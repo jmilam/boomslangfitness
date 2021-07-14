@@ -1,0 +1,31 @@
+{:uriI"‘file://node_modules/mark.js/test/fixtures/regexp/infinite.html?type=text/html&id=6feb6da69cbc6286e40c7e5fc9cd84e690cfb371ba7d26e7ff308dc67a48de84:ET:load_pathI"node_modules;T:filenameI"<node_modules/mark.js/test/fixtures/regexp/infinite.html;T:	nameI"*mark.js/test/fixtures/regexp/infinite;T:logical_pathI"/mark.js/test/fixtures/regexp/infinite.html;T:content_typeI"text/html;T:sourceI"á<div class="regexp-infinite">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Jfile-digest://node_modules/mark.js/test/fixtures/regexp/infinite.html;TTF:charsetI"
+utf-8;F:digest"%	ã§¯³ªAëÙQı¥%Xƒım¸ğîé×†8:lengthiá:dependencies_digest"%^Œ«¢ÌDT[Ğ6,ën ÙƒÃñD*ÿ˜t1 r9¾:idI"E6feb6da69cbc6286e40c7e5fc9cd84e690cfb371ba7d26e7ff308dc67a48de84;F:
+mtimel+í‹íY

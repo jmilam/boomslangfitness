@@ -1,0 +1,30 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th />
+			<th>Exercise Name</th>
+			<th>Equipment Name</th>
+			<th>Set Count</th>
+			<th>Rep Count/Time</th>
+			<th>Timed Exercise</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @selected_exercises.zip(@selected_equipment).each_with_index do |config, idx| %>
+			<tr>
+				<td><%= idx + 1 %></td>
+			  <td><%= config[0][:name] %></td>
+			  <td><%= config[1][:name] %></td>
+			  <td><%= config[0][:set_count] %></td>
+			  <td>
+			  	<% if config[0][:timed_exercise] %>
+			  		<%= config[0][:time_by_seconds] %> secs.
+			  	<% else %>
+			  		<%= config[0][:rep_count] %> reps
+			  	<% end %>
+			  </td>
+			  <td><%= config[0][:timed_exercise] || false %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

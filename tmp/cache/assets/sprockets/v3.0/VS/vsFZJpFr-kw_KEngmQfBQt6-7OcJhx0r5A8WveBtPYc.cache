@@ -1,0 +1,27 @@
+{:uriI"Ÿfile://node_modules/mark.js/test/fixtures/basic/ignore-joiners-synonyms.html?type=text/html&id=967a9212a5ba5593768e1f7c026fd23124c341a846b5f4840ab269809921efff:ET:load_pathI"node_modules;T:filenameI"Jnode_modules/mark.js/test/fixtures/basic/ignore-joiners-synonyms.html;T:	nameI"8mark.js/test/fixtures/basic/ignore-joiners-synonyms;T:logical_pathI"=mark.js/test/fixtures/basic/ignore-joiners-synonyms.html;T:content_typeI"text/html;T:sourceI"`<div class="basic-ignore-joiners-synonyms">
+    <div>
+        <p>
+            Lore&shy;m i&shy;psum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est L&#8203;orem ip&#8204;sum
+            dolor sit amet. Lo&#8203;rem ipsu&shy;m dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+            est lor&#8205;em Ipsu&#8205;m dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum on&shy;e, tw&#8203;o, do&#8205;s, three, dolor sit amet u&shy;no, consetetur.
+            Lorem ipsum L&#8203;ue&#8204;fte dolor sit l&shy;Ã¼&#8205;fte amet One
+            T&#8203;wo Three lu&shy;efte.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Xfile-digest://node_modules/mark.js/test/fixtures/basic/ignore-joiners-synonyms.html;TTF:charsetI"
+utf-8;F:digest"%‚ôØCúµ"ÅáAÔÄ&Õéi7\´Ø/»|•1:lengthi`:dependencies_digest"%µğz¼ÎÈá¿RIèÙÉ¾&Rül¯ªî*@fşYçÙ/:idI"E967a9212a5ba5593768e1f7c026fd23124c341a846b5f4840ab269809921efff;F:
+mtimel+í‹íY

@@ -1,0 +1,27 @@
+{:uriI"£file://node_modules/mark.js/test/fixtures/basic/ignore-punctuation-synonyms.html?type=text/html&id=2ca14d06aefe09c127e979595400dab72deaa3aec58901d7b0930921092225f9:ET:load_pathI"node_modules;T:filenameI"Nnode_modules/mark.js/test/fixtures/basic/ignore-punctuation-synonyms.html;T:	nameI"<mark.js/test/fixtures/basic/ignore-punctuation-synonyms;T:logical_pathI"Amark.js/test/fixtures/basic/ignore-punctuation-synonyms.html;T:content_typeI"text/html;T:sourceI"Ù<div class="basic-ignore-punctuation-synonyms">
+    <div>
+        <p>
+            Lo{rem ip}sum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lo_rem ip;sum dolor sit amet.
+            Lo=rem ips.um dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est lorem Ip_sum dolor
+            sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum one, two, d_os, three, dolor sit amet uno, consetetur. Lorem ipsum L'ue'fte
+            dolor sit amet l√ºfte One Two Three l[ueft]e.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"\file-digest://node_modules/mark.js/test/fixtures/basic/ignore-punctuation-synonyms.html;TTF:charsetI"
+utf-8;F:digest"%'œÈÑ ø†		
+›VØ‘`{N"Qö#ó+›§”≠K:lengthiÙ:dependencies_digest"%Sπ—©Å¿ò:ˇ4·≥	ÉπîZÃ‘’ı ë‡èˇVÊ:idI"E2ca14d06aefe09c127e979595400dab72deaa3aec58901d7b0930921092225f9;F:
+mtimel+ÌãÌY

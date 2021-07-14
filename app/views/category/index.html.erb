@@ -1,0 +1,29 @@
+<div class="container">
+  <%= render "partials/alert" %>
+</div>
+
+<table class="table">
+  <thead class="boomslang-green" style="height:50px;">
+    <tr>
+      <th scope="col" class="category-header" style="vertical-align: middle;">Name</th>
+      <th scope="col" class="text-center category-header" style="vertical-align: middle;">Tag</th>
+      <th scope="col" class="text-center category-header" style="vertical-align: middle;">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+		<% @categories.each do |category| %>
+			<tr>
+	      <th scope="row" style="color:white;"><%= category.name %></th>
+	      <td class="<%= Category.style_tags[category.tag]['background-color'] %>"></td>
+	      <td class="text-center">
+	      	<% if category.editable_by_user?(current_user) %>
+	      		<%= link_to "Edit", edit_category_path(category.id) %> |  <% if category.disabled %> <%= link_to "Enable", enable_category_path(id: category.id), method: :put %> <% else %> <%= link_to "Disable", disable_category_path(id: category.id), method: :put %> <% end %>
+	      	<% end %>		
+	      </td>
+	    </tr>
+		<% end %> 
+		<tr>
+			<td scope="col" colspan="3" class="text-right"><%= link_to "Add a new Category...", new_category_path %></td>
+		</tr>
+  </tbody>
+</table>

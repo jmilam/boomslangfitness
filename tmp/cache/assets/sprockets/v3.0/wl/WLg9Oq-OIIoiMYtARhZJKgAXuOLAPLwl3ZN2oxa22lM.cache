@@ -1,0 +1,18 @@
+{:uriI"ùfile://node_modules/mark.js/test/fixtures/basic/ignore-joiners-escape.html?type=text/html&id=99d73a32626e1d6b5c7e54fcc6e41fea270eaef721b323d974d051d7ddde1e0b:ET:load_pathI"node_modules;T:filenameI"Hnode_modules/mark.js/test/fixtures/basic/ignore-joiners-escape.html;T:	nameI"6mark.js/test/fixtures/basic/ignore-joiners-escape;T:logical_pathI";mark.js/test/fixtures/basic/ignore-joiners-escape.html;T:content_typeI"text/html;T:sourceI"<div class="basic-ignore-joiners-escape">
+    <p>
+        Lo&shy;rem ipsum+ dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+        gubergren, $50 {no} sea takimata sanctus est lorem ipsum+ dolor sit. Lo&#8203;rem
+        ip&#8204;sum+ dolor sit* amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+        kasd gubergren, no sea takimata sanctus est lorem ips&#8205;um+ dolor sit
+        amet? www.happy.com\ test.
+    </p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Vfile-digest://node_modules/mark.js/test/fixtures/basic/ignore-joiners-escape.html;TTF:charsetI"
+utf-8;F:digest"%î òzÍ]]¶ïÜ#ﬂEÉ2f+ëaïΩÕ0Qy]}Ò¿:lengthi:dependencies_digest"%e$ﬁÄ^wP≈∏v•$$Q{w‘GáSŒê=bÂ4øÊÿP:idI"E99d73a32626e1d6b5c7e54fcc6e41fea270eaef721b323d974d051d7ddde1e0b;F:
+mtimel+”™O`

@@ -1,0 +1,522 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+ @import "bootstrap";
+ @import "font-awesome";
+ @import "home";
+
+html, body {
+	height: 100%;
+}
+
+nav {
+	background: #101216;
+	color: white;
+}
+
+.full-screen { 
+	height: 100%;
+}
+
+.header-background {
+	background: #003259;
+}
+
+.workout-background {
+	background: #71B11D;
+	opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.nav-pills .nav-link {
+  padding-top: 1em;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	background: #101216;
+	opacity: 0.8;
+	border-radius: 0px;
+  padding-top: 1em;
+  color: #A7C8F2;
+}
+
+.nav-link {
+	border-radius: 0px;
+	height: 60px;
+	text-align: center;
+}
+
+.nav-li {
+	width:100%;
+}
+
+a {
+	color: #007bff;
+}
+
+.registration_links {
+	color: #003259;
+}
+
+.row {
+	margin-bottom: 10px;
+}
+
+.detail-font-size {
+	font-size: 0.8em;
+	text-align:center;
+}
+
+.card-body {
+  margin-bottom: 15px;
+}
+
+.custom-input {
+	background-color: #fafafa;
+}
+
+.workout-btn {
+	background-color: #71B11D;
+	color: #003259;
+	opacity: 0.8;
+}
+
+.workout-text {
+	color: #BFF075;
+}
+
+.login-header {
+  margin-top: -20px;
+  height: 100px;
+}
+
+#footer {
+	height:50px;
+	margin-top: 75px;
+	background: #003259;
+	color: white;
+}
+
+#step-header {
+	padding-top: 20px;
+}
+
+.card {
+	background-color: transparent;
+	border: 0;
+}
+
+.stand-alone-card {
+	border: 1px solid grey;
+
+	.card-title {
+		padding-left: 1em;
+	}
+}
+
+.project49-store-header-background {
+  background-image: url(project49header);
+  background-size: cover;
+  height: 240px;
+  background-repeat: no-repeat;
+  margin-bottom:1em;
+  margin-top:1em;
+  padding-top: 12em;
+  font-size: medium;
+  font-family: sans-sarif;
+}
+
+.image-background {
+	background-image: url('road-background');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+
+.btn-standard {
+	background-color:#D9D278;
+}
+
+.workout-header {
+	background-color: #003259;
+	color: #white;
+}
+
+.log-it-btn {
+	border: solid 1px #8C8C8C;
+	color: #262626;
+}
+
+#profile-background {
+	background-color: #025951;
+	height:300px;
+	padding-top:10px;
+	opacity: 0.8;
+	/*
+	height:330px;
+	margin-top:40px;
+	*/
+}
+
+.default-background {
+	background-color: #003259;
+}
+
+#login-profile-background {
+	background-color: #003259;
+  height: 420px;
+  margin-top: 60px;
+  color: white;
+}
+
+#signup-background {
+	background-color: #003259;
+  height: 420px;
+  margin-top: 60px;
+  color: white;
+}
+
+.rounded-image {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	height:80px;
+	width:80px;
+}
+
+#nav-image {
+	border-radius: 50%
+}
+
+.message-rounded-image { 
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	height:50px;
+	width:50px;
+}
+
+#metric_time_frame {
+	padding-top: 50px;
+}
+
+#profile-layout {
+  background-color: #003259;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+#chart-div {
+	height:100%;
+}
+
+#login-header {
+	text-align: center;
+}
+
+#login-footer {
+	border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.arrow-down {
+  width: 14px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -1px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #003259;
+}
+
+.top-arrow {
+  width: 14px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -1px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 60px solid white;
+}
+
+.speech-bubble-left {
+	position: relative;
+	background: #71B11D;
+	border-radius: .4em;
+}
+
+.speech-bubble-left:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-right-color: #71B11D;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -14px;
+	margin-left: -28px;
+}
+
+.speech-bubble-right {
+	position: relative;
+	background: #D9D278;
+	border-radius: .4em;
+}
+
+.speech-bubble-right:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-left-color: #D9D278;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -14px;
+	margin-right: -28px;
+}
+
+.home-page-header {
+  height: 75px;
+  font-size: 2em;
+  margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: middle;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.carousel-details {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.half-screen {
+	width: 50%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.profile-link {
+	border-bottom: 1px solid #003259;
+	color: #003259;
+	height:60px;
+	padding-top:18px;
+	padding-bottom:18px;
+	border-radius:0px;
+}
+
+.nav-sections {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 3px solid lightgrey;
+}
+
+.nav-section-text {
+	position: sticky;
+    top: 25%;
+    left: 25%;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.nav-section-img {
+	height:100%;
+}
+
+.home-page-icon {
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.home-page-icon:hover {
+	color: white;
+}
+
+.nutrition-only-icon {
+	color:#F29F05;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nutrition-only-icon:hover {
+	color:#82B937;
+	opacity: 0.8;
+}
+
+.boomslang-green {
+	background-color:#82B937 !important;
+	opacity: 0.8;
+}
+
+.boomslang-orange {
+	color:#F29F05;
+}
+
+.boomslang-orange-background {
+	background-color: #F29F05;
+	color: white;
+}
+
+.text-middle {
+	vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.category-header {
+	height:100px;
+}
+
+.boomslang-card {
+	margin-top: 50px;
+	color: white;
+}
+
+.profile-submit-btn {
+	margin-bottom:20px;
+	background-color:#D9D278;
+}
+
+.browser-center {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.main {
+	margin-left: 35px;
+}
+
+#mySidebar, #mySidebarNoHide {
+	padding-top: 20px;
+	background: #025951; 
+}
+
+#right-col {
+	padding-top:20px;
+}
+
+.boomslang-blue {
+	background: #003259;
+}
+
+.app-font {
+	font-family: serif;
+}
+
+.profile-index-btn {
+	background-color: #F25116;
+	color:white;
+}
+
+.fill-col-div {
+	width: 100%;
+	height: 100%;
+}
+
+.remove-session {
+	cursor: pointer;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 2.5em; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+	margin-left: 35px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 600px) {
+  .sidebar {padding-top: 15px;}
+  .small-main	{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    width: 25%;
+  }
+
+  .project49-store-header-background {
+	  background-image: url(project49header);
+	  background-size: 107% 100%;
+	  height: 240px;
+	  background-repeat: no-repeat;
+	  margin-bottom:1em;
+	  margin-top:1em;
+	  padding-top: 12em;
+	  font-size: medium;
+	  font-family: sans-sarif;
+	}
+}

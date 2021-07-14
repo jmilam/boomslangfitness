@@ -1,0 +1,36 @@
+{:uriI"„file://node_modules/js-tokens/package.json?type=application/json&id=8d9c5b40df544d81deab9268f9310b7f710c40e1ebeddc6298948d5c9571cc90:ET:load_pathI"node_modules;T:filenameI"(node_modules/js-tokens/package.json;T:	nameI"js-tokens/package;T:logical_pathI"js-tokens/package.json;T:content_typeI"application/json;T:sourceI"‰{
+  "name": "js-tokens",
+  "version": "4.0.0",
+  "author": "Simon Lydell",
+  "license": "MIT",
+  "description": "A regex that tokenizes JavaScript.",
+  "keywords": [
+    "JavaScript",
+    "js",
+    "token",
+    "tokenize",
+    "regex"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "repository": "lydell/js-tokens",
+  "scripts": {
+    "test": "mocha --ui tdd",
+    "esprima-compare": "node esprima-compare ./index.js everything.js/es5.js",
+    "build": "node generate-index.js",
+    "dev": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "coffeescript": "2.1.1",
+    "esprima": "4.0.0",
+    "everything.js": "1.0.3",
+    "mocha": "5.0.0"
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"6file-digest://node_modules/js-tokens/package.json;TTF:charsetI"
+utf-8;F:digest"%G4Y1‚{>&ÛŸæ«¸…j¼¨¯iqdÍXÎ:lengthi‰:dependencies_digest"%ƒ€İe^+ûè6è}-5ç&)ûK
+ËMğLaä7:idI"E8d9c5b40df544d81deab9268f9310b7f710c40e1ebeddc6298948d5c9571cc90;F:
+mtimel+ÓªO`

@@ -1,0 +1,31 @@
+{:uriI"–file://node_modules/mark.js/test/fixtures/regexp/ignore-groups.html?type=text/html&id=fe0f74e43c22f402cffd86340a309e7605db78020e98ddeecb7bee8d79d8783b:ET:load_pathI"node_modules;T:filenameI"Anode_modules/mark.js/test/fixtures/regexp/ignore-groups.html;T:	nameI"/mark.js/test/fixtures/regexp/ignore-groups;T:logical_pathI"4mark.js/test/fixtures/regexp/ignore-groups.html;T:content_typeI"text/html;T:sourceI"Ü<div class="regexp-ignore-groups">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ofile-digest://node_modules/mark.js/test/fixtures/regexp/ignore-groups.html;TTF:charsetI"
+utf-8;F:digest"%¼õ 	LáÃsN½é”™°oã!©+QWFËEñÍ:lengthiÜ:dependencies_digest"%&ew–ºÊÊ”ÒŸ¥(KDwömû©EpW„	XuÞs:idI"Efe0f74e43c22f402cffd86340a309e7605db78020e98ddeecb7bee8d79d8783b;F:
+mtimel+í‹íY

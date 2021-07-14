@@ -1,0 +1,105 @@
+<style>
+
+body {background:#025951;opacity:1;}
+</style>
+<%= render "partials/alert" %>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active" style=""></li>
+    <li data-target="#carouselExampleSlidesOnly" data-slide-to="1" style=""></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item <%= @user.nutrition_only ? '' : 'active' %>">
+      <div id="profile-background">
+        <div class="col-md-10 col-10 offset-1">
+          <%= link_to edit_profile_path(@user.id), id: "edit_profile" do %>
+            <div class="row">
+              <%= image_tag @user.avatar.url, class: "rounded-image" %>
+            </div>
+          <% end %>
+
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-4 detail-font-size" style="color:#A7C8F2;">
+              <b style="color:white;">Weight:</b> <div><%= @user.weight %> lbs.</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-4 detail-font-size" style="color:#A7C8F2;">
+              <b style="color:white;">Height:</b> <div><%= @height[0] %>' <%= @height[1] %>"</div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-4 detail-font-size" style="color:#A7C8F2;">
+              <div style="color:white">BMI: </div><div style="color:<%= @bmi_status %>;text-align:center;"><%= @bmi %></div>
+            </div>
+          </div>
+        </div>
+        <% unless @user.nutrition_only %>
+          <div class="col-md-12 col-12 text-center" style="margin-top:10px;margin-bottom:10px;color:white;">
+            <b>Current Workout:</b><div style="color:#A7C8F2;"><%= @workout&.name %></div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="carousel-item <%= @user.nutrition_only ? 'active' : '' %>" style="background:#025951;">
+      <div class="container-fluid" style="height:300px;padding-top: 10px;">
+        <table class="table table-striped" style="background:white;">
+          <thead>
+            <tr>
+              <th class="text-right"></th>
+              <th class='text-center'>Total</th>
+              <th class='text-center'>Remaining</th>
+              <th>Consumed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b><i>Calories</i></b></td>
+              <td class='text-center'><%= @user.tdee %></td>
+              <td class='text-center'><%= @remaining_tdee %></td>
+              <td class='text-center'><%= @user.tdee - @remaining_tdee %></td>
+            </tr>
+            <tr>
+              <td><b><i>Protein</i></b></td>
+              <td class='text-center'><%= @user.protein_total %></td>
+              <td class='text-center'><%= @remaining_protein %></td>
+              <td class='text-center'><%= (@user.protein_total - @remaining_protein).round(2) %></td>
+            </tr>
+            <tr>
+              <td><b><i>Carbs</i></b></td>
+              <td class='text-center'><%= @user.carb_total %></td>
+              <td class='text-center'><%= @remaining_carbs %></td>
+              <td class='text-center'><%= (@user.carb_total - @remaining_carbs).round(2) %></td>
+            </tr>
+            <tr>
+              <td><b><i>Fats</i></b></td>
+              <td class='text-center'><%= @user.fat_total %></td>
+              <td class='text-center'><%= @remaining_fats %></td>
+              <td class='text-center'><%= (@user.fat_total - @remaining_fats).round(2) %></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<% if @user.nutrition_only %>
+  <%= render 'nutrition_only_buttons' %>
+<% else %>
+  <%= render 'full_app_buttons' %>
+<% end %>
+
+<div>
+</div>
+
+<script>
+  $('.carousel').carousel({
+  interval: 0
+})
+</script>

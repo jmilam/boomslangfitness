@@ -1,0 +1,30 @@
+<%= form_for(:user, url: new_user_session_path(gym: @gym&.subdomain || 'boomslangfitness')) do |f| %>
+  <div class="card border-success" style="border:1px solid;">
+    <div class="card-header border-success boomslang-green">
+      <h4 class="text-center app-font">Sign In</h4>
+    </div>
+    <div class="card-body bg-white" style="margin-bottom:0;">
+      <%= render "partials/alert" %>
+      <%= hidden_field_tag :gym_id, @gym&.id %>
+      <div class="col-md-12 col-sm-12 form-group">
+        <%= f.label :email %>
+        <%= f.text_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
+      </div>
+
+      <div class="col-md-12 col-sm-12 form-group">
+        <%= f.label :password, class: '' %>
+        <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+      </div>
+      
+    </div>
+    <div class="card-footer boomslang-green">
+      <div class="text-right">
+        <%= f.submit "Log In", class: "btn btn-standard" %>
+        <br/>
+        <% if params[:action] == 'new' && @gym&.subdomain != 'project49' %>
+          <%= render "devise/shared/links" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+{:uriI"éfile://node_modules/mark.js/test/fixtures/iframes/main.html?type=text/html&id=3e77324ade20c33bc5091b73eb0aef816bd2b55db1ee947dc93445aabc528caf:ET:load_pathI"node_modules;T:filenameI"9node_modules/mark.js/test/fixtures/iframes/main.html;T:	nameI"'mark.js/test/fixtures/iframes/main;T:logical_pathI",mark.js/test/fixtures/iframes/main.html;T:content_typeI"text/html;T:sourceI"Q<div class="iframes" id="iframes-target">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <script>
+        // Can't use document.write here, as this fixture will be
+        // included after the document was fully loaded
+        var target = document.getElementById("iframes-target");
+        var iframe = document.createElement("iframe");
+        iframe.src = jasmine.getFixtures().fixturesPath + "/iframes/inc.html";
+        target.appendChild(iframe);
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Gfile-digest://node_modules/mark.js/test/fixtures/iframes/main.html;TTF:charsetI"
+utf-8;F:digest"%Õ±0–è(é|ë
+É/-Z≠û±Ë¢ŸZb!Wqn;ó£¿:lengthiQ:dependencies_digest"%
+∫∑Íäõ¡ªñ8nz∏R˚∂!ßV”ú˝Ô⁄)◊ix:idI"E3e77324ade20c33bc5091b73eb0aef816bd2b55db1ee947dc93445aabc528caf;F:
+mtimel+”™O`

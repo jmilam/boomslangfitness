@@ -1,0 +1,127 @@
+<%= form_for exercise, url: request_type == :post ? exercise_index_path : exercise_path(exercise.id), method: request_type do |f| %>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 form-group">
+        <%#= f.hidden_field :workout_group_id, value: workout_group.id %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12 form-group">
+        <%= f.fields_for :common_exercise do |ex| %>
+          <%= ex.label :id, 'Exercise Name *', class: 'col-md-12' %>
+          <%= ex.select :id, @common_exercises.map { |ex| [ex.name, ex.id] }, { prompt: "--- Select Exercise ---", selected: exercise.common_exercise.id }, class: 'col-md-12 form-control', onchange:  'changeAlert()' %>
+        <% end %>
+      </div>
+      <div class="col-md-6 col-sm-12 form-group">
+        <%= f.fields_for :common_equipment do |ex| %>
+          <%= ex.label :id, 'Exercise Name *', class: 'col-md-12' %>
+          <%= ex.select :id, @equipment.map { |ex| [ex.name, ex.id] }, { prompt: "--- Select Equipment ---", selected: exercise.common_equipment.id }, class: 'col-md-12 form-control' %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12 form-group">
+        <%= f.label :description, 'Exercise Description', class: 'col-md-12' %>
+        <%= f.text_area :description, height:30, class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-6 col-sm-12 form-group">
+        <%= f.label :instructions, 'Exercise Instructions', class: 'col-md-12' %>
+        <%= f.text_area :instructions, height:30, class: 'col-md-12 form-control' %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-2 form-group">
+        <%= f.label :warm_up, "Warm Up?", class: 'col-md-12' %>
+        <%= f.check_box :warm_up, class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-7 col-sm-7 col-6 form-group">
+        <%= f.label :warm_up_details, class: 'col-md-12' %>
+        <%= f.text_area :warm_up_details, class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-1 col-sm-1 col-2 form-group text-center">
+        <%= f.label :band, "Band?", class: 'col-md-12' %>
+        <%= f.check_box :band %>
+      </div>
+      <div class="col-md-1 col-sm-1 col-1 form-group text-center">
+        <%= f.label :timed_exercise, "Timed?", class: 'col-md-12' %>
+        <%= f.check_box :timed_exercise %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-6 form-group">
+        <%= f.label :kiosk_number, class: 'col-md-12' %>
+        <%= text_field_tag :kiosk_number, nil, class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 form-group">
+        <%= f.label :set_count, "Set Count? *", class: 'col-md-12' %>
+        <%= f.select :set_count, (1..6).to_a.collect {|set| [ set, set ] }, { prompt: "--- Select How Many Sets for this exercise ---" }, class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 form-group">
+        <%= f.label :rep_range, "Rep Count? *", class: 'col-md-12' %>
+        <%= f.text_field :rep_range, placeholder: "10-12", class: 'col-md-12 form-control' %>
+      </div>
+       <div class="col-md-3 col-sm-6 col-6 form-group">
+        <%= f.label :time_by_seconds, "Exercise Time:", class: 'col-md-12' %>
+        <%= f.text_field :time_by_seconds, class: 'col-md-12 form-control' %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <%= f.label :priority, class: 'col-md-12' %>
+        <%= f.select :priority, (1..total_exercises).to_a.collect { |priority| [priority, priority] }, { prompt: "--- Select the priority in the workout you want them to do this exercise ---"}, class: 'col-md-12 form-control' %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <%= f.label :exercise_video_url, "Exercise Video URL", class: 'col-md-12' %>
+        <%= f.text_field :exercise_video_url, class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-10">
+          <%= f.label :video, "Upload Instructional Video ** Only .mp4 allowed **:" %>
+        </div>
+        <div class="col-md-2">
+          <%= f.file_field :video %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <%= f.label :super_set_id, 'Select all exercises you\'d like to pair with this exercise to make a circuit', class: 'col-md-12 text-muted' %>
+    </div>
+
+    <div class="row">
+      <% unless request_type == :post %>
+        <% exercises.each do |wg_exercise| %>
+          <% unless wg_exercise.id == exercise.id %>
+            <div class="col-md-4 col-sm-4 col-12">
+                <% checked = exercise.exercise_circuit_id.nil? ? false : wg_exercise.exercise_circuit_id == exercise.exercise_circuit_id %>
+                <%= check_box_tag 'super_set_id[]', wg_exercise.id, checked %> <%= f.label :super_set_id, wg_exercise.common_exercise.name %>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+  	   <%= f.submit request_type == :post ? "New Exercise" : "Edit Exercise", class: 'btn btn-lg btn-block workout-btn' %>
+      </div>
+      <% unless request_type == :post %>
+        <div class="col-md-6 col-sm-12" style="padding-top: 1em;">
+          <div class= 'text-center' style="margin-bottom:15px;"><%= link_to "Disable Exercise", exercise_path(exercise.id), method: :delete %></div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <script>
+    function changeAlert() {
+      alert("You are making a change to an exercise name for a workout that users might have be using. Please be sure you want to make this change before you save.");
+    }
+  </script>

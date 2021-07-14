@@ -1,0 +1,32 @@
+{:uriI"–file://node_modules/mark.js/test/fixtures/basic/ignore-joiners.html?type=text/html&id=33026e0c7691ae58f85b56c14028b8c3b9c70efda3b71e9ad19b509dbaab56b3:ET:load_pathI"node_modules;T:filenameI"Anode_modules/mark.js/test/fixtures/basic/ignore-joiners.html;T:	nameI"/mark.js/test/fixtures/basic/ignore-joiners;T:logical_pathI"4mark.js/test/fixtures/basic/ignore-joiners.html;T:content_typeI"text/html;T:sourceI"<div class="basic-ignore-joiners">
+    <div>
+        <p>
+            Lo&shy;rem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est lorem ipsum dolor sit. Lo&#8203;rem
+            ip&#8204;sum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est lorem ips&#8205;um
+            dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ip&#8205;sum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est lorem ipsum dolor sit. lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est lorem ips&#8203;um dolor sit amet.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ofile-digest://node_modules/mark.js/test/fixtures/basic/ignore-joiners.html;TTF:charsetI"
+utf-8;F:digest"%P1•=æ°,õ	[áÃ´ú£1ýY|éÉ1r®wø;•iÁ:lengthi:dependencies_digest"%I¶-YAµ`zžhG,¾"–?RÜKR|oñÌ:idI"E33026e0c7691ae58f85b56c14028b8c3b9c70efda3b71e9ad19b509dbaab56b3;F:
+mtimel+í‹íY

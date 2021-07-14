@@ -1,0 +1,25 @@
+{:uriI"’file://node_modules/mark.js/test/fixtures/iframes/disabled.html?type=text/html&id=d54aeade8774087aaf3fa7841f41b879b406c4b5c37a868c1741beda605130c5:ET:load_pathI"node_modules;T:filenameI"=node_modules/mark.js/test/fixtures/iframes/disabled.html;T:	nameI"+mark.js/test/fixtures/iframes/disabled;T:logical_pathI"0mark.js/test/fixtures/iframes/disabled.html;T:content_typeI"text/html;T:sourceI"l<div class="iframes-disabled" id="iframes-disabled-target">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <script>
+        // Can't use document.write here, as this fixture will be
+        // included after the document was fully loaded
+        var target = document.getElementById("iframes-disabled-target");
+        var iframe = document.createElement("iframe");
+        iframe.src = jasmine.getFixtures().fixturesPath + "/iframes/inc.html";
+        target.appendChild(iframe);
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Kfile-digest://node_modules/mark.js/test/fixtures/iframes/disabled.html;TTF:charsetI"
+utf-8;F:digest"%X9 ˜?3AŞõüÈde€ËkŠæÃ´Á_wddö:lengthil:dependencies_digest"%¼¶t­ô€_D&´ø¬X{`üo.{ªhÍKôğƒµíF:idI"Ed54aeade8774087aaf3fa7841f41b879b406c4b5c37a868c1741beda605130c5;F:
+mtimel+ÓªO`

@@ -1,0 +1,72 @@
+{:uriI"€file://node_modules/react/package.json?type=application/json&id=b4be04152ed044a740a144fc586a00f994842fc6261c4d2fccee49674b3d5183:ET:load_pathI"node_modules;T:filenameI"$node_modules/react/package.json;T:	nameI"react/package;T:logical_pathI"react/package.json;T:content_typeI"application/json;T:sourceI"C{
+  "_from": "react@16.8.6",
+  "_id": "react@16.8.6",
+  "_inBundle": false,
+  "_integrity": "sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==",
+  "_location": "/react",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react@16.8.6",
+    "name": "react",
+    "escapedName": "react",
+    "rawSpec": "16.8.6",
+    "saveSpec": null,
+    "fetchSpec": "16.8.6"
+  },
+  "_requiredBy": [
+    "/@zoomus/websdk"
+  ],
+  "_resolved": "https://registry.npmjs.org/react/-/react-16.8.6.tgz",
+  "_shasum": "ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe",
+  "_spec": "react@16.8.6",
+  "_where": "/Users/jmilam/Projects/workout_randomizer/node_modules/@zoomus/websdk",
+  "browserify": {
+    "transform": [
+      "loose-envify"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/facebook/react/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "loose-envify": "^1.1.0",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.6.2",
+    "scheduler": "^0.13.6"
+  },
+  "deprecated": false,
+  "description": "React is a JavaScript library for building user interfaces.",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "build-info.json",
+    "index.js",
+    "cjs/",
+    "umd/"
+  ],
+  "homepage": "https://reactjs.org/",
+  "keywords": [
+    "react"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facebook/react.git",
+    "directory": "packages/react"
+  },
+  "version": "16.8.6"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"2file-digest://node_modules/react/package.json;TTF:charsetI"
+utf-8;F:digest"%ûã=×æiôò®õ,(kwÊ	
+éˆæ¾w…”wNd:lengthiC:dependencies_digest"%j¸úZôŠ#,¥ª­¦§8<êÊ„t¼Ùb€¨äeê:idI"Eb4be04152ed044a740a144fc586a00f994842fc6261c4d2fccee49674b3d5183;F:
+mtimel+š¾6`

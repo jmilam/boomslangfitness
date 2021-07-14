@@ -1,0 +1,32 @@
+{:uriI"Éfile://node_modules/react-is/package.json?type=application/json&id=9ea5031b206c519239356c1b57931ac381c28102e7fed941fb6308ef4ff585b1:ET:load_pathI"node_modules;T:filenameI"'node_modules/react-is/package.json;T:	nameI"react-is/package;T:logical_pathI"react-is/package.json;T:content_typeI"application/json;T:sourceI"{
+  "name": "react-is",
+  "version": "16.13.1",
+  "description": "Brand checking of React Elements.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/react.git",
+    "directory": "packages/react-is"
+  },
+  "keywords": [
+    "react"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/facebook/react/issues"
+  },
+  "homepage": "https://reactjs.org/",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "build-info.json",
+    "index.js",
+    "cjs/",
+    "umd/"
+  ]
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"5file-digest://node_modules/react-is/package.json;TTF:charsetI"
+utf-8;F:digest"%xLC@ØòSíåQóëhDá∏0v≥»NçÊ∫_$3pq:lengthi:dependencies_digest"%|j‚xh*	ó⁄H◊xmOvæÎ¢~lﬁ0æí@%-Ê¨:idI"E9ea5031b206c519239356c1b57931ac381c28102e7fed941fb6308ef4ff585b1;F:
+mtimel+”™O`

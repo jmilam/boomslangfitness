@@ -1,0 +1,93 @@
+<div class="container">
+	<% if exercise.timed_exercise %>
+		<div class="jumbotron jumbotron-fluid">
+	    <div class="container">
+	    	<h4 class="display-4 text-center">Timer</h4>
+	    	<hr />
+				<div class="row">
+					<div class="col-12 time">
+						<h5 class="text-center time-text"><%= exercise.time_by_seconds / 60 %>:<%= (exercise.time_by_seconds % 60).to_s.rjust(2, '0') %></h5>
+					</div>
+					<div class="col-6 start">
+						<button class="btn btn-block btn-start btn-success" type="button">Start</button>
+					</div>
+					<div class="col-6 stop">
+						<button class="btn btn-block btn-stop btn-danger" type="button">Stop</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<% end %>
+
+	<%= f.fields_for 'workout_detail[]', exercise.workout_details.new do |workout_detail| %>
+		<%= workout_detail.hidden_field :exercise_id, value: "#{exercise.id}" %>
+		<%= workout_detail.hidden_field :edit, value: @edit_mode %>
+		<%= workout_detail.hidden_field :workout_detail_id, value: "#{ previous_exercise.blank? ? nil : previous_exercise[:id]}" %>
+
+		<div class="row" style="padding-right:10px;">
+	  	<% col_space = 6 %>
+	    <% 1.upto(exercise.set_count) do |num| %>
+				<% prev_value = previous_exercise.blank? ? nil : previous_exercise["rep_#{num}_weight"] %>
+  			<% if previous_exercise.nil? || @edit_mode == "false" %>
+  				<div class="col-md-<%= col_space %> col-sm-<%= col_space %> col-<%= col_space %> rep" style="padding-top:10px;"><%= workout_detail.text_field "rep_#{num}_weight", size: 3, class: "rep_input form-control custom-input", type: 'number', placeholder: prev_value %></div>
+  			<% else %>
+  				<div class="col-md-<%= col_space %> col-sm-<%= col_space %> col-<%= col_space %> rep" style="padding-top:10px;"><%= workout_detail.text_field "rep_#{num}_weight", size: 3, class: "rep_input form-control custom-input", type: 'number', value: prev_value %></div>
+  			<% end %>
+	    <% end %>
+		</div>
+
+		<% if exercise.band %>
+			<div class="row" style="margin-left:1px;padding-right: 25px;color:white;">
+				<%= workout_detail.label "Band Color:" %>
+	  			<% prev_band = previous_exercise.blank? ? nil : previous_exercise&.band_color %>
+	  		<% if previous_exercise.nil? || @edit_mode == "false" %>
+					<%= workout_detail.text_field :band_color, class: "col-md-12 form-control custom-input", placeholder: prev_band || "Enter Band Color" %>
+				<% else %>
+					<%= workout_detail.text_field :band_color, class: "col-md-12 form-control custom-input", placeholder: "Enter Band Color", value: "#{prev_band}" %>
+				<% end %>
+			</div>
+		<% end %>
+
+		<div class="row" style="margin-left:1px;padding-right: 25px;">
+	  		<% prev_comment = previous_exercise.blank? ? nil : previous_exercise&.comment %>
+			<% if previous_exercise.nil? || @edit_mode == "false" %>
+				<%= workout_detail.text_area :comment, class: "col-md-12 form-control custom-input", placeholder: prev_comment || "Enter exercise comment here..."  %>
+			<% else %>
+				<%= workout_detail.text_area :comment, class: "col-md-12 form-control custom-input", placeholder: "Enter exercise comment here...", value: "#{prev_comment}"  %>
+			<% end %>
+		</div>
+	<% end %>
+</div>
+
+<script>
+	var timer;
+
+	$('.btn-start').unbind('click').click(function(e){
+		const btn = $(this)
+		$(this).attr('disabled', true);
+
+		timer = setInterval(function() {
+			let [minutes, seconds] = btn.parent().siblings('.time').text().split(':')
+			let newTime = '';
+			minutes = parseInt(minutes * 60)
+			seconds = parseInt(seconds)
+
+			if (minutes <= 60 && minutes > 0){
+		 		newTime = `0:${minutes - 1}`;
+			} else if (seconds == 0) {
+		 		newTime = `00:00`;
+		 		btn.parent().siblings('.time').children('.time-text').addClass('text-danger');
+		 		btn.attr('disabled', false);
+				clearInterval(timer);
+			} else {
+		 		newTime = `0:${seconds - 1}`;
+			}
+			btn.parent().siblings('.time').children('.time-text').text(newTime);
+		}, 1000);
+	});
+
+	$('.btn-stop').unbind('click').click(function(){
+		$(this).parent().siblings('.start').children('.btn-start').attr('disabled', false);
+		clearInterval(timer);
+	});
+</script>

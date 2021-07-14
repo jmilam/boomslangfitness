@@ -1,0 +1,17 @@
+{:uriI"file://node_modules/mark.js/test/fixtures/ranges/overlap.html?type=text/html&id=2d38d06b042c4ddb53ce7a468cd0cc22e3a20a6f4b1148205823ada3ded56cb4:ET:load_pathI"node_modules;T:filenameI";node_modules/mark.js/test/fixtures/ranges/overlap.html;T:	nameI")mark.js/test/fixtures/ranges/overlap;T:logical_pathI".mark.js/test/fixtures/ranges/overlap.html;T:content_typeI"text/html;T:sourceI"À<div class="ranges-overlap">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ifile-digest://node_modules/mark.js/test/fixtures/ranges/overlap.html;TTF:charsetI"
+utf-8;F:digest"%ÓşÖ2aûU*¨jü“ë™,ŠÑ°” i)šï:lengthiÀ:dependencies_digest"%ŠíËs|§QÛ„cÎ´Ê¬@i$s$Ëâıh*¢aü7—ô:idI"E2d38d06b042c4ddb53ce7a468cd0cc22e3a20a6f4b1148205823ada3ded56cb4;F:
+mtimel+ÓªO`

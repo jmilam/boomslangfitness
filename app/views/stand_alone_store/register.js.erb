@@ -1,0 +1,4 @@
+$('#exampleModal').modal('hide');
+$('#workout_class_first_name').val(null)
+$('#workout_class_last_name').val(null)
+$(".workout_classes").html("<%= escape_javascript(render partial: 'class_list', locals: { workout_classes: @classes } ) %>");

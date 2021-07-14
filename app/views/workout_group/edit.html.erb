@@ -1,0 +1,56 @@
+ <div class="container" style="padding-top:10px;">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4 text-center"><%= @workout_group.name %></h1>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header boomslang-green">
+      List of Workouts In this Group
+    </div>
+    <div class="card-body">
+      <%= form_tag :add_workout, method: :put, remote: true do |f| %>
+        <%= hidden_field_tag :selected_workout_ids, [], class: 'selected_workout_ids_field' %>
+        <%= hidden_field_tag :selected_workout_day_ids, [], class: 'selected_workout_day_ids_field' %>
+
+        <div id="workout_table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th />
+                <th>Workout Name</th>
+                <th>Workout Day</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @workouts.each_with_index do |workout, idx| %>
+                <tr>
+                  <td><%= idx + 1 %></td>
+                  <td><%= workout[0].name %></td>
+                  <td><%= workout[1] %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <table class="table" style="margin-top:20px;" id="workout-group-users-table">
+    <thead>
+      <tr>
+        <th>User name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @workout_users.each do |user| %>
+        <tr>
+          <td><%= user.first_name %> <%= user.last_name %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+

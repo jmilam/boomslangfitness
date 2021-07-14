@@ -1,0 +1,18 @@
+{:uriI"file://node_modules/mark.js/test/fixtures/ranges/iframes.html?type=text/html&id=045b43353247c1fd76b5ae2aaa90af4df28807211f1f557b05b83f6068a52908:ET:load_pathI"node_modules;T:filenameI";node_modules/mark.js/test/fixtures/ranges/iframes.html;T:	nameI")mark.js/test/fixtures/ranges/iframes;T:logical_pathI".mark.js/test/fixtures/ranges/iframes.html;T:content_typeI"text/html;T:sourceI"ë<div class="ranges-iframes" id="iframes-target">
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p>
+    <script>
+        // Can't use document.write here, as this fixture will be
+        // included after the document was fully loaded
+        var target = document.getElementById("iframes-target");
+        var iframe = document.createElement("iframe");
+        iframe.src = jasmine.getFixtures().fixturesPath + "/ranges/inc.html";
+        target.appendChild(iframe);
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ifile-digest://node_modules/mark.js/test/fixtures/ranges/iframes.html;TTF:charsetI"
+utf-8;F:digest"%¨5×ƒ±‹o¶êµÁø•NÇ1è´Ô†\ˆ\ódÂxæQ§:lengthië:dependencies_digest"%ŸßÄ¸—Í¦$ú¾­7è•£2Pã¹ÆÇWà¬×\:idI"E045b43353247c1fd76b5ae2aaa90af4df28807211f1f557b05b83f6068a52908;F:
+mtimel+ÓªO`

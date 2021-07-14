@@ -1,0 +1,73 @@
+<% workout_classes.to_a.each_slice(3) do |grouped_classes| %>
+	<div class="row">
+		<% grouped_classes.each do |workout_class| %>
+			<div class="col-md-4">
+				<div class="card stand-alone-card" style="margin-bottom:10px;">
+					<%#= image_tag "logo" %>
+					<%= image_tag workout_class.avatar.url, style: "max-height: 250px; min-height: 250px;" %>
+					<div class="card-title row">
+						<div style='font-size:0;'><%= @gym.id %></div>
+						<div class="col-9">
+							<%= workout_class.title %>
+						</div>
+						<div class="col-3">
+							<% if user.nil? %>
+								$<%= sprintf("%.2f", workout_class.cost) %>
+							<% end %>
+						</div>
+					</div>
+				  <div class="card-body" style="max-height: 8em;min-height: 8em;overflow-y: scroll;">
+				    <p class="card-text"><%= workout_class.description %></p>
+				    <p class="card-text text-muted">
+				    	<% @details = [] %>
+				    	<% workout_class.sessions.group_by(&:day).each do |day, workout_sessions| %>
+				    		<% @details << { day: Session.weekdays.key(day).titlecase, times: workout_sessions.map { |session| "#{session.class_time} #{session.meridiem}" } } %>
+				    		<%= Session.weekdays.key(day).titlecase.pluralize %> @ <%= workout_sessions.map { |session| "#{session.class_time} #{session.meridiem}" }.join(', ') %><br/>
+				    	<% end %>
+				    </p>
+				  </div>
+				  <div class="card-footer">
+				  	<% if user.nil? %>
+				  		<% if @registered_user_class_details.map { |detail| detail[:workout_class_id]}.include? workout_class.id %>
+						  	<div class="text-muted">
+						  		<% @registered_user_class_details.map { |detail| detail[:session] }.each do |workout_session| %>
+										Your next session for this class is:
+						  			<p>
+						  				<%= Session.weekdays.key(workout_session.day).titlecase %> @ <%= workout_session.class_time %> <%= workout_session.meridiem %>
+						  			</p>
+						  		<% end %>
+						  	</div>
+						  <% end %>
+						<% end %>
+				  	<div class="row">
+					  	<% disabled = @registered_user_class_details&.map { |registration_details| registration_details[:workout_class_id] }&.include?(workout_class.id) ? 'disabled' : '' %>
+					  	<div class="col-4 text-center">
+					  		<% if user.nil? %>
+							    <button type="button" class="btn btn-primary checkout-button" <%= disabled %> data-id= <%= workout_class.id %>>
+									  <% if disabled == 'disabled' %>
+									  	Purchased
+									  <% else %>
+									  	Buy
+									  <% end %>
+									</button>
+									<br />
+								<% end %>
+								<% if disabled == 'disabled' || !user.nil? %>
+									<%= link_to "Join Class", workout_class.zoom_url %>
+								<% end %>
+							</div>
+							<% if user.nil? %>
+								<div class="col-4">
+		            	<%= select_tag :class_day, options_for_select(@details.map { |detail| detail[:day] }), prompt: "Day", class: 'col-md-12 form-control class-day-select', data: { details: @details } %>
+		            </div>
+		            <div class="col-4">
+		            	<%= select_tag :class_time, options_for_select([]), prompt: "Time", class: 'col-md-12 form-control' %>
+		            </div>
+		          <% end %>
+	          </div>
+				  </div>
+				</div>
+			</div>
+		<% end %>
+	</div>
+<% end %>

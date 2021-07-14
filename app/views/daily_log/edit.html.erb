@@ -1,0 +1,14 @@
+<style type="text/css">  
+	thead,tbody{
+    /*display:block;*/
+  }
+</style>  
+
+<div class="container">
+	<%= render "partials/alert" %>
+
+	<%= form_for @daily_log, url: daily_log_path(@daily_log.id), remote: true do |f| %>
+   	<%= render partial: 'daily_log_data', locals: { f: f } %>
+   
+	<% end %>
+</div>

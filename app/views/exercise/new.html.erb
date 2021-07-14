@@ -1,0 +1,77 @@
+<%= render "partials/alert" %>
+
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4 text-center">Exercise</h1>
+      <hr/>
+      <p class="lead">Create and Add exercises to your daily workout. The daily workout you are adding to right now is: <b><%= @workout_group.name %></b></p>
+    </div>
+  </div>
+
+  <%= link_to "<< Back to Workout", edit_workout_path(@workout), style: 'color: #101216' %>
+  <%= form_for @exercise, url: exercise_index_path, method: :post do |f| %>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 form-group">
+        <%= f.hidden_field :workout_group_id, value: @workout_group.id %>
+      </div>
+    </div>
+
+  	<div class="row">
+      <div class="col-md-12 col-sm-12 form-group">
+        <%= f.label :name, 'Exercise Name *', class: 'col-md-12' %>
+        <%= f.text_field :name, class: 'col-md-12 form-control' %>
+      </div>
+     </div>
+
+     <div class="row">
+      <div class="col-md-6 col-sm-12 form-group">
+        <%= f.label :description, 'Exercise Description', class: 'col-md-12' %>
+        <%= f.text_area :description, height:30, class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-6 col-sm-12 form-group">
+        <%= f.label :instructions, 'Exercise Instructions', class: 'col-md-12' %>
+        <%= f.text_area :instructions, height:30, class: 'col-md-12 form-control' %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-2 form-group">
+        <%= f.label :warm_up, "Warm Up?", class: 'col-md-12' %>
+        <%= f.check_box :warm_up, class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-10 col-sm-10 col-10 form-group">
+        <%= f.label :warm_up_details, class: 'col-md-12' %>
+        <%= f.text_area :warm_up_details, class: 'col-md-12 form-control' %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-3 form-group">
+        <%= f.label :kiosk_number, class: 'col-md-12' %>
+        <%= text_field_tag :kiosk_number, nil, class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-4 col-sm-4 col-4 form-group">
+        <%= f.label :set_count, "Set Count? *", class: 'col-md-12' %>
+        <%= f.select :set_count, (1..6).to_a.collect {|set| [ set, set ] }, { prompt: "--- Select How Many Sets for this exercise ---" }, class: 'col-md-12 form-control' %>
+      </div>
+    	<div class="col-md-4 col-sm-4 col-4 form-group">
+        <%= f.label :rep_range, "Rep Count? *", class: 'col-md-12' %>
+        <%= f.text_field :rep_range, placeholder: "10-12", class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-1 col-sm-1 col-4 form-group text-center">
+        <%= f.label :band, "Band?", class: 'col-md-12' %>
+        <%= f.check_box :band %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 form-group">
+        <%= f.label :priority, class: 'col-md-12' %>
+        <%= f.select :priority, (1..@total_exercises).to_a.collect { |exercise| [exercise, exercise] }, { prompt: "--- Select the priority in the workout you want them to do this exercise ---"}, class: 'col-md-12 form-control' %>
+      </div>
+    </div>
+
+  	<%= f.submit "New Exercise", class: 'btn btn-lg btn-block workout-btn', style: "margin-bottom: 15px;" %>
+  <% end %>
+</div>

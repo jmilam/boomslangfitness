@@ -1,0 +1,17 @@
+  <% unless notice.nil?  %>
+	 	<p class="notice alert alert-primary alert-dismissible fade in show" role="alert" style="margin-bottom:5px;">
+	 		<%= notice %>
+	 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">&times;</span>
+		  </button>		
+	 	</p>
+  <% end %>
+
+  <% unless alert.nil? %>
+    <p class="alert alert-danger alert-dismissible fade in show" role="alert" style="margin-bottom: 5px;">
+    	<%= alert %>
+    	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+    </p>
+  <% end %>

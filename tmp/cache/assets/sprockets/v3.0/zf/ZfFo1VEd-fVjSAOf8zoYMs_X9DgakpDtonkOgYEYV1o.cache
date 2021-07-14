@@ -1,0 +1,12 @@
+{:uriI"éfile://node_modules/mark.js/test/fixtures/basic/escape.html?type=text/html&id=5db9bccda5e7d54e2318af8d0653d93af59cb832fc5e763bc2e883e066f5f624:ET:load_pathI"node_modules;T:filenameI"9node_modules/mark.js/test/fixtures/basic/escape.html;T:	nameI"'mark.js/test/fixtures/basic/escape;T:logical_pathI",mark.js/test/fixtures/basic/escape.html;T:content_typeI"text/html;T:sourceI"ë<div class="basic-escape">
+    <p>39,00 ‚Ç¨</p>
+    <p>0.009 ‚Ç¨</p>
+    <p>Unk?nown</p>
+    <p>Some+>thing</p>
+    <p>www.happy.com\</p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Gfile-digest://node_modules/mark.js/test/fixtures/basic/escape.html;TTF:charsetI"
+utf-8;F:digest"%a&zÀû¸“â‹Y0Ó%S6bvéHÍ•‘\•ÊèP`v:lengthië:dependencies_digest"%ÙP˛µtÜÙ[/Ÿ]π;∑÷>	è1Æù–Ì¨a.¨:idI"E5db9bccda5e7d54e2318af8d0653d93af59cb832fc5e763bc2e883e066f5f624;F:
+mtimel+÷ŒWZ

@@ -1,0 +1,103 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-center">Commonly Used Exercises</h1>
+    <hr/>
+    <p class="lead">These exercises are general exercises that can be paired with a piece of workout equipment to create a customize exercise by a trainer or gym.</p>
+    <p class="lead">Below, create a common exercise name and click save.</p>
+
+    <div class="search row">
+				  <div class="col-10">
+				    <input type="text" name="keyword" class="form-control" placeholder="See if an exercise exists...">
+				  </div>
+				  <div class="col-2 counter-text">
+				  </div>
+				</div>
+  </div>
+</div>
+
+<%= form_for :common_exercises, url: create_common_exercise_path do |f| %>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 form-group">
+      	<%= f.label :name %>
+      	<%= f.text_field :name, class: 'col-md-12 form-control', value: '' %>
+      </div>
+      <div class="col-md-4 col-sm-8 form-group">
+        <%= f.label :video, "Upload Exercise Video:"%>
+        <%= f.file_field :video %>
+      </div>
+      <div class="col-md-2 col-sm-4 form-group">
+				<%= f.submit "Save", class: 'btn btn-lg btn-block profile-index-btn', style: 'margin-top: 1em;opacity:0.8;' %>
+			</div>
+    </div>
+<% end %>
+
+<table class="table table-striped context">
+	<thead>
+		<tr>
+			<th>Exercise Name</th>
+      <th>Has Video?</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% common_exercises.each do |ex| %>
+			<tr>
+				<td><%= link_to ex.name, edit_common_exercise_path(ex.id) %></td>
+        <td>
+          <% if ex.video.url.include? "missing.png" %>
+            <i class="fa fa-times-circle fa-lg" style="color:red;"></i>
+          <% else %>
+            <i class="fa fa-check-circle fa-lg" style="color:green;"></i>
+          <% end %>
+        </td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+
+
+<script>
+	$.expr[":"].contains = $.expr.createPseudo(function(arg) {
+	    return function( elem ) {
+	        return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+	    };
+	});
+
+	$(function() {
+
+  var mark = function() {
+
+    // Read the keyword
+    var keyword = $("input[name='keyword']").val();
+
+    // Determine selected options
+    var options = {
+    	"className": "boomslang-green",
+      "separateWordSearch": true
+    };
+
+    $("input[name='opt[]']").each(function() {
+      options[$(this).val()] = $(this).is(":checked");
+    });
+
+    // Remove previous marked elements and mark
+    // the new keyword inside the context
+    $(".context").unmark({
+      done: function() {
+        $(".context").mark(keyword, options);
+      }
+    });
+    
+    if (keyword == '') {
+    	$('.counter-text').text('');
+    } else {
+	    $('.counter-text').text($('td:contains(' + keyword + ')').length + " results found!")
+    }
+
+  };
+
+
+  $("input[name='keyword']").on("input", mark);
+  $("input[type='checkbox']").on("change", mark);
+
+});
+</script>

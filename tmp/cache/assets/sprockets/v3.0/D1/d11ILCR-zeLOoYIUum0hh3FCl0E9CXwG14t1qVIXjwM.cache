@@ -1,0 +1,28 @@
+{:uriI"˜file://node_modules/mark.js/test/fixtures/basic/accuracy-exactly.html?type=text/html&id=05366d1b597cf12bc6ccf33b717b2071e833348526856f9afe14ab1cd924d9a1:ET:load_pathI"node_modules;T:filenameI"Cnode_modules/mark.js/test/fixtures/basic/accuracy-exactly.html;T:	nameI"1mark.js/test/fixtures/basic/accuracy-exactly;T:logical_pathI"6mark.js/test/fixtures/basic/accuracy-exactly.html;T:content_typeI"text/html;T:sourceI"S<div class="basic-accuracy-exactly">
+    <div>
+        lorem ipsu dolor sit amet.
+        <p class="not">
+            <!-- in here nothing should be marked -->
+            lorem ipsum dolor sit amet. lorem ipsu.
+        </p>
+    </div>
+    <div>
+        ipsu lorem dolo
+        <p class="not">
+            <!-- in here nothing should be marked -->
+            ipsum lorem dolor
+        </p>
+    </div>
+    <div>
+        ipsu ipsÃ¼ Ä«psu Ä«psÃ¼
+        <p class="not">
+            <!-- in here nothing should be marked -->
+            ipsum loremipsum loremÄ«psÃ¼m
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Qfile-digest://node_modules/mark.js/test/fixtures/basic/accuracy-exactly.html;TTF:charsetI"
+utf-8;F:digest"%LŠÀ6şÒÅÆ@tÃ%´¡’šûSm8§î&&y{è:lengthiS:dependencies_digest"%^[š…y@ÎWc÷ÃpQÇ,åp&³ûŒO¬§¨ˆ¡:idI"E05366d1b597cf12bc6ccf33b717b2071e833348526856f9afe14ab1cd924d9a1;F:
+mtimel+ÓªO`

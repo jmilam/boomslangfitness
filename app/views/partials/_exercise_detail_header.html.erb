@@ -1,0 +1,32 @@
+<div class="container col-md-12">
+	<div style="<%= bg_color['style'] %>;padding-right:10px;border-radius: 5px;">
+		<div class="row">
+			<div class="col-md-6 col-12 text-center exercise-header">
+				<%= exercise.common_exercise.name %>
+				<span>
+					<button type="button" class="btn exerciseModalLink sidebar-collapse-button" data-toggle="modal" data-target="#<%= exercise.common_exercise.name.downcase.gsub(/[^0-9A-Za-z]/, '').prepend('_') %>Modal" aria-expanded="false" style="background:transparent;" title="See exercise details. Including form to enter weight">
+					  <i class="fa fa-external-link fa-lg fa-pull-right" style="color:white;"></i>
+					</button>
+				</span>
+				<div class="lead text-center"><%= exercise.common_equipment.name %></div>
+			</div>
+			<div class="col-md-6 col-12 text-center exercise-details">
+				<div class="row">
+					<div class="col-md-6 col-6 text-center" style="color:white;">
+						<p>Set Count</p>
+						<p><%= exercise.set_count %></p>
+					</div>
+					<div class="col-md-6 col-6 text-center" style="color:white;">
+						<% if exercise.timed_exercise %>
+							<p>Set Time</p>
+							<p><%= exercise.time_by_seconds / 60 %> Minutes <%= exercise.time_by_seconds % 60 %> Seconds</p>
+						<% else %>
+							<p>Rep Count</p>
+							<p><%= exercise.rep_range %></p>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

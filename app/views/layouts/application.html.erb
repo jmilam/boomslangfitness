@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title || "Boomslang Fitness" %></title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= favicon_link_tag 'favicon.ico' %>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="navbar-header">
+        <%= link_to profile_index_path, class: 'navbar-brand' do %>
+          <%= image_tag @gym.nil? ? 'logo-snake.png' : @gym.logo.url, size: '55x55', id: 'nav-image' %>
+        <% end %>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav">
+          <li><%= link_to "Profile", edit_profile_path(current_user.id), class: 'nav-link', id: 'profile-nav-link' %></li>
+          <li><%= link_to "Workouts", list_workouts_path, class: 'nav-link', id: 'workouts-nav-link' %></li>
+          <li><%= link_to "Messages", inbox_index_path, class: 'nav-link', id: 'messages-nav-link' %></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="nutritionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Nutrition
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nutritionDropdown">
+              <%= link_to "My Food Logs", daily_log_index_path, class: 'dropdown-item', id: 'nutrition-nav-link' %>
+              <%= link_to "My Foods", food_index_path, class: 'dropdown-item', id: 'food-nav-link' %>
+              <%= link_to "Meals", meal_path, class: 'dropdown-item', id: 'meal-nav-link' %>
+            </div>
+          </li>
+          <% if current_user&.gym&.current_user_gym_admin(current_user) %>
+            <li><%= link_to "Gym", gym_path(current_user&.gym&.id), class: 'nav-link', id: 'gym-nav-link' %></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="reports-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Reporting</a>
+              <div class="dropdown-menu">
+                <%= link_to "New Users", admin_portal_new_users_path, class: 'dropdown-item' %>
+                <%= link_to "Time Card", admin_portal_time_cards_path, class: 'dropdown-item' %>
+              </div>
+            </li>
+          <% end %>
+          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'nav-link', id: 'sign-out-nav-link' %></li>
+        </ul>
+      </div>
+    </nav>
+
+    <%= yield %>
+  </body>
+
+  <script>
+    $('.step-change').click(function(e) {
+      e.preventDefault();
+      let parent = $(this).parent();
+      parent.toggle();
+      $('#step-header').text(parent.next().attr('title'))
+      $('#login-profile-background').css({"height":"550px"})
+      parent.next().toggle();
+    });
+
+    $('.step-back').click(function(e) {
+      e.preventDefault();
+      let parent = $(this).parent();
+      parent.toggle();
+      $('#step-header').text(parent.prev().attr('title'))
+      if (parent.prev().attr('id') === 'step1') {
+        $('#login-profile-background').css({"height":"370px"})
+      }
+      parent.prev().toggle()
+    })
+
+    $(document).ready(function() {
+      $('.food-checkbox').click(function() {
+        let food_values = $(this).parent('td').siblings()
+
+        if (this.checked) {
+          let totalCals = parseInt($(food_values[6]).children('select').val()) * parseFloat($(food_values[1]).text())
+          $('#selected-food-table tbody').append(`<tr food=${$(food_values[0]).text().replace(/\s/g, '')}><td></td><td>${$(food_values[0]).text()}</td><td class="calories">${totalCals}</td><td class="protein">${$(food_values[2]).text()}</td><td class="carbs">${$(food_values[3]).text()}</td><td class="fats">${$(food_values[4]).text()}</td><td>${$(food_values[5]).text()}</td><td>${$(food_values[6]).children('select').val()}</td></tr>`)
+          populateTotals()
+          
+        } else {        
+          $(`tr[food=${$(food_values[0]).text().replace(/\s/g, '')}]`).remove()
+          populateTotals()
+        }
+      });
+    });
+
+    function populateTotals() {
+      caloriesSum = 0
+      proteinSum = 0
+      carbsSum = 0
+      fatSum = 0
+
+      $.each($('.calories'), function( idx, value) {
+          caloriesSum += parseFloat($(value).text()) 
+      })
+
+      $.each($('.protein'), function( idx, value) {
+          proteinSum += parseFloat($(value).text()) 
+      })
+
+      $.each($('.carbs'), function( idx, value) {
+          carbsSum += parseFloat($(value).text()) 
+      })
+
+      $.each($('.fats'), function( idx, value) {
+          fatSum += parseFloat($(value).text()) 
+      })
+
+        $('#totalCalories').text(caloriesSum)
+        $('#totalProtein').text(proteinSum)
+        $('#totalCarbs').text(carbsSum)
+        $('#totalFat').text(fatSum)
+    }
+</script>
+</html>

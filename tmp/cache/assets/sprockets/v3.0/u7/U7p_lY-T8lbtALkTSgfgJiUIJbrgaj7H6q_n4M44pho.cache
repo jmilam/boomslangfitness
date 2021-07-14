@@ -1,0 +1,26 @@
+{:uriI"šfile://node_modules/mark.js/test/fixtures/basic/wildcards-synonyms.html?type=text/html&id=2bdd802d2782643c736148f95e815a0c6f2bd262d6330cbd5cf853b24a140a9c:ET:load_pathI"node_modules;T:filenameI"Enode_modules/mark.js/test/fixtures/basic/wildcards-synonyms.html;T:	nameI"3mark.js/test/fixtures/basic/wildcards-synonyms;T:logical_pathI"8mark.js/test/fixtures/basic/wildcards-synonyms.html;T:content_typeI"text/html;T:sourceI"£<div class="basic-wildcards-synonyms">
+    <div>
+        <p>
+            Lorenzom ipsum dolor sit amet, consetetur sadipsumcing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorem ips1234m dolor sit amet, consetetur sadipscing elitr. Loriem ipsm
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorm ipsim Lorum ipsÃ¡m, et LorÃ©Ã¼m IpseÌm. Lor?m ipsa12m. Lor*m ipsuÃŸm.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorenzom ipsum dolor sit amet, consetetur sadipsumcing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorem ips1234m dolor sit amet, consetetur sadipscing elitr. Loriem ipsm
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorm ipsim Lorum ipsÃ¡m, et LorÃ©Ã¼m IpseÌm. Lor?m ipsa12m. Lor*m ipsuÃŸm.
+        </p>
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Sfile-digest://node_modules/mark.js/test/fixtures/basic/wildcards-synonyms.html;TTF:charsetI"
+utf-8;F:digest"% 0xüyÕÇ?†‡0@öĞìÎªby$7;–ì‡´Ø:lengthi£:dependencies_digest"%kNŸ«+èF“èìâKeéõ}¯YŸXB"tğg·b:idI"E2bdd802d2782643c736148f95e815a0c6f2bd262d6330cbd5cf853b24a140a9c;F:
+mtimel+ÓªO`

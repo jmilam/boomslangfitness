@@ -1,0 +1,49 @@
+{:uriI"‘file://node_modules/mark.js/test/fixtures/basic/wildcards.html?type=text/html&id=9c3480b5acd2faccde11eade69806856d4ded061a99c8280a7a5ece003e5f6ac:ET:load_pathI"node_modules;T:filenameI"<node_modules/mark.js/test/fixtures/basic/wildcards.html;T:	nameI"*mark.js/test/fixtures/basic/wildcards;T:logical_pathI"/mark.js/test/fixtures/basic/wildcards.html;T:content_typeI"text/html;T:sourceI"Ù<div class="basic-wildcards">
+    <div>
+        <p>
+            Lorenzom ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Loriem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorm ipsum Lorum ipsum, et Loram ipsum. Lor?m ipsum. Lor*m ipsum.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorenzom ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Loriem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorm ipsum Lorum ipsum, et Loram ipsum. Lor?m ipsum. Lor*m ipsum.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorenzom ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Loriem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorm ipsum Lorum ipsum, et Loram ipsum. Lor?m ipsum. Lor*m ipsum.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorenzom ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Loriem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            Lorm ipsum Lorum ipsum, et Loram ipsum. Lor?m ipsum. Lor*m ipsum.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Jfile-digest://node_modules/mark.js/test/fixtures/basic/wildcards.html;TTF:charsetI"
+utf-8;F:digest"%£ ]<«®tnÑA%60§YDº<ýæg§ìú:lengthiÙ:dependencies_digest"%~þÔ&ŠólAZ
+¾Ä
+´õ]%«í’44ÂŽ¨_4ƒ:idI"E9c3480b5acd2faccde11eade69806856d4ded061a99c8280a7a5ece003e5f6ac;F:
+mtimel+í‹íY

@@ -1,0 +1,33 @@
+{:uriI"ñfile://node_modules/mark.js/test/fixtures/basic/case-sensitive.html?type=text/html&id=882eb55c619b359dc2ecdebcc8e848828ba2c2e9856a916c157bfb92f4209e49:ET:load_pathI"node_modules;T:filenameI"Anode_modules/mark.js/test/fixtures/basic/case-sensitive.html;T:	nameI"/mark.js/test/fixtures/basic/case-sensitive;T:logical_pathI"4mark.js/test/fixtures/basic/case-sensitive.html;T:content_typeI"text/html;T:sourceI"Ù<div class="basic-case-sensitive">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ofile-digest://node_modules/mark.js/test/fixtures/basic/case-sensitive.html;TTF:charsetI"
+utf-8;F:digest"% ™˙m˛%¯†ª@Õ≈^÷≠÷›2æP˛4Mëº"ÅªS:lengthiÙ:dependencies_digest"%∆s·L‹çr÷.vØ§JxLπ<Ä°äπ0s{Pn®ø:idI"E882eb55c619b359dc2ecdebcc8e848828ba2c2e9856a916c157bfb92f4209e49;F:
+mtimel+ÌãÌY

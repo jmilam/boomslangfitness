@@ -1,0 +1,24 @@
+{:uriI"Žfile://node_modules/regenerator-runtime/package.json?type=application/json&id=decf6b481b3f96d3439213f5b26bf53a2beda40d3778e8d551d5a6f74d312288:ET:load_pathI"node_modules;T:filenameI"2node_modules/regenerator-runtime/package.json;T:	nameI" regenerator-runtime/package;T:logical_pathI"%regenerator-runtime/package.json;T:content_typeI"application/json;T:sourceI"Ý{
+  "name": "regenerator-runtime",
+  "author": "Ben Newman <bn@cs.stanford.edu>",
+  "description": "Runtime for Regenerator-compiled generator and async functions.",
+  "version": "0.13.7",
+  "main": "runtime.js",
+  "keywords": [
+    "regenerator",
+    "runtime",
+    "generator",
+    "async"
+  ],
+  "sideEffects": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime"
+  },
+  "license": "MIT"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"@file-digest://node_modules/regenerator-runtime/package.json;TTF:charsetI"
+utf-8;F:digest"%È¥ ÃöÛß)’™kçRÛ>’Ùª —ê¾g–±€,j§:lengthiÝ:dependencies_digest"%q­oý:@G‰ƒ)‘êµÚ+Ä`xˆY¾C—>ø`¯:idI"Edecf6b481b3f96d3439213f5b26bf53a2beda40d3778e8d551d5a6f74d312288;F:
+mtimel+ÓªO`

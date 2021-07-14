@@ -1,0 +1,33 @@
+{:uriI"îfile://node_modules/mark.js/test/fixtures/basic/merge-blanks.html?type=text/html&id=b41771cabb411160fae15285a88aecda348edb3510801eb30068f902190f13da:ET:load_pathI"node_modules;T:filenameI"?node_modules/mark.js/test/fixtures/basic/merge-blanks.html;T:	nameI"-mark.js/test/fixtures/basic/merge-blanks;T:logical_pathI"2mark.js/test/fixtures/basic/merge-blanks.html;T:content_typeI"text/html;T:sourceI"J<div class="basic-merge-blanks">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem  ipsum dolor sit. Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem&nbsp;&nbsp;&nbsp;ipsum dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem
+            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem&nbsp;ipsum dolor sit amet.
+            Loremipsum <!-- Words without whitespace shouldn't be marked -->
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Mfile-digest://node_modules/mark.js/test/fixtures/basic/merge-blanks.html;TTF:charsetI"
+utf-8;F:digest"%†¯5EèÁ‰f/éfij˚Æ≠%m@:—#œMVû£Ã;À:lengthiJ:dependencies_digest"%Ñ	7]M◊3mµÿC˘G≈j®(s}o_ÌC¸π∆s0:idI"Eb41771cabb411160fae15285a88aecda348edb3510801eb30068f902190f13da;F:
+mtimel+”™O`

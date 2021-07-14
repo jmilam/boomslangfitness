@@ -1,0 +1,60 @@
+{:uriI"„file://node_modules/react-dom/package.json?type=application/json&id=9b324142e22fa86a8f27d212eab64e437839d8d983434538dbc9d8d42319860e:ET:load_pathI"node_modules;T:filenameI"(node_modules/react-dom/package.json;T:	nameI"react-dom/package;T:logical_pathI"react-dom/package.json;T:content_typeI"application/json;T:sourceI"’{
+  "name": "react-dom",
+  "version": "16.8.6",
+  "description": "React package for working with the DOM.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/react.git",
+    "directory": "packages/react-dom"
+  },
+  "keywords": [
+    "react"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/facebook/react/issues"
+  },
+  "homepage": "https://reactjs.org/",
+  "dependencies": {
+    "loose-envify": "^1.1.0",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.6.2",
+    "scheduler": "^0.13.6"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "build-info.json",
+    "index.js",
+    "profiling.js",
+    "server.js",
+    "server.browser.js",
+    "server.node.js",
+    "test-utils.js",
+    "unstable-fire.js",
+    "unstable-fizz.js",
+    "unstable-fizz.browser.js",
+    "unstable-fizz.node.js",
+    "unstable-native-dependencies.js",
+    "cjs/",
+    "umd/"
+  ],
+  "browser": {
+    "./server.js": "./server.browser.js",
+    "./unstable-fizz.js": "./unstable-fizz.browser.js"
+  },
+  "browserify": {
+    "transform": [
+      "loose-envify"
+    ]
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"6file-digest://node_modules/react-dom/package.json;TTF:charsetI"
+utf-8;F:digest"%‘$LF€½œ…÷Îî-!©¾âÞ7ÆêIèe~˜¶:lengthi’:dependencies_digest"%@Ù>µª‘ƒ×áà^	‡ÜÛ·|¶öÏÆÞºÒ“»:idI"E9b324142e22fa86a8f27d212eab64e437839d8d983434538dbc9d8d42319860e;F:
+mtimel+ÑªO`

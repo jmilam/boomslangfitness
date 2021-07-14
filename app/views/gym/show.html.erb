@@ -1,0 +1,781 @@
+<!-- <div class="container-fluid"> -->
+	<div class="row" style="height:100%;width:100%;">
+		<div class="col-md-3 col-12" id="mySidebar">
+			<div class="row">
+				<button class="sidebar-collapse-button btn btn pull-left" type="button" data-target="#workoutTab" aria-controls="workoutTab" aria-expanded="false" aria-label="Toggle navigation" style="margin-bottom:10px;margin-left:5px;margin-right:5px;background-color:white;" onclick="openCloseNav()">
+					<i class="fa fa-chevron-right fa-sm" id="expand" style=""></i>
+			  </button>
+			</div>
+			<ul class="nav nav-pills navbar-collapse" id="workoutTab" role="tablist" style="margin-bottom:30px;">
+			  <li class='nav-item nav-li'><a class='nav-link active' id='profile-tab' data-toggle='tab' href='#profile' role='tab' aria-controls='profile' aira-selected='true' style="color:white;">Gym Information</a></li>
+			  <li class='nav-item nav-li'><a class='nav-link' id='gym-users-tab' data-toggle='tab' href='#gym-users' role='tab' aria-controls='gym-users' aria-selected='false' style="color:white;">Gym Users <span class="badge badge-pill badge-secondary"><%= @gym_users.count %></span></a></li>
+			  <% unless current_user.nutrition_only %>
+				  <li class='nav-item nav-li'><a class='nav-link' id='popup-workout-tab' data-toggle='tab' href='#popup-workout' role='tab' aria-controls='popup-workout' aria-selected='false' style="color:white;">Daily Popup Workouts</span></a></li>
+				  <li class='nav-item nav-li'><a class='nav-link' id='categories-tab' data-toggle='tab' href='#categories' role='tab' aria-controls='categories' aria-selected='false' style="color:white;">Categories</span></a></li>
+				  <li class='nav-item nav-li'><a class='nav-link' id='common-exercises-tab' data-toggle='tab' href='#common-exercises' role='tab' aria-controls='common-exercises' aria-selected='false' style="color:white;">Common Exercises</span></a></li>
+				  <li class='nav-item nav-li'><a class='nav-link' id='workouts-tab' data-toggle='tab' href='#workouts' role='tab' aria-controls='workouts' aria-selected='false' style="color:white;">Workouts</span></a></li>
+				  <li class='nav-item nav-li'><a class='nav-link' id='workout-groups-tab' data-toggle='tab' href='#workout-groups' role='tab' aria-controls='workout-groups' aria-selected='false' style="color:white;">Workout Groups</span></a></li>
+				  <!-- <li class='nav-item nav-li'><a class='nav-link' id='gym-nutrition-tab' data-toggle='tab' href='#gym-nutrition' role='tab' aria-controls='gym-nutrition' aria-selected='false' style="color:white;">Nutrition Pairings</a></li> -->
+				  <li class='nav-item nav-li'><a class='nav-link' id='gym-tasks-tab' data-toggle='tab' href='#gym-tasks' role='tab' aria-controls='gym-tasks' aria-selected='false' style="color:white;">Task <span class="badge badge-pill badge-secondary"><%= @tasks.count %></span></a></li>
+				 	<li class='nav-item nav-li'><a class='nav-link' id='gym-workout-classes-tab' data-toggle='tab' href='#gym-workout-classes' role='tab' aria-controls='gym-workout-classes' aria-selected='false' style="color:white;">Workout Classes <span class="badge badge-pill badge-secondary"><%= @gym.workout_classes.count %></span></a></li>
+				<% end %>
+			</ul>
+		</div>
+		<div class="col-md-9 col-10" id="right-col">
+			<div id="main">
+				<%= render "partials/alert" %>
+				<div class="container-fluid">
+					<div class="tab-content" id="workoutTabContent">
+					  <div class="tab-pane fade show active" id='profile' role='tabpanel' aria-labelledby='profile'>
+							<%= form_for @gym, url: gym_path, method: :put do |f| %>
+								<div class="container">
+								  <div class="row">
+								    <div class="col-md-6 col-sm-12 form-group">
+											<%= f.label :name %>
+											<%= f.text_field :name, class: 'form-control' %>
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<%= f.label :phone_number %>
+											<%= f.text_field :phone_number, class: 'form-control' %>
+										</div>
+									</div>
+									<div class="row">
+								    <div class="col-md-12 col-sm-12 form-group">
+											<%= f.label :address %>
+											<%= f.text_field :address, class: 'form-control' %>
+										</div>
+									</div>
+
+									<div class="row">
+								    <div class="col-md-4 col-sm-12 form-group">
+								    	<%= f.label :city %>
+											<%= f.text_field :city, class: 'form-control' %>
+								    </div>
+								    <div class="col-md-4 col-sm-12 form-group">
+								    	<%= f.label :state %>
+											<%= f.text_field :state, class: 'form-control' %>
+								    </div>
+								    <div class="col-md-4 col-sm-12 form-group">
+								    	<%= f.label :zipcode %>
+											<%= f.text_field :zipcode, class: 'form-control' %>
+								    </div>
+								  </div>
+
+									<div class="row">
+										<div class="col-md-4 col-12">
+											<%= f.label :protein_threshold %> <i class="fa fa-info-circle fa-lg" data-container="body" data-toggle="popover" data-html='true' data-placement="top" data-content="<h5 class='text-center'>Protein Threshold</h5><hr />* By setting the protein threshold, you are setting a recommended minimum conssumption of protein per meal. This is defaulted to 30g per meal, because of recommendations for optimum proetin synthesis."></i>
+											<%= f.text_field :protein_threshold, class: 'form-control' %>
+										</div>
+										<div class="col-md-4 col-12">
+											<%= f.label :carb_limit %> <i class="fa fa-info-circle fa-lg" data-container="body" data-toggle="popover" data-html='true' data-placement="top" data-content="<h5 class='text-center'>Carb Limit</h5><hr />* By setting this carb limit, you are setting a recommended limit of carbohydrate consumption for the day. This is defaulted to 50g daily, because of nutrition recommendations for weight loss."></i>
+											<%= f.text_field :carb_limit, class: 'form-control' %>
+										</div>
+									  <div class="col-md-4 col-12">
+											<%= f.label :logo, "Upload Gym Logo: " %>
+											<%= f.file_field :logo %>
+										</div>
+									</div>
+
+									<%= f.submit "Update Gym Info", class: "btn btn-lg btn-block profile-index-btn", style: 'margin-bottom: 15px;opacity:0.8;', id: 'gym-update' %>
+								</div>
+							<% end %>
+						</div>
+						<div class="tab-pane fade show" id='gym-users' role='tabpanel' aria-labelledby='gym-users'>
+							<%= link_to "New User", new_user_path, class: "pull-right profile-index-btn btn", style: 'margin-bottom: 10px;opacity:0.8;' %>
+							<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th/>
+										<th>User Name</th>
+										<th class="td-toggle">Current Workout</th>
+										<th class="td-toggle">Employee</th>
+										<th class="td-toggle">Last Workout</th>
+										<th/>
+									</tr>
+								</thead>
+								<tbody>
+									<% @gym_users.each do |user| %>
+										<tr>
+											<td><%= image_tag user.avatar.url, class: "rounded-image" %></td>
+											<td style="vertical-align: middle;"><%= link_to "#{user.first_name} #{user.last_name}", edit_profile_path(user.id) %></td>
+											<td class="td-toggle" style="vertical-align: middle;"><i><%= user.current_workout_name %></i></td>
+											<td class="td-toggle" style="vertical-align: middle;"><b><%= user.employee? ? "Yes" : "No" %></b></td>
+
+											<td class="td-toggle" style="vertical-align: middle;"><b><%= user.user_previous_workouts.last&.workout_date&.strftime("%m/%d/%y") %></b></td>
+											<td style="vertical-align: middle;">
+												<% if user.account_disabled %>
+													<%= link_to "Enable Account", enable_user_path(user.id), method: :put %>
+												<% else %>
+													<%= link_to "Disable Account", disable_user_path(user.id), method: :put %>
+												<% end %>
+											</td>
+										</tr>
+									<% end %>
+								</tbody>
+							</table>
+							</div>
+						</div>
+						<div class="tab-pane fade show" id='popup-workout' role='tabpanel' aria-labelledby='popup-workout'>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Workout Name</th>
+										<th>Workout Date</th>
+									</tr>
+								</thead>
+								<tbody>
+									<% @popup_workouts.each do |popup| %>
+										<tr>
+											<td><%= popup.workout.name %></td>
+											<td><%= popup.workout_date.strftime("%m-%d-%Y") %></td>
+										</tr>
+									<% end %>
+								</tbody>
+							</table>
+							<%= button_to "Setup a Pop Up Workout", new_wod_path, method: :get, class: "btn btn-lg workout-btn profile-index-btn", style: 'opacity:0.8;' %>
+						</div>
+						<div class="tab-pane fade show" id='categories' role='tabpanel' aria-labelledby='categories'>
+							<nav style="background:transparent;">
+							  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+							    <a class="nav-item nav-link active" id="nav-current-categories-tab" data-toggle="tab" href="#nav-current-categories" role="tab" aria-controls="nav-current-categories" aria-selected="true">Configured Categories</a>
+							    <a class="nav-item nav-link" id="nav-new-category-tab" data-toggle="tab" href="#nav-new-category" role="tab" aria-controls="nav-new-category" aria-selected="false">New Category</a>
+							  </div>
+							</nav>
+							<div class="tab-content" id="category-tabContent">
+							  <div class="tab-pane fade show active" id="nav-current-categories" role="tabpanel" aria-labelledby="nav-current-categories-tab">
+							  	<table class="table">
+									  <thead class="boomslang-green" style="color:white;">
+									    <tr>
+									      <th scope="col" class="category-header" style="vertical-align: middle;">Name</th>
+									      <th scope="col" class="text-center category-header" style="vertical-align: middle;">Tag</th>
+									      <th scope="col" class="text-center category-header" style="vertical-align: middle;">Actions</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+											<% @categories.each do |category| %>
+												<tr>
+										      <th scope="row">
+										      	<% if category.editable_by_user?(current_user) %>
+										      		<%= link_to category.name, edit_category_path(category.id) %>
+										      	<% else %>
+										      		<%= category.name %></th>
+										      	<% end %>
+										      <td class="<%= Category.style_tags[category.tag]['background-color'] %>"></td>
+										      <td class="text-center">
+										      	<% if category.editable_by_user?(current_user) %>
+										      		<% if category.disabled %>
+										      			<%= link_to "Enable", enable_category_path(id: category.id), method: :put, class: 'edit-link' %>
+										      		<% else %>
+										      		  <%= link_to "Disable", disable_category_path(id: category.id), method: :put %>
+										      		<% end %>
+										      	<% end %>		
+										      </td>
+										    </tr>
+											<% end %> 
+									  </tbody>
+									</table>
+							  </div>
+							  <div class="tab-pane fade" id="nav-new-category" role="tabpanel" aria-labelledby="nav-new-category-tab">
+							  	<div class="card" style="padding-top:20px;padding-bottom:20px;">
+								    <div class="card-header boomslang-green text-center">
+								      <div style="color:white;">Create New Category</div>
+								    </div>
+										<%= form_for @category, url: category_index_path, method: :post do |f| %>
+									    <div class="card-body badge-dark" style="margin-bottom:0px">
+											    <div class="row">
+											      <div class="col-md-12 col-sm-12 form-group">
+											        <%= f.label :name, class: 'col-md-12' %>
+											        <%= f.text_field :name, class: 'col-md-12 form-control' %>
+											      </div>
+											    </div>
+
+											    <div class="row">
+											      <div class="col-md-5 col-sm-11 col-10 form-group">
+											        <%= f.label :tag, class: 'col-md-12' %>
+											        <%= f.select :tag, Category.style_tags.collect { |category| [category[0], category[0], class: "#{category[1]['background-color']} #{category[1]['text-color']}"] }, { placeholder: "--- Please select a tag for your category ---"}, { class: 'col-md-12 form-control' } %>
+											      </div>
+											      <div class="col-md-1 col-sm-1 col-1 <%= Category.style_tags[@category.tag]['background-color'] %>" id="category-color" style="height: 50px;margin-top: 25px;">
+											      </div>
+											      <div class="col-md-6 col-sm-12 form-group">
+											        <%= f.label :goal_id, class: 'col-md-12' %>
+											        <%= f.select :goal_id, User.goals.collect { |key, goal| [goal, key] }, { placeholder: "--- Please select a goal associated to this category ---"}, {class: 'col-md-12 form-control'} %>
+											      </div>
+											    </div>
+
+											    
+											</div>
+										<%= f.submit "Create Category", class: 'btn btn-lg btn-block workout-btn card-footer' %>
+										<% end %>
+
+									</div>
+							  </div>
+							</div>
+						</div>
+						<div class="tab-pane fade show" id='common-exercises' role='tabpanel' aria-labelledby='common-exercises' style="margin-top: 1em;margin-left: -1em;">
+							<%= render "partials/common_exercise", common_exercises: @common_exercises %>
+						</div>
+						<div class="tab-pane fade show" id='workouts' role='tabpanel' aria-labelledby='workouts'>
+							<%= link_to "New Workout", new_workout_path, class: "pull-right profile-index-btn btn", style: "margin-bottom:10px;opacity:0.8;" %>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Workout Name</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<% @workouts.each do |workout| %>
+										<tr>
+											<td><%= workout.name %></td>
+											<td><%= link_to "Edit", edit_workout_path(workout.id) %></td>
+										</tr>
+									<% end %>
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane fade show" id='workout-groups' role='tabpanel' aria-labelledby='workout-groups'>
+							<%= link_to "New Workout Group", new_workout_group_path, class: "pull-right profile-index-btn btn", style: "margin-bottom:10px;opacity:0.8;" %>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Workout Group Name</th>
+										<th></th>
+										<th />
+									</tr>
+								</thead>
+								<tbody>
+									<% @gym.workout_group_pairings.map(&:workout_group).uniq.each do |workout_group| %>
+										<tr>
+											<td><%= workout_group.name %></td>
+											<td><%= link_to "View", edit_workout_group_path(workout_group.id) %></td>
+											<td><%= link_to "Delete", workout_group_path(workout_group.id, gym_id: @gym.id), method: :delete %></td>
+										</tr>
+									<% end %>
+								</tbody>
+							</table>
+						</div>
+<!-- 						<div class="tab-pane fade show" id='gym-nutrition' role='tabpanel' aria-labelledby='gym-nutrtion'>
+							<table class="table table-stripped">
+								<tbody>
+									<% @food_groups.each do |food_group| %>
+										<tr>
+											<td><%= food_group.name %></td>
+											<td><%= link_to "Edit", edit_food_group_path(food_group.id) %></td>
+										</tr>
+									<% end %>
+								</tbody>
+							</table>
+
+							<%= link_to "Create Food Pairings", new_food_group_path, class: 'profile-index-btn btn', style: 'opacity:0.8;' %>
+						</div> -->
+						<div class="tab-pane fade show" id='gym-tasks' role='tabpanel' aria-labelledby='gym-tasks'>
+							<nav style="background:transparent;">
+							  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+							    <a class="nav-item nav-link active" id="nav-current-tasks-tab" data-toggle="tab" href="#nav-current-tasks" role="tab" aria-controls="nav-current-tasks" aria-selected="true">Configured Tasks</a>
+							    <a class="nav-item nav-link" id="nav-new-tasks-tab" data-toggle="tab" href="#nav-new-tasks" role="tab" aria-controls="nav-new-tasks" aria-selected="false">New Task</a>
+							    <a class="nav-item nav-link" id="nav-new-time-tab" data-toggle="tab" href="#nav-new-time" role="tab" aria-controls="nav-new-time" aria-selected="false">Manually Enter Time</a>
+							  </div>
+							</nav>
+							<div class="tab-content" id="tasks-tabContent">
+							  <div class="tab-pane fade show active" id="nav-current-tasks" role="tabpanel" aria-labelledby="nav-current-tasks-tab">
+							  	<table class="table">
+									  <thead class="boomslang-green" style="color:white;">
+									    <tr>
+									      <th scope="col" class="tasks-header" style="vertical-align: middle;">Name</th>
+									      <th scope="col" class="tasks-header" style="vertical-align: middle;">Duration</th>
+									      <th scope="col" class="tasks-header" style="vertical-align: middle;">Select Client</th>
+									      <th scope="col" class="text-center tasks-header" style="vertical-align: middle;">Actions</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+											<% @tasks.each do |task| %>
+												<tr>
+										      <th scope="row"><%= task.name %></th>
+										      <td class="task-center"><%= task.duration || "Time Not Specified" %></td>
+										      <td class="task-center"><%= task.select_client %></td>
+										      <td class="text-center"><%= link_to "Delete", task_path(task.id), method: :delete, data: { confirm: 'Are you sure you want to delete this task?' } %></td>
+										    </tr>
+											<% end %> 
+									  </tbody>
+									</table>
+							  </div>
+							  <div class="tab-pane fade" id="nav-new-tasks" role="tabpanel" aria-labelledby="nav-new-tasks-tab">
+							  	<div class="card" style="padding-top:20px;padding-bottom:20px;">
+								    <div class="card-header boomslang-green text-center">
+								      <div style="color:white;">Create New Task</div>
+								      <div class="text-muted">Add a new task to be accessed by employees for billing</div>
+								    </div>
+										<%= form_for :task, url: task_index_path, method: :post do |f| %>
+									    <div class="card-body badge-dark" style="margin-bottom:0px">
+										    <div class="row">
+										      <div class="col-md-6 col-sm-12 form-group">
+										        <%= f.label :name, class: 'col-md-12' %>
+										        <%= f.text_field :name, class: 'col-md-12 form-control' %>
+										      </div>
+										      <div class="col-md-4 col-sm-4 form-group">
+										        <%= f.label :duration, class: 'col-md-12' %>
+										        <%= f.number_field :duration, class: 'col-md-12 form-control' %>
+										      </div>
+										       <div class="col-md-2 col-sm-2 form-group">
+										        <%= f.label :select_client %>
+										        <%= f.check_box :select_client, {class: 'col-md-12'}, true, false %>
+										      </div>
+										    </div>
+											</div>
+										<%= f.submit "Create Task", class: 'btn btn-lg btn-block workout-btn card-footer' %>
+										<% end %>
+
+									</div>
+							  </div>
+							  <div class="tab-pane fade" id="nav-new-time" role="tabpanel" aria-labelledby="nav-new-time-tab">
+							  	<%= form_for :time_card, url: time_card_index_path, method: :post do |f| %>
+							  		<%= hidden_field_tag :manual_entry, true %>
+										<div class="container">
+										    <div class="row">
+										    	<div class="col-md-12 col-sm-12 form-group">
+										        <%= f.select :user_id, @employees.collect { |user| ["#{user.first_name} #{user.last_name}", user.id] }, { prompt: "--- Select employee name ---"}, { class: 'col-md-12 form-control' } %>
+										      </div>
+										    </div>
+										    <div class="row">
+										      <div class="col-md-12 col-sm-12 form-group">
+										        <%= f.select :task_id, @gym.tasks.order(name: :asc).collect { |task| [task.name, task.id] }, { prompt: "--- Please select a task ---"}, { class: 'col-md-12 form-control' } %>
+										      </div>
+										    </div>
+										    <div class="row">
+										      <div class="col-md-12 col-sm-12 form-group" id="client">
+										        <%= f.select :client_id, @clients.collect { |client| ["#{client.first_name} #{client.last_name}", client.id] }, { prompt: "--- Please select your client ---"}, { class: 'col-md-12 form-control' } %>
+										      </div>
+										    </div>
+										    <div class="row">
+										      <div class="col-md-12 col-sm-12 form-group" id="client">
+										        <%= date_field_tag :date, Date.today, {placeholder: "Enter duration of the task entering in minutes", class: 'col-md-12 form-control'}%>
+										      </div>
+										    </div>
+										    <div class="row">
+										      <div class="col-md-12 col-sm-12 form-group" id="client">
+										        <%= f.number_field :duration, placeholder: "Enter duration of the task entering", class: 'col-md-12 form-control'%>
+										      </div>
+										    </div>
+											  <div>
+													<%= f.submit "Log time", class: 'btn btn-lg btn-block profile-index-btn card-footer', style: 'opacity:0.8;' %>
+											  </div>
+										</div>
+									<% end %>
+							  </div>
+							</div>
+						</div>
+						<div class="tab-pane fade show" id='gym-workout-classes' role='tabpanel' aria-labelledby='gym-workout-classes'>
+							<div class="row">
+								<%= link_to "New Workout Class", "#", class: 'new-workout-class btn btn-block btn-primary', data: { toggle: 'modal', target: '#newWorkoutClassModal' }, style: 'margin-bottom:10px;' %>
+							</div>
+							<div class="accordion" id="workoutClassAccordion">
+								<% @gym.workout_classes.sort_by { |w_class| w_class.title }.each_with_index do |workout_class, idx| %>
+									<div class="card">
+								    <div class="card-header" id="heading<%= idx %>">
+								      <h2 class="mb-0">
+								        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse<%= idx %>" aria-expanded="true" aria-controls="collapse<%= idx %>">
+								          <%= workout_class.title %>
+								        </button>
+								        <div class="pull-right text-muted" style="font-size: small;margin-top: 1em;"><%= workout_class.active ? '' : 'Inactive' %></div>
+								      </h2>
+								    </div>
+
+								    <div id="collapse<%= idx %>" class="collapse" aria-labelledby="heading<%= idx %>" data-parent="#workoutClassAccordion">
+								      <div class="card-body">
+								      	<div class="row">
+								      		<div class="col-6">
+									      		<%= image_tag workout_class.avatar.url, class: 'fill-col-div' %>
+									      	</div>
+									      	<div class="col-6">
+									      		<div class="row">
+									      			<div class="col-6 workout-cost" style="padding:0;">
+										      			<%= sprintf("%.2f", workout_class.cost) %>
+										      		</div>
+										      		<div class="col-6">
+										      			<div class="workout-class-id" style="display:none;"><%= workout_class.id %></div>
+										      			<div class="workout-class-active" style="display:none;"><%= workout_class.active %></div>
+										      			<%= link_to "Edit", "#", class: 'edit-workout-class pull-right' %>
+										      		</div>
+									      		</div>
+									      		<div class="row workout-description">
+									      			<%= workout_class.description %>
+									      		</div>
+									      		<div class="row workout-url" style="word-break: break-word;">
+									      			<%= workout_class.zoom_url %>
+									      		</div>
+									      	</div>
+								      	</div>
+								      </div>
+								    </div>
+								  </div>
+
+								<% end %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- </div> -->
+
+<div class="modal fade in" id="workoutClassModal" tabindex="-1" role="dialog" aria-labelledby="workoutClassModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<%= form_for :workout_class, url: workout_class_path, method: :put, remote: true, html: { multipart: true } do |f| %>
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="workoutClassModalLabel">Edit Workout Class</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      		<%= hidden_field_tag :selected_session_ids, [], class: 'selected_session_ids' %>
+	      		<%= hidden_field_tag :selected_days, [], class: 'selected_days' %>
+		        <%= hidden_field_tag :selected_class_times, [], class: 'selected_class_times' %>
+		        <%= hidden_field_tag :selected_durations, [], class: 'selected_durations' %>
+	      		<%= f.hidden_field :id, class: 'workout-class-fields' %>
+	      		<div class="form-group">
+		      		<%= f.label :title, "Title" %>
+		      		<%= f.text_field :title, class: 'form-control workout-class-fields' %>
+		      	</div>
+
+		      	<div class="form-group">
+		      		<%= f.label :description, "Description" %>
+		      		<%= f.text_area :description, class: 'form-control workout-class-fields' %>
+		      	</div>
+		      	<div class="form-group">
+		      		<%= f.label :cost, "Cost" %>
+		      		<%= f.text_field :cost, class: 'form-control workout-class-fields' %>
+		      	</div>
+		      	<div class="form-group">
+		      		<%= f.file_field :avatar %>
+		      	</div>
+		      	<div class="form-group">
+		      		<%= f.label :zoom_url, "Zoom URL" %>
+		      		<%= f.text_field :zoom_url, class: 'form-control workout-class-fields' %>
+		      	</div>
+		      	<div class="form-group">
+		      		<%= f.label :active, "Active Class: " %>
+		      		<%= f.check_box :active, class: 'workout-class-fields' %>
+		      	</div>
+
+		      	<div class='container' style="background: lightgray;">
+		      		<%= f.fields_for :sessions do |form| %>
+				        <div class="row">
+				      		<div class="form-group col-6">
+				      			<%= label_tag :day, "Day of the Week" %>
+					      		<%= select_tag :day, options_for_select(WorkoutGroup.day_of_the_weeks.collect { |key, day| [ day, key ] }, Time.now.wday), class: "form-control selected-day" %>
+			       			</div>
+			       			<div class="form-group col-6">
+			       				<%= label_tag :class_time %>
+			       				<div class="row">
+				       				<%= time_select :class, :time, {minute_step: 15, :default => {:hour => (Time.now + 1.hour).at_beginning_of_hour.hour, :minute => (Time.now + 1.hour).at_beginning_of_hour.min}}, class: 'selected-class-time' %>
+				       			</div>
+			       			</div>
+			       		</div>
+			       		<div class="row">
+			       			<div class="form-group col-6">
+			       				<%= label_tag :duration %>
+			       				<%= select_tag :duration, options_for_select((0..90).collect { |num| [num, num] }, 30), class: 'form-control selected-duration' %>
+			       			</div>
+			       			<div class="form-group col-6">
+			       				<%= link_to "Add Session", '#', class: 'add-session-btn' %>
+			       			</div>
+			       		</div>
+
+				        <div id="session-table" style="padding-bottom:1em;">
+				        	<table class="table table-stripped bg-white" >
+				        		<tbody>
+				        		</tbody>
+				        	</table>
+				        </div>
+				      <% end %>
+			      </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <%= f.submit "Submit", class: 'btn btn-primary' %>
+	      </div>
+	    <% end %>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade in" id="newWorkoutClassModal" tabindex="-1" role="dialog" aria-labelledby="newWorkoutClassModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<%= form_for :workout_class, url: workout_class_index_path, method: :post, remote: true, html: { multipart: true } do |f| %>
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="newWorkoutClassModalLabel">New Workout Class</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      		<%= hidden_field_tag :selected_days, [], class: 'selected_days' %>
+		        <%= hidden_field_tag :selected_class_times, [], class: 'selected_class_times' %>
+		        <%= hidden_field_tag :selected_durations, [], class: 'selected_durations' %>
+	      		<%= f.hidden_field :gym_id, value: @gym.id %>
+	      		<div class="form-group">
+		      		<%= f.label :title, "Title" %>
+		      		<%= f.text_field :title, class: 'form-control workout-class-fields', id: 'new-workout-title' %>
+		      	</div>
+
+		      	<div class="form-group">
+		      		<%= f.label :description, "Description" %>
+		      		<%= f.text_area :description, class: 'form-control workout-class-fields', id: 'new-workout-description' %>
+		      	</div>
+		      	<div class="form-group">
+		      		<%= f.label :cost, "Cost" %>
+		      		<%= f.text_field :cost, class: 'form-control workout-class-fields', id: 'new-workout-cost' %>
+		      	</div>
+		      	<div class="form-group">
+		      		<%= f.file_field :avatar, id: 'new-workout-avatar' %>
+		      	</div>
+		      	<div class="form-group">
+		      		<%= f.label :zoom_url, "Zoom URL" %>
+		      		<%= f.text_field :zoom_url, class: 'form-control workout-class-fields', id: 'new-workout-zoom' %>
+		      	</div>
+
+		      	<div class='container' style="background: lightgray;">
+		      		<%= f.fields_for :sessions do |form| %>
+				        <div class="row">
+				      		<div class="form-group col-6">
+				      			<%= label_tag :day, "Day of the Week" %>
+					      		<%= select_tag :day, options_for_select(WorkoutGroup.day_of_the_weeks.collect { |key, day| [ day, key ] }, Time.now.wday), class: "form-control selected-day" %>
+			       			</div>
+			       			<div class="form-group col-6">
+			       				<%= label_tag :class_time %>
+			       				<div class="row">
+				       				<%= time_select :class, :time, {minute_step: 15, :default => {:hour => (Time.now + 1.hour).at_beginning_of_hour.hour, :minute => (Time.now + 1.hour).at_beginning_of_hour.min}}, class: 'selected-class-time' %>
+				       			</div>
+			       			</div>
+			       		</div>
+			       		<div class="row">
+			       			<div class="form-group col-6">
+			       				<%= label_tag :duration %>
+			       				<%= select_tag :duration, options_for_select((0..90).collect { |num| [num, num] }, 30), class: 'form-control selected-duration' %>
+			       			</div>
+			       			<div class="form-group col-6">
+			       				<%= link_to "Add Session", '#', class: 'add-session-btn' %>
+			       			</div>
+			       		</div>
+
+				        <div id="session-table" style="padding-bottom:1em;">
+				        	<table class="table table-stripped bg-white" >
+				        		<tbody>
+				        		</tbody>
+				        	</table>
+				        </div>
+				      <% end %>
+			      </div>
+
+			     
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <%= f.submit "Submit", class: 'btn btn-primary' %>
+	      </div>
+	    <% end %>
+    </div>
+  </div>
+</div>
+
+
+<script>
+	$('.add-session-btn').on('click', function(e){
+		e.preventDefault();
+
+		var currentModal = $(this).parents('.modal-body')
+		var currentTimeSelector = $(this).parents('.container').find('.selected-class-time')
+		var classTime = $(currentTimeSelector).eq(0).val() + ':' + $(currentTimeSelector).eq(1).val();
+		var classDay =  $(this).parents('.container').find('.selected-day option:selected').val();
+		var selectedWeekday = $(currentModal).find('.selected-day option:selected').text()
+		var classDuration = $(this).parents('.container').find('.selected-duration').val();
+		var selectedSessionIds = parseStringToArray($(currentModal).children('.selected_session_ids').val(), ',')
+		var selectedDays = parseStringToArray($(currentModal).children('.selected_days').val(), ',')
+		var selectedTimes = parseStringToArray($(currentModal).children('input.selected_class_times').val(), ',');
+		var selectedDurations = parseStringToArray($(currentModal).children('.selected_durations').val(), ',');
+
+
+		if (selectedDays.includes(classDay) && selectedTimes.includes(classTime)) {
+			alert("Please double check that you are not adding a duplicate time for day/time combo.")
+		}
+
+		$('#session-table tbody').append("<tr><td style='display:none;'>" + classDay + "</td><td>" + selectedWeekday + "</td><td>" + classTime + "</td><td>" + $('.selected-duration').val() + "</td><td class='remove-session'>x</td></tr>")
+
+		selectedSessionIds.push("*")
+		selectedDays.push(classDay)
+		selectedTimes.push(classTime)
+		selectedDurations.push(classDuration)
+
+		$(currentModal).children('.selected_session_ids').val(selectedSessionIds)
+		$(currentModal).children('.selected_days').val(selectedDays)
+		$(currentModal).children('.selected_class_times').val(selectedTimes)
+		$(currentModal).children('.selected_durations').val(selectedDurations)
+	});
+
+	$(document).on('click', '.remove-session', function(e){
+		var selectedRemoveDays = parseStringToArray($('.selected_days').val(), ',')
+		var selectedRemoveTimes = parseStringToArray($('.selected_class_times').val(), ',');
+		var selectedRemoveDurations = parseStringToArray($('.selected_durations').val(), ',');
+		var day = $(this).siblings().eq(0).text()
+		var arrayPositionToRemove = selectedRemoveDays.indexOf(day)
+
+		selectedRemoveDays.splice(arrayPositionToRemove,1)
+		selectedRemoveTimes.splice(arrayPositionToRemove,1)
+		selectedRemoveDurations.splice(arrayPositionToRemove,1)
+
+		$('.selected_days').val(selectedRemoveDays)
+		$('.selected_class_times').val(selectedRemoveTimes)
+		$('.selected_durations').val(selectedRemoveDurations)
+
+		$(this).parent().remove()
+	});
+
+	$('.edit-workout-class').on('click', function(e){
+		e.preventDefault();
+
+		workout_class_id = $(this).siblings('.workout-class-id').text().trim()
+
+		$.ajax({
+		  method: "GET",
+		  dataType: 'JSON',
+		  url: '/workout_class/get_workout_sessions',
+		  data: { id: workout_class_id }
+		})
+	  .done(function( response ) {
+	  	$('#session-table tbody').children().remove();
+	    $.each(response.classSessions, function(){
+	    	$('#session-table tbody').append("<tr><td style='display:none;'>" + this.day + "</td><td>" + response.weekdays[this.day] + "</td><td>" + this.class_time + " " + this.meridiem + "</td><td>" + this.duration + "</td><td class='remove-session'>x</td></tr>")
+	    });
+
+	    console.log($('#workoutClassModal').find('.selected_session_ids'))
+	    $('#workoutClassModal').find('.selected_session_ids').val(response.selectedSessionIds)
+	    $('#workoutClassModal').find('.selected_class_times').val(response.selectedTimes);
+	    $('#workoutClassModal').find('.selected_days').val(response.selectedDays);
+	    $('#workoutClassModal').find('.selected_durations').val(response.selectedDurations);
+	  });
+
+		$('#workout_class_id').val(workout_class_id)
+		$('#workout_class_title').val($(this).parents('.card').children('.card-header').text().trim())
+		$('#workout_class_description').val($(this).parent().parent().siblings('.workout-description').text().trim())
+		$('#workout_class_cost').val($(this).parent().siblings('.workout-cost').text().trim())
+		$('#workout_class_zoom_url').val($(this).parent().parent().siblings('.workout-url').text().trim())
+		$('#workout_class_active').prop('checked', $(this).siblings('.workout-class-active').text() == 'true')
+		$('#workoutClassModal').modal('show');
+	});
+
+	$('.new-workout-class').on('click', function(e){
+		e.preventDefault();
+
+		// Everytime new workout modal pulled up, clear all old data
+		$('.selected_days').val(null)
+		$('.selected_class_times').val(null)
+		$('.selected_durations').val(null)
+		$("#newWorkoutClassModal textarea").val(null);
+		$.each($("#newWorkoutClassModal input[type='text']"), function() {
+		    $(this).val(null)
+		});
+
+		$('#session-table tbody').children().remove()
+
+		$('#newWorkoutClassModal').modal('show')
+	})
+
+	$('.fa-info-circle').popover();
+	$('.fa-info-circle').on('click', function (e) {
+    $('.fa-info-circle').not(this).popover('hide');
+	});
+
+	$('#gym-update').on('click', function(e) {
+		e.preventDefault();
+		$('.edit_gym').submit();
+	});
+
+  $('#category_tag').on('change', function(){
+    parser = new RegExp(/(\w+-\w+)/g);
+    let new_class = parser.exec($(this).find(":selected").attr('class'))[0]
+    $('#category-color').attr('class', "col-md-1 col-sm-1 col-1 " + new_class)
+  });
+
+  function parseStringToArray(values, seperator) {
+  	if (values != null) {
+  		if (values.includes(':')) {
+  			values = values.match(/\d+:\d+/g);
+  		} else {
+				values = values.match(/\d+/g);
+  		}
+		};
+
+		return values == null ? [] : values
+  }
+
+  function checkWidth(init)
+	{
+	    /*If browser resized, check width again */
+	    if ($(window).width() < 768) {
+	        $('#mySidebar').addClass('sidebar');
+	        document.getElementById("mySidebar").style.width = null;
+	        document.getElementById("mySidebar").style.position = "absolute";
+	        document.getElementById("mySidebar").style.width = "3em";
+	        document.getElementById("main").style.width = "100%";
+	        document.getElementById("main").style.marginTop = "1em";
+	        $('.nav-link').parent('.nav-item.nav-li').css('padding-left', '2em');
+	        $("#right-col").css('margin-left', '4.5em');
+  				$('.td-toggle').hide();
+	      	$('.sidebar-collapse-button').show();
+	      	$('#main').addClass('small-main');
+	    }
+	    else {
+	        if (!init) {
+	          $('#mySidebar').removeClass('sidebar');
+	        	document.getElementById("mySidebar").style.width = null;
+	        	document.getElementById("mySidebar").style.position = null;
+	        	document.getElementById("main").style.width = null;
+	        	$('.nav-link').parent('.nav-item.nav-li').css('padding-left', '');
+  					$('.td-toggle').show();
+		        $('.sidebar-collapse-button').hide();
+		        $("#right-col").css('margin-left', '');
+	      		$('#main').removeClass('small-main');
+	        }
+	    }
+	}
+
+	$(document).ready(function() {
+	    checkWidth(false);
+
+	    $(window).resize(function() {
+	        checkWidth(false);
+	    });
+	});
+
+function openCloseNav() {
+	if (document.getElementById("mySidebar").style.width == "") {
+  	openNav();
+	} else if (document.getElementById("mySidebar").style.width == "300px") {
+  	closeNav();
+		
+	} else {
+  	openNav();
+	}
+}
+
+	/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementById('expand').classList.add('fa-chevron-left')
+  document.getElementById('expand').classList.remove('fa-chevron-right')
+
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "3em";
+  document.getElementById('expand').classList.add('fa-chevron-right')
+  document.getElementById('expand').classList.remove('fa-chevron-left')
+}
+</script>

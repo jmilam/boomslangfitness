@@ -1,0 +1,120 @@
+<style>
+	.exercise-header {
+		color: white;
+		font-size: 1.5em;
+	}
+
+	.exercise-sub-header {
+		font-size: 0.75em;
+		color: white;
+	}
+
+	.exercise-details {
+		font-size: 1em;
+		color: white;
+	}
+</style>
+
+<% unless @workout.nil? %>
+	<%= form_for :exercises, url: log_exercise_path(workout_id: @workout.id) do |f| %>
+		<%= f.hidden_field :workout_date, value: params[:workout_date] %>
+		<%= f.hidden_field :manual_entry, value: @manual_entry %>
+		<%= f.hidden_field :user_id, value: @user.id %>
+		<% unless @manual_entry %>
+			<div class="boomslang-green" style="padding-top:20px;padding-bottom:20px;color:#003259;text-align:center;margin-top:auto;margin-bottom:10px;height:100%;">
+				<h4>Exercises Completed <%= @step_string %></h4>
+			</div>
+		<% end %>
+		<div  class="jumboton" style="padding-top: 20px;">
+			<div class="container-fluid">
+				<div class="row">
+					<h4 class="col-10 offset-1"><b>Workout Name:</b></h4>
+					<p class="lead col-10 offset-1">
+						<%= @workout.name %>
+					</p>
+				</div>
+				<div class="hard-return" style="border:1px solid white;margin-bottom:1em;"></div>
+				<div class="row">
+					<h4 class="col-10 offset-1"><b>Workout Details:</b></h4>
+					<p class="lead col-10 offset-1">
+						<%= @workout.details %>
+						<% if !@workout.intro_url.nil? || !@workout.video.url.include?("missing") %>
+							<span>
+								<button type="button" class="btn sidebar-collapse-button" data-toggle="modal" data-target="#<%= @workout.name.downcase.gsub(/[^0-9A-Za-z]/, '').prepend('_') %>Modal" aria-expanded="false" style="background:transparent;" title="See workout intro. Including form to enter weight">
+								  <i class="fa fa-external-link fa-lg fa-pull-right"></i>
+								</button>
+							</span>
+							<div class="modal fade" id="<%= @workout.name.downcase.gsub(/[^0-9A-Za-z]/, '').prepend('_') %>Modal" tabindex="-1" role="dialog" aria-labelledby="<%= @workout.name.downcase.gsub(/[^0-9A-Za-z]/, '').prepend('_') %>ModelLabel" aria-hidden="true">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="<%= @workout.name.downcase.gsub(/[^0-9A-Za-z]/, '').prepend('_') %>ModelLabel"><%= @workout.name %> Intro</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body boomslang-blue">
+								          <div style="background-color:black;">
+								          	<% if @workout.intro_url.nil? %>
+								      				<%= video_tag url_for(@workout.video.url), controls: '', autoplay: true, loop: true, style: 'height:400px;width:100%' %>
+								  					<% else %>
+								  						<iframe width="100%" height="300px" src="<%= @workout.intro_url %>" allow="accelerometer; autoplay; encrypted-media; gyroscope; " allowfullscreen></iframe>
+								  					<% end %>
+								  				</div>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn workout-btn" data-dismiss="modal" aria-label="Close">
+								          Close
+								        </button>
+								      </div>
+								    </div>
+								  </div>
+							</div>
+						<% end %>
+					</p>
+				</div>
+			</div>
+		</div>
+		<% if @manual_entry %>
+			<% counter = 1 %>
+			<% @exercise_groups.each do |key, exercise_group| %>
+				<div class="card">
+				  <div class="card-header" style="background-color:#003259;color:white;">
+				    <div class="lead">Exercise Group <%= counter %></div>
+				  </div>
+				  <div class="card-body">
+				  	<% exercise_group.each_with_index do |exercise, idx| %>
+							<% bg_color = Category.style_tags.to_a.sample[1] %>
+							<div class="row boomslang-green">
+								<div class="col-md-12" style="<%= bg_color['style'] %>;padding-right:10px;border-radius: 5px;">
+									<%= render 'partials/exercise_detail_header', exercise: exercise, bg_color: bg_color %>
+								</div>
+							</div>
+							<%= render 'partials/video_modal', exercise: exercise, previous_workout: @previous_workout, workout_date: params[:workout_date], f: f %>
+						<% end %>
+
+				  </div>
+				</div>
+				<% counter += 1 %>
+			<% end %>
+			<div class="row">
+					<%= f.submit @button_title, class: "btn btn-lg btn-block workout-btn", style: "height:100px;margin-top: -10px;" %>
+			</div>
+		<% else %>
+			<% @exercise_group.each_with_index do |exercise, idx| %>
+				<div class="col-12 boomslang-green" style="border: 1px solid #003259;padding-bottom:5px;margin-bottom:0px;">
+					<%= render 'partials/exercise_detail_header', exercise: exercise, bg_color: Category.style_tags.to_a.sample[1] %>
+				</div>
+				<%= render 'partials/video_modal', exercise: exercise, previous_workout: @previous_workout, workout_date: params[:workout_date] || Date.today, f: f %>
+			<% end %>
+			<div class="boomslang-blue container-fluid" style="padding-top: 15px;padding-bottom: 15px;">
+				<div class="row">
+					<% unless @manual_entry %>
+						<%= link_to "Exit Workout", profile_index_path(manual_exit: true), data: { confirm: 'Please make sure you complete the last exercise so your data will not be lost.' }, class: "btn btn-lg btn-block col-md-5 offset-md-1 col-6", style: "margin-top:auto;;height:75px;padding-top:20px;background-color:transparent;color:white;" %> 
+					<% end %>
+					<%= f.submit @button_title, class: "btn btn-lg btn-block col-md-4 offset-md-1 col-6", style: "background-color:transparent;height:75px;color:white;" %>
+				</div>
+			</div>
+		<% end %>
+	<% end %>
+<% end %>

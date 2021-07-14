@@ -1,0 +1,60 @@
+{:uriI"Ñfile://node_modules/react-dom/package.json?type=application/json&id=ce4fc7ba3b6a8386f215bbd962c92509732beca761c1e798bbf9a3442eff625a:ET:load_pathI"node_modules;T:filenameI"(node_modules/react-dom/package.json;T:	nameI"react-dom/package;T:logical_pathI"react-dom/package.json;T:content_typeI"application/json;T:sourceI"í{
+  "name": "react-dom",
+  "version": "16.8.6",
+  "description": "React package for working with the DOM.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/react.git",
+    "directory": "packages/react-dom"
+  },
+  "keywords": [
+    "react"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/facebook/react/issues"
+  },
+  "homepage": "https://reactjs.org/",
+  "dependencies": {
+    "loose-envify": "^1.1.0",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.6.2",
+    "scheduler": "^0.13.6"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "build-info.json",
+    "index.js",
+    "profiling.js",
+    "server.js",
+    "server.browser.js",
+    "server.node.js",
+    "test-utils.js",
+    "unstable-fire.js",
+    "unstable-fizz.js",
+    "unstable-fizz.browser.js",
+    "unstable-fizz.node.js",
+    "unstable-native-dependencies.js",
+    "cjs/",
+    "umd/"
+  ],
+  "browser": {
+    "./server.js": "./server.browser.js",
+    "./unstable-fizz.js": "./unstable-fizz.browser.js"
+  },
+  "browserify": {
+    "transform": [
+      "loose-envify"
+    ]
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"6file-digest://node_modules/react-dom/package.json;TTF:charsetI"
+utf-8;F:digest"%ë$LFÄΩúÖ˜ŒÓ-!©æ‚ﬁ7∆ÍIËe~ò∂:lengthií:dependencies_digest"%;eŒ)®êe£Ã^S∂|ÿFÖÏ#ÉÙ∂µø;zÒ:idI"Ece4fc7ba3b6a8386f215bbd962c92509732beca761c1e798bbf9a3442eff625a;F:
+mtimel+—™O`

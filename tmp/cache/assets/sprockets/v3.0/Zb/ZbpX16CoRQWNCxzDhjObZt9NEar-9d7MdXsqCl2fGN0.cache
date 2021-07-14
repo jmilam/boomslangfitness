@@ -1,0 +1,26 @@
+{:uriI"Ñfile://node_modules/lodash-es/package.json?type=application/json&id=39a37b50503ee5d11e76a3bdfa5b4c6237705c5adccba8248c2ba1f95719d90c:ET:load_pathI"node_modules;T:filenameI"(node_modules/lodash-es/package.json;T:	nameI"lodash-es/package;T:logical_pathI"lodash-es/package.json;T:content_typeI"application/json;T:sourceI"œ{
+  "name": "lodash-es",
+  "version": "4.17.21",
+  "description": "Lodash exported as ES modules.",
+  "keywords": "es6, modules, stdlib, util",
+  "homepage": "https://lodash.com/custom-builds",
+  "bugs": "https://github.com/lodash/lodash-cli/issues",
+  "repository": "lodash/lodash",
+  "license": "MIT",
+  "type": "module",
+  "jsnext:main": "lodash.js",
+  "main": "lodash.js",
+  "module": "lodash.js",
+  "sideEffects": false,
+  "author": "John-David Dalton <john.david.dalton@gmail.com>",
+  "contributors": [
+    "John-David Dalton <john.david.dalton@gmail.com>",
+    "Mathias Bynens <mathias@qiwi.be>"
+  ],
+  "scripts": { "test": "echo \"See https://travis-ci.org/lodash-archive/lodash-cli for testing details.\"" }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"6file-digest://node_modules/lodash-es/package.json;TTF:charsetI"
+utf-8;F:digest"%≤LØ∏:LkRq⁄eiZª{}ï@∑†8ƒØ/Î:lengthiœ:dependencies_digest"%œ»€¢2`ˇµƒ∫uõRÒ”¥ÑÀ„Y˚FÂÅh0˙ÿ\:idI"E39a37b50503ee5d11e76a3bdfa5b4c6237705c5adccba8248c2ba1f95719d90c;F:
+mtimel+”™O`

@@ -1,0 +1,51 @@
+<%= render "partials/alert" %>
+<div id="donutchart" ></div>
+<table class="table">
+	<thead>
+		<tr>
+			<th class="text-center" colspan="3">Total Calories Available: <%= current_user.tdee - @daily_log.total_calories %></th>
+		</tr>
+		<tr style="font-size:0.9em">
+			<th class="text-center" colspan="3">Total Calories Today: <%= @daily_log.total_calories %></th>
+		</tr>
+		<tr style="font-size:0.9em">
+			<th class="text-center" colspan="3">Protein: <%= @daily_log.total_protein %> g, Carbs: <%= @daily_log.total_carbs %> g, Fats: <%= @daily_log.total_fats%> g</th>
+		</tr>
+		<tr class="progress" style="height: 40px;margin-bottom:0;">
+		  <td class="progress-bar progress-bar-striped bg-primary" style="width: <%= (((@user.tdee - @remaining_tdee)/@user.tdee.to_f) * 100.0).round %>%;color:black;text-align:center;padding-left:5px;" role="progressbar" aria-valuenow="<%= @user.tdee - @remaining_tdee %>" aria-valuemin="0" aria-valuemax="<%= @user.tdee %>"><%= @user.tdee - @remaining_tdee %> calories consumed</td>
+		</tr>
+
+		<tr>
+			<th class="text-center" colspan="3" style="background-color:#F25116;opacity:0.8;"><%= link_to "Add Food", edit_daily_log_path(@daily_log.id), class: 'btn btn-primary btn-block .profile-index-btn', style: 'background-color: transparent;border:0;' if @daily_log.calendar_date.in_time_zone == Time.current.to_date.in_time_zone %></th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @daily_log_foods.values.each do |daily_log_foods| %>
+			<tr>
+				<td><%= daily_log_foods.count %> x <%= daily_log_foods.first.food.name %></td>
+				<td class="text-center"><%= daily_log_foods.first.food.calories * daily_log_foods.count %> cal</td>
+				<td><%= link_to "Edit", edit_daily_log_foods_path(daily_log_foods.first.food_id, daily_log_id: @daily_log.id), style: 'color: #048ABF;' %></td>
+				<!-- <td class="text-center"><%#= link_to "Remove", destroy_daily_log_food_path(daily_log_foods.first.id), method: :delete,  data: { confirm: 'Are you sure you want to remove this from your food log?' } %> -->
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(<%= raw @macros %>);
+
+        var options = {
+          pieHole: 0.4,
+          legend: {position: 'bottom', textStyle: {color: 'white'}},
+          backgroundColor: '#025951'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+</script>
+

@@ -1,0 +1,24 @@
+{:uriI"”file://node_modules/mark.js/test/fixtures/iframes/readystate.html?type=text/html&id=d0248e1113467318e300a99d7bf2bde03bbd6af72286c3a271e884a92d79d86b:ET:load_pathI"node_modules;T:filenameI"?node_modules/mark.js/test/fixtures/iframes/readystate.html;T:	nameI"-mark.js/test/fixtures/iframes/readystate;T:logical_pathI"2mark.js/test/fixtures/iframes/readystate.html;T:content_typeI"text/html;T:sourceI"<div class="iframes-readystate" id="iframes-readystate-target">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <script>
+        var target = document.getElementById("iframes-readystate-target");
+        var iframe = document.createElement("iframe");
+        iframe.src = jasmine.getFixtures().fixturesPath +
+            "/iframes/inc.html";
+        target.appendChild(iframe);
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Mfile-digest://node_modules/mark.js/test/fixtures/iframes/readystate.html;TTF:charsetI"
+utf-8;F:digest"%-$H9Ó‰›ÿ„qıbé%0ªZi‡±€´¸= h£:lengthi:dependencies_digest"%:@”[£÷ñô1.f1î(ŠñyÙ'FOv_¿‘<b:idI"Ed0248e1113467318e300a99d7bf2bde03bbd6af72286c3a271e884a92d79d86b;F:
+mtimel+í‹íY

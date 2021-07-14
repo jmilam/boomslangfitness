@@ -1,0 +1,42 @@
+<%= render "partials/alert" %>
+<div class="container">
+  <%= form_for @workout, url: workout_path(@workout.id), method: :patch do |f| %>
+     <div class="row">
+      <div class="col-md-12 col-sm-12 form-group">
+        <%= f.label :name, class: 'col-md-12' %>
+        <%= f.text_field :name, class: 'col-md-12 form-control' %>
+      </div>
+     </div>
+
+    <div class="row">
+      <div class="col-md-10 col-sm-10 form-group">
+        <%= f.label :category_id, "Category", class: 'col-md-12' %>
+        <%= f.select :category_id, @categories.collect {|category| [ category.name, category.id ] }, { prompt: "--- Please select Category ---" }, class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-2 col-sm-2 form-group">
+        <%= f.label :user_default, "Default workout?", class: 'col-md-12' %>
+        <%= f.check_box :user_default, {}, true, false %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 form-group">
+        <%= f.label :details, class: 'col-md-12' %>
+        <%= f.text_area :details, class: 'col-md-12 form-control' %>
+      </div>
+      
+    </div>
+
+     <div class="row">
+      <div class="col-md-9 col-sm-12 form-group">
+        <%= f.label :intro_url, "Workout Intro URL:", class: 'col-md-12' %>
+        <%= f.text_field :intro_url, class: 'col-md-12 form-control' %>
+      </div>
+      <div class="col-md-3 col-sm-12 form-group">
+        <%= f.label :video, "Upload Workout Intro Video: ", class: 'col-md-12' %>
+        <%= f.file_field :video %>
+      </div>
+    </div>
+    	<%= f.submit "Update Workout", class: 'btn btn-lg btn-block workout-btn' %>
+  <% end %>
+</div>

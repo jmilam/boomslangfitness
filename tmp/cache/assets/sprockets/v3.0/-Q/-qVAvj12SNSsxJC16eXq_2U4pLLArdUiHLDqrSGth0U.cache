@@ -1,0 +1,31 @@
+{:uriI"çfile://node_modules/mark.js/test/fixtures/iframes/inc.html?type=text/html&id=ca53cee7ec59f73ca0455aca5d933419d51df05fb03091fbd5ab8f24ecbd5f58:ET:load_pathI"node_modules;T:filenameI"8node_modules/mark.js/test/fixtures/iframes/inc.html;T:	nameI"&mark.js/test/fixtures/iframes/inc;T:logical_pathI"+mark.js/test/fixtures/iframes/inc.html;T:content_typeI"text/html;T:sourceI"ﬂ<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test iframe document</title>
+    <style>
+        .mark,
+        .lorem {
+            background: yellow;
+        }
+    </style>
+    <!-- The above is necessary to check if elements inside <head> will be ignored -->
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </div>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ffile-digest://node_modules/mark.js/test/fixtures/iframes/inc.html;TTF:charsetI"
+utf-8;F:digest"%¯‘ gTOÅ´‰G˚"£L–≤3c'?Û;0∑IÊÖP¯:lengthiﬂ:dependencies_digest"%œ~små:;•Rùh5†[:RË^T#xó4à£lPFG:idI"Eca53cee7ec59f73ca0455aca5d933419d51df05fb03091fbd5ab8f24ecbd5f58;F:
+mtimel+”™O`

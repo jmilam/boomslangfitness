@@ -1,0 +1,15 @@
+current directory: /Users/jmilam/Projects/workout_randomizer/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/jmilam/.rvm/rubies/ruby-2.7.4/bin/ruby -I /Users/jmilam/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20210714-57595-e6zjyc.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jmilam/Projects/workout_randomizer/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/jmilam/Projects/workout_randomizer/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/jmilam/Projects/workout_randomizer/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20210714-57595-78dbr2/skiptrace/internal

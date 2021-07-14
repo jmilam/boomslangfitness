@@ -1,0 +1,41 @@
+{:uriI"‡file://node_modules/loose-envify/package.json?type=application/json&id=6d2d3749a87e07e912decf644ac7394fab281cbb5e4a6581d947866333887760:ET:load_pathI"node_modules;T:filenameI"+node_modules/loose-envify/package.json;T:	nameI"loose-envify/package;T:logical_pathI"loose-envify/package.json;T:content_typeI"application/json;T:sourceI"){
+  "name": "loose-envify",
+  "version": "1.4.0",
+  "description": "Fast (and loose) selective `process.env` replacer using js-tokens instead of an AST",
+  "keywords": [
+    "environment",
+    "variables",
+    "browserify",
+    "browserify-transform",
+    "transform",
+    "source",
+    "configuration"
+  ],
+  "homepage": "https://github.com/zertosh/loose-envify",
+  "license": "MIT",
+  "author": "Andres Suarez <zertosh@gmail.com>",
+  "main": "index.js",
+  "bin": {
+    "loose-envify": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zertosh/loose-envify.git"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "dependencies": {
+    "js-tokens": "^3.0.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "envify": "^3.4.0",
+    "tap": "^8.0.0"
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"9file-digest://node_modules/loose-envify/package.json;TTF:charsetI"
+utf-8;F:digest"%Œ.'Úãf9lí6þ|m5×@ýŽ‚ß_ ¥)xˆ Ô:lengthi):dependencies_digest"%l\¼dS†¾·oUG,.Z9ò/¶ˆÞû–.XLÀ:idI"E6d2d3749a87e07e912decf644ac7394fab281cbb5e4a6581d947866333887760;F:
+mtimel+ÑªO`

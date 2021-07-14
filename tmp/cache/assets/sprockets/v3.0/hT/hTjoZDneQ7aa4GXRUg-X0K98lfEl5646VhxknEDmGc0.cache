@@ -1,0 +1,45 @@
+{:uriI"šfile://node_modules/mark.js/test/fixtures/basic/ignore-punctuation.html?type=text/html&id=1b182f6f330261e8dbc6f3f34e56d86615f4a9930fec2223653859a8e9eef7cf:ET:load_pathI"node_modules;T:filenameI"Enode_modules/mark.js/test/fixtures/basic/ignore-punctuation.html;T:	nameI"3mark.js/test/fixtures/basic/ignore-punctuation;T:logical_pathI"8mark.js/test/fixtures/basic/ignore-punctuation.html;T:content_typeI"text/html;T:sourceI"o	<div class="basic-ignore-punctuation">
+    <div>
+        <p>
+            Lorem, ipâ€’sum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est lo[rem]! ips'um dolor sit. Lore'm
+            ip(sum) dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est lorem ips+-=um dolor
+            sit amet. Lor}{em "ipsum". Lorem ip&shy;sum.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem, ipâ€’sum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est lo[rem]! ips'um dolor sit. Lore'm
+            ip(sum) dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est lorem ips+-=um dolor
+            sit amet. Lor}{em "ipsum". Lorem ip&shy;sum.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem, ipâ€’sum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est lo[rem]! ips'um dolor sit. Lore'm
+            ip(sum) dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est lorem ips+-=um dolor
+            sit amet. Lor}{em "ipsum". Lorem ip&shy;sum.
+        </p>
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Sfile-digest://node_modules/mark.js/test/fixtures/basic/ignore-punctuation.html;TTF:charsetI"
+utf-8;F:digest"%›áLpP˜JaÔÈe¯f5zx9€½‰S¼¥Óäy :lengthio	:dependencies_digest"%¿’b’™W¡	sÀ 6fêŠz­îÒ‘Å>Ì¡2M¹:idI"E1b182f6f330261e8dbc6f3f34e56d86615f4a9930fec2223653859a8e9eef7cf;F:
+mtimel+í‹íY

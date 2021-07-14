@@ -1,0 +1,31 @@
+{:uriI"¶file://node_modules/mark.js/test/fixtures/across-elements/regexp/ignore-groups.html?type=text/html&id=a7dd0957dfb64e6041e604c0f9ac42a294380b36d2b1b763678244aaace3149d:ET:load_pathI"node_modules;T:filenameI"Qnode_modules/mark.js/test/fixtures/across-elements/regexp/ignore-groups.html;T:	nameI"?mark.js/test/fixtures/across-elements/regexp/ignore-groups;T:logical_pathI"Dmark.js/test/fixtures/across-elements/regexp/ignore-groups.html;T:content_typeI"text/html;T:sourceI"Ï<div class="across-elements-regexp-ignore-groups">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"_file-digest://node_modules/mark.js/test/fixtures/across-elements/regexp/ignore-groups.html;TTF:charsetI"
+utf-8;F:digest"%”ùw¨ÁVw¶…¸’“â’˛ˇﬁ`^MWâô7†Cf∏C:lengthiÏ:dependencies_digest"%?a!Ç∑çŒjÙ1ïC3Ù≥1™-•˚™œ«B°D9ª:idI"Ea7dd0957dfb64e6041e604c0f9ac42a294380b36d2b1b763678244aaace3149d;F:
+mtimel+”™O`

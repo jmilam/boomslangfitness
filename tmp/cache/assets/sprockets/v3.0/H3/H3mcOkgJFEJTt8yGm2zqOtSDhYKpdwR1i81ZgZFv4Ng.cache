@@ -1,0 +1,53 @@
+{:uriI"file://node_modules/mark.js/test/manual.html?type=text/html&id=467c42aa63f84e019a513a3c97111bb7519ae3e080d831fc1084c4736abf4365:ET:load_pathI"node_modules;T:filenameI"*node_modules/mark.js/test/manual.html;T:	nameI"mark.js/test/manual;T:logical_pathI"mark.js/test/manual.html;T:content_typeI"text/html;T:sourceI"¤<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>mark.js manual test (dev purposes)</title>
+  <style>
+    mark {
+      background: yellow;
+    }
+  </style>
+</head>
+<body>
+<div id="context"></div>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../dist/mark.js"></script>
+<script>
+  console.log(Mark);
+  const $ctx = $("#context");
+  $ctx.load("fixtures/basic/main.html", function() {
+    let start = new Date(),
+      instance = new Mark($ctx.get());
+    console.log(instance);
+    instance.mark("lorem", {
+      debug: true,
+      done: function(counter) {
+        const end = new Date(),
+          time = end.getTime() - start.getTime();
+        console.log(
+          "Time elapsed: " + time + "ms.",
+          "Elements: " + counter
+        );
+        setTimeout(function() {
+          start = new Date();
+          instance.unmark({
+            debug: true,
+            done: function() {
+              const end = new Date(),
+                time = end.getTime() - start.getTime();
+              console.log("Time elapsed: " + time + "ms.");
+            }
+          });
+        }, 2000);
+      }
+    });
+  });
+</script>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"8file-digest://node_modules/mark.js/test/manual.html;TTF:charsetI"
+utf-8;F:digest"%§ÔLC‹ñt°ÆïB	«dðøìá,Ýû£úCP¶ÑoÚ:lengthi¤:dependencies_digest"%²—­ŒËÁEZ©ÄPA>.,‰b™Î§ú!Þ-ÿj¿ 9:idI"E467c42aa63f84e019a513a3c97111bb7519ae3e080d831fc1084c4736abf4365;F:
+mtimel+ÓªO`

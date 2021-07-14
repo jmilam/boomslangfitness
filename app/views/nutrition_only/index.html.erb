@@ -1,0 +1,84 @@
+<div class="container">
+  <%= form_for @user, url: create_nutrition_only_path do |f| %>
+    <div class="card border-success" style="border:1px solid;">
+      <div class="card-header text-center border-success boomslang-green" style="min-height: 4em;padding-top: 0px;
+    padding-bottom: 15px;">
+          <%= image_tag "project49", class: "rounded-image" %>
+      </div>
+      <div class="card-body bg-white" style="margin-bottom:0;">
+        <%= render "partials/alert" %>
+        <div class="row">
+          <div class="col-6 form-group">
+            <%= f.label :first_name, "First Name", class: 'col-md-12' %>
+            <%= f.text_field :first_name, class: 'col-md-12 form-control' %>
+          </div>
+          <div class="col-6 form-group">
+            <%= f.label :last_name, "Last Name", class: 'col-md-12' %>
+            <%= f.text_field :last_name, class: 'col-md-12 form-control' %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-12 form-group">
+            <%= f.label :email, "Email *", class: 'col-md-12' %>
+            <%= f.text_field :email, class: 'col-md-12 form-control' %>
+          </div>
+          <div class="col-md-6 col-sm-12 form-group">
+            <%= f.label :password, "Password *", class: 'col-md-12' %>
+            <%= f.password_field :password, class: 'col-md-12 form-control' %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 form-group">
+            <%= f.label :weight, "Weight (lb.)", class: 'col-md-12' %>
+            <%= f.text_field :weight, class: 'col-md-12 form-control' %>
+          </div>
+          <div class="col-6 form-group">
+            <%= f.label :height, "Height (in.)", class: 'col-md-12' %>
+            <%= f.text_field :height, class: 'col-md-12 form-control' %>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header bg-dark text-white text-center">
+            Daily Nutrition Values
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3 col-6 form-group">
+                <%= f.label :tdee, "Calorie Total", class: 'col-md-12' %>
+                <%= f.text_field :tdee, class: 'col-md-12 form-control' %>
+              </div>
+              <div class="col-md-3 col-6 form-group">
+                <%= f.label :protein_total, "Protein Total", class: 'col-md-12' %>
+                <%= f.text_field :protein_total, class: 'col-md-12 form-control' %>
+              </div>
+              <div class="col-md-3 col-6 form-group">
+                <%= f.label :carb_total, "Carb Total", class: 'col-md-12' %>
+                <%= f.text_field :carb_total, class: 'col-md-12 form-control' %>
+              </div>
+              <div class="col-md-3 col-6 form-group">
+                <%= f.label :fat_total, "Fat Total", class: 'col-md-12' %>
+                <%= f.text_field :fat_total, class: 'col-md-12 form-control' %>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer tex-center bg-dark text-white">
+            <p class="card-text">Not sure what yours is? <%= link_to "Click Here", "http://boomslangfitness.com/home/assessment", target: :_blank  %>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 form-group" style="display:none;">
+            <%= f.label :gym_id, "Gym *", class: 'col-md-12' %>
+            <%= f.select :gym_id, @gyms.collect { |gym| [gym.name, gym.id] }, {selected: @gym&.id, prompt: "Select Gym" }, class: 'col-md-12 form-control' %>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer boomslang-green">
+        <div class="text-right">
+          <%= f.submit "Sign up", class: "btn btn-standard btn-block " %>
+        </div>
+      </div>
+    </div>
+      
+  <% end %>
+</div>

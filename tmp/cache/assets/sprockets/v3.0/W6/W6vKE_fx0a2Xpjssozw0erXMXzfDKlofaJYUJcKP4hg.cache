@@ -1,0 +1,42 @@
+{:uriI"§file://node_modules/mark.js/test/fixtures/across-elements/iframes/nested-inc.html?type=text/html&id=69d01598025424ab3df5be4505c1a96b9549683275d7ba95f56cffdd42d9bb97:ET:load_pathI"node_modules;T:filenameI"Onode_modules/mark.js/test/fixtures/across-elements/iframes/nested-inc.html;T:	nameI"=mark.js/test/fixtures/across-elements/iframes/nested-inc;T:logical_pathI"Bmark.js/test/fixtures/across-elements/iframes/nested-inc.html;T:content_typeI"text/html;T:sourceI"·<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test iframe document</title>
+    <style>
+        .mark {
+            background: yellow;
+        }
+    </style>
+    <!-- The above is necessary to check if elements inside <head> will be ignored -->
+</head>
+<body>
+    <div id="across-elements-iframes-nested-inc-target">
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <script>
+            // Can't use document.write here, as this fixture will be
+            // included after the document was fully loaded
+            var target = document.getElementById(
+                "across-elements-iframes-nested-inc-target"
+            );
+            var iframe = document.createElement("iframe");
+            iframe.src = "inc.html";
+            target.appendChild(iframe);
+        </script>
+    </div>
+</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"]file-digest://node_modules/mark.js/test/fixtures/across-elements/iframes/nested-inc.html;TTF:charsetI"
+utf-8;F:digest"%å˘◊ÛÍ˝ÑUé6≤l¡‘Ÿ}[≈@7πÁ∏p#∆â:lengthi·:dependencies_digest"%¶yHπóâsi'ÄY˘Ú$I≠DÅ∞u7Q]ÁG“…É:idI"E69d01598025424ab3df5be4505c1a96b9549683275d7ba95f56cffdd42d9bb97;F:
+mtimel+ÌãÌY

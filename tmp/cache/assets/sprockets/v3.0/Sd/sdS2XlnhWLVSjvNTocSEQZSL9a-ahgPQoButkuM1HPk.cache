@@ -1,0 +1,26 @@
+{:uriI"ñfile://node_modules/mark.js/test/fixtures/iframes/inaccessible.html?type=text/html&id=aeca50272bdf8cafeb49866b3df57d981e0e6fe5be880af59e4303a6ac0208c1:ET:load_pathI"node_modules;T:filenameI"Anode_modules/mark.js/test/fixtures/iframes/inaccessible.html;T:	nameI"/mark.js/test/fixtures/iframes/inaccessible;T:logical_pathI"4mark.js/test/fixtures/iframes/inaccessible.html;T:content_typeI"text/html;T:sourceI"U<div class="iframes-inaccessible" id="iframes-inaccessible-target">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <script>
+        // Can't use document.write here, as this fixture will be
+        // included after the document was fully loaded
+        var target = document.getElementById("iframes-inaccessible-target");
+        var iframe = document.createElement("iframe");
+        iframe.src = "http://example.com/";
+        target.appendChild(iframe);
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ofile-digest://node_modules/mark.js/test/fixtures/iframes/inaccessible.html;TTF:charsetI"
+utf-8;F:digest"%òtFÙ•qÀV©W“ã
+)¸–äõ¸¥O¡;6µ:lengthiU:dependencies_digest"%ˆí|èO?d®M÷FP†u'YÑVü!ßG3∞%ê¬Û¿•:idI"Eaeca50272bdf8cafeb49866b3df57d981e0e6fe5be880af59e4303a6ac0208c1;F:
+mtimel+”™O`

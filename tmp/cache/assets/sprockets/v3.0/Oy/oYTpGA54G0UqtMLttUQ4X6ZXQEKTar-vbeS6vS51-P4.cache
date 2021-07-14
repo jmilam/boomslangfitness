@@ -1,0 +1,42 @@
+{:uriI"™file://node_modules/mark.js/test/fixtures/basic/case-sensitive-synonyms-diacritics.html?type=text/html&id=747eda910789ff6085dd81976cf251358e0c48be37c6813b67c9fd24217ccdb2:ET:load_pathI"node_modules;T:filenameI"Unode_modules/mark.js/test/fixtures/basic/case-sensitive-synonyms-diacritics.html;T:	nameI"Cmark.js/test/fixtures/basic/case-sensitive-synonyms-diacritics;T:logical_pathI"Hmark.js/test/fixtures/basic/case-sensitive-synonyms-diacritics.html;T:content_typeI"text/html;T:sourceI"°<div class="basic-case-sensitive-synonyms-diacritics">
+    <h3>Lor√®m Ipsum Dol√∏r</h3>
+    <p>
+        Lor√®m ipsum dolor sit amƒôt, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et just√≤ duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est lorem ipsum ƒëolor sit
+        amet. L√¥r√´m ips≈Øm dolor sit ·∫£met, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et just√≥ duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est ≈Çorem
+        ipsum ƒéolo≈ô sit √†met.
+    </p>
+    <h3>Amƒìt</h3>
+    <p>
+        Morbi convallis tellus non lacus tincidunt, eu luctus quam gravida.
+        Donec sodales, arcu at sollicitudin rhoncus, sapien massa aliquam velit,
+        vitae auctor massa libero quis ≈Çorem ipsum. Integer suscipit leo gravida
+        luctus placerat. Integer dapibus placerat porttitor. Sed laoreet
+        pellentesque ex quis porttitor. Nulla fermentum rutrum gravida. Fusce
+        non lectus massa. √Çliquam erat volutpat. Sed molestie, lacus id vehicula
+        faucibus, eros quam ornare nunc, vitae blandit ex nisl fringilla lorem.
+        Morbi efficitur a enim aliquam ultrices. Lorem ip≈õum d√∏lor sit √Émet,
+        consectetur adipiscing elit. Fusce bibendum sagittis odio.
+    </p>
+    <p>
+        Lorem ipsum dol√≤r sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam. J√πsto duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet. Lorem ipsum dolor sit ·∫£met, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et Just√≤ duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est lorem
+        ipsum dolor sit amet.
+    </p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"cfile-digest://node_modules/mark.js/test/fixtures/basic/case-sensitive-synonyms-diacritics.html;TTF:charsetI"
+utf-8;F:digest"%∏0‰{ﬂ+Í+@bà¿1H¥›x¿æØ⁄K7tP`?£0:lengthi°:dependencies_digest"%ñª4ŸæZÅËÄ—µ~‰ñèΩ <ï˛æcÌP∂&~pØ∞:idI"E747eda910789ff6085dd81976cf251358e0c48be37c6813b67c9fd24217ccdb2;F:
+mtimel+ÌãÌY

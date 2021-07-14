@@ -1,0 +1,69 @@
+<% if @user.nutrition_only %>
+  <%= render 'partials/nutrition_user_form' %>
+
+<% else %>
+  <%= render 'partials/user_form' %>
+<% end %>
+
+<script>
+  function checkWidth(init)
+  {
+      /*If browser resized, check width again */
+      if ($(window).width() < 768) {
+          $('#mySidebar').addClass('sidebar');
+          document.getElementById("mySidebar").style.width = null;
+          document.getElementById("mySidebar").style.position = "absolute";
+          document.getElementById("mySidebar").style.width = "3em";
+          document.getElementById("main").style.width = "100%";
+          $('.nav-link').parent('.nav-item.nav-li').css('padding-left', '2em');
+          $("#right-col").addClass('offset-2');
+          $('.sidebar-collapse-button').show();
+          $('#main').addClass('small-main');
+      }
+      else {
+          if (!init) {
+            $('#mySidebar').removeClass('sidebar');
+            document.getElementById("mySidebar").style.width = null;
+            document.getElementById("mySidebar").style.position = null;
+            document.getElementById("main").style.width = null;
+            $('.nav-link').parent('.nav-item.nav-li').css('padding-left', '');
+            $('.sidebar-collapse-button').hide();
+            $("#right-col").removeClass('offset-2');
+            $('#main').removeClass('small-main');
+          }
+      }
+  }
+
+  $(document).ready(function() {
+      checkWidth(false);
+
+      $(window).resize(function() {
+          checkWidth(false);
+      });
+  });
+
+  function openCloseNav() {
+    if (document.getElementById("mySidebar").style.width == "") {
+      openNav();
+    } else if (document.getElementById("mySidebar").style.width == "300px") {
+      closeNav();
+      
+    } else {
+      openNav();
+    }
+  }
+
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "300px";
+    document.getElementById('expand').classList.add('fa-chevron-left');
+    document.getElementById('expand').classList.remove('fa-chevron-right');
+  }
+
+  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "3em";
+    document.getElementById('expand').classList.add('fa-chevron-right');
+    document.getElementById('expand').classList.remove('fa-chevron-left');
+  }
+</script>

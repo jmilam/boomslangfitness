@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title || "Boomslang Fitness" %></title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= favicon_link_tag 'favicon.ico' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="navbar-header">
+        <%= link_to profile_index_path, class: 'navbar-brand' do %>
+          <%= image_tag @gym.nil? ? 'logo-snake.png' : @gym.logo.url, size: '55x55', id: 'nav-image' %>
+        <% end %>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav">
+          <li><%= link_to "Profile", edit_profile_path(current_user.id), class: 'nav-link', id: 'profile-nav-link' %></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="nutritionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Nutrition
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nutritionDropdown">
+              <%= link_to "My Food Logs", daily_log_index_path, class: 'dropdown-item', id: 'nutrition-nav-link' %>
+              <%= link_to "My Foods", food_index_path, class: 'dropdown-item', id: 'food-nav-link' %>
+              <%= link_to "Meals", meal_path, class: 'dropdown-item', id: 'meal-nav-link' %>
+              <!-- <li class='nav-item nav-li'><a class='nav-link' id='gym-nutrition-tab' data-toggle='tab' href='#gym-nutrition' role='tab' aria-controls='gym-nutrition' aria-selected='false' style="color:white;">Nutrition Pairings</a></li> -->
+            </div>
+          </li>
+          <% if current_user.gym.current_user_gym_admin(current_user) %>
+            <li><%= link_to "Gym", gym_path(current_user.gym.id), class: 'nav-link', id: 'gym-nav-link' %></li>
+          <% end %>
+          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'nav-link', id: 'sign-out-nav-link' %></li>
+        </ul>
+      </div>
+    </nav>
+
+    <%= yield %>
+  </body>
+  <script>
+    $(document).ready(function() {
+      $('.food-checkbox').click(function() {
+        let food_values = $(this).parent('td').siblings()
+
+        if (this.checked) {
+          let totalCals = parseInt($(food_values[6]).children('select').val()) * parseFloat($(food_values[1]).text())
+          $('#selected-food-table tbody').append(`<tr food=${$(food_values[0]).text().replace(/\s/g, '')}><td></td><td>${$(food_values[0]).text()}</td><td class="calories">${totalCals}</td><td class="protein">${$(food_values[2]).text()}</td><td class="carbs">${$(food_values[3]).text()}</td><td class="fats">${$(food_values[4]).text()}</td><td>${$(food_values[5]).text()}</td><td>${$(food_values[6]).children('select').val()}</td></tr>`)
+          populateTotals()
+          
+        } else {        
+          $(`tr[food=${$(food_values[0]).text().replace(/\s/g, '')}]`).remove()
+          populateTotals()
+        }
+      });
+    });
+
+    function populateTotals() {
+      caloriesSum = 0
+      proteinSum = 0
+      carbsSum = 0
+      fatSum = 0
+
+      $.each($('.calories'), function( idx, value) {
+          caloriesSum += parseFloat($(value).text()) 
+      })
+
+      $.each($('.protein'), function( idx, value) {
+          proteinSum += parseFloat($(value).text()) 
+      })
+
+      $.each($('.carbs'), function( idx, value) {
+          carbsSum += parseFloat($(value).text()) 
+      })
+
+      $.each($('.fats'), function( idx, value) {
+          fatSum += parseFloat($(value).text()) 
+      })
+
+        $('#totalCalories').text(caloriesSum)
+        $('#totalProtein').text(proteinSum)
+        $('#totalCarbs').text(carbsSum)
+        $('#totalFat').text(fatSum)
+    }
+  </script>
+</html>

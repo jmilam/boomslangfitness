@@ -1,0 +1,8 @@
+{
+  "name": "workout_randomizer",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "mark.js": "^8.11.1"
+  }
+}

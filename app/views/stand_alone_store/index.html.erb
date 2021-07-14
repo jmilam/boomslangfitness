@@ -1,0 +1,117 @@
+<div class="container">
+	<%= render 'partials/alert' %>
+	<section class="workout-classes">
+		<% if @classes.blank? %>
+			<div class="jumbotron boomslang-green" style="margin-top:1em;">
+			  <h1 class="display-4">No classes configured and ready to purchase.</h1>
+			</div>
+		<% else %>
+        <div class="project49-store-header-background">
+          <!-- <p class='text-justify container-fluid' style='color:yellow;text-shadow: 1px 1px black;'>Below are a list of the classes we offer. Browse around, pick what you'd like to try and register today!</p>  -->
+        </div>
+        <%#= image_tag 'project49header.jpg' %>
+			  <!-- <h1 class="display-4 text-center"><%= @gym.name %></h1> -->
+			  <!-- <p>Below are a list of the classes we offer. Browse around, pick what you'd like to try and register today!</p> -->
+			<%= render 'class_list', workout_classes: @classes, user: @user %>	
+		<% end %>
+	</section>
+</div>
+
+<!-- Modal -->
+<div class="modal fade in" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<%= form_for :user, url: stand_alone_register_path, method: :post, remote: true do |f| %>
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Edit Workout Class</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      		<%#= render 'partials/alert' %>
+	      		<%#= f.hidden_field :id, id: 'workoutClassId' %>
+	      		<div class="form-group">
+		      		<%= f.label :first_name, "First Name" %>
+		      		<%= f.text_field :first_name, class: 'form-control' %>
+		      	</div>
+
+		      	<div class="form-group">
+		      		<%= f.label :last_name, "Last Name" %>
+		      		<%= f.text_field :last_name, class: 'form-control' %>
+		      	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <%= f.submit "Submit", class: 'btn btn-primary' %>
+	      </div>
+	    <% end %>
+    </div>
+  </div>
+</div>
+
+<script src="https://js.stripe.com/v3/"></script>
+<script type="text/javascript">
+  if ('<%= @session_user_name %>' == ' ') {
+  	$('#exampleModal').modal('show');
+  } 
+
+  $('.class-day-select').on('change', function(){
+    $this = $(this)
+  	selectedDay = $(this).val()
+  	filteredDetails = $(this).data('details').filter(dates => dates['day'] == selectedDay)
+  	$this.parent().siblings().last().children().children().remove();
+  	$.each(filteredDetails[0]['times'], function(idx, time) {
+      $this.parent().siblings().last().children().append("<option value='" + time + "'>" + time + "</option")
+  	})
+  })
+
+ 	var stripe = Stripe("<%= ENV['STRIPE_PK'] %>");
+
+  var checkoutButtons = document.getElementsByClassName('checkout-button');
+
+  for (var i = 0; i < checkoutButtons.length; i++) {
+    checkoutButtons[i].addEventListener('click', function() {
+    	var classDetails = $(this).parents('.card-footer').siblings('.card-title').children();
+    	var classCost = $(classDetails[2]).text().trim().match(/[^$]+/g)[0]
+    	var classDay = $(this).parent().siblings().eq(0).children().val();
+    	var classTime = $(this).parent().siblings().eq(1).children().val()
+    	if (parseInt(classCost) == 0) {
+    	  alert("This class is closed")
+    	} else if ((selectedDay == '') || (selectedDay == '' || selectedDay == null)) {
+    		alert('You must select a day and time for your workout session.')
+    	} else {
+        let url = new URL('<%= @stripe_url_path %>/stand_alone_store/process_payment.json')
+				url.search = new URLSearchParams({
+						gym_id: $(classDetails[0]).text().trim(),
+				    class_description: $(classDetails[1]).text().trim(),
+				    class_cost: classCost,
+				    class_id: $(this).data('id'),
+				    class_day: classDay,
+				    class_time: classTime
+				})
+
+        fetch(url, {
+          method: 'POST',
+        })
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(session) {
+          return stripe.redirectToCheckout({ sessionId: session.id });
+        })
+        .then(function(result) {
+          // If `redirectToCheckout` fails due to a browser or network
+          // error, you should display the localized error message to your
+          // customer using `error.message`.
+          if (result.error) {
+            alert(result.error.message);
+          }
+        })
+        .catch(function(error) {
+          console.error('Error:', error);
+        });
+      }
+    });
+  }
+</script>

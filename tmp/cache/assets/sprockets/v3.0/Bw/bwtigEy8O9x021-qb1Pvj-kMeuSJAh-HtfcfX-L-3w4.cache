@@ -1,0 +1,24 @@
+{:uriI"file://node_modules/mark.js/test/fixtures/nested/main.html?type=text/html&id=d985df408aca98089382722dae8bc141d1caf978f3cabadaff9ce291e324dc74:ET:load_pathI"node_modules;T:filenameI"8node_modules/mark.js/test/fixtures/nested/main.html;T:	nameI"&mark.js/test/fixtures/nested/main;T:logical_pathI"+mark.js/test/fixtures/nested/main.html;T:content_typeI"text/html;T:sourceI"¥<div class="nested">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        <mark class="nested-mark">lorem</mark> sit amet, consetetur sadipscing elitr,
+        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+        erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+        dolor
+    </p>
+    <div>
+        <p>
+            Lorem ipsum justo dolor sit amet
+            <span>Lorem ipsum justo dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</span>
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ffile-digest://node_modules/mark.js/test/fixtures/nested/main.html;TTF:charsetI"
+utf-8;F:digest"%,[Ô×|årìñmgÎy# :s›!–‚¾Mu„ :9«Ñô:lengthi¥:dependencies_digest"%`;Uƒ¦|yñ½4K‰©ñíd·xD™äÂëÒêæ†):idI"Ed985df408aca98089382722dae8bc141d1caf978f3cabadaff9ce291e324dc74;F:
+mtimel+ÓªO`

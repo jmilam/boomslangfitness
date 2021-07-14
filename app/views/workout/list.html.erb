@@ -1,0 +1,66 @@
+<div class="container-fluid" style="height:100%;">
+  <div class="row" style="height:100%;">
+      <div class="col-md-3" style="padding-top:20px;background:#003259;">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="card col-md-12" style="padding-top:20px;padding-bottom:20px;">
+              <div class="card-header boomslang-green text-center">
+                <div style="color:white;">Filter Workout By: </div>
+              </div>
+              <div class="card-body bg-dark" style="margin-bottom:0px">
+                <div class="form-group">
+                  <%= label "equipment_filter", "Equipment", style:"color:white;" %>
+                  <%= select_tag "equipment_filter", options_for_select(@common_equipment.map { |equip| [equip.name, equip.name]}.prepend("All")), class: 'form-control' %>
+                </div>
+                <div class="form-group">
+                  <%= label "filter", "Exercise Category", style: 'color:white;' %>
+                  <%= select_tag "filter", options_for_select(@user_goals.map { |key, value| [value, key] }.prepend("All")), class: 'form-control' %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9" style="padding-top:20px;">
+        <% @workouts.each_with_index do |workout_group, idx| %>
+          <div class="row">
+            <% workout_group.each do |workout| %>
+              <div class="col-md-6 col-sm-12 workout" category="<%= workout.category.id %>" equipment="<%= workout.exercises.map { |ex| ex.common_equipment.name }.join(',') %>">
+                <%= render 'workout_card', workout: workout, editable: true %>
+              </div>
+            <% end %>
+          </div>
+          <br/>
+        <% end %>
+      </div>
+  </div>
+</div>
+<script>
+  $('#equipment_filter').on('change', function(){
+    let selected_equipment = $(this).val();
+
+    $.each($('.workout'), function(idx, value) {
+      if (selected_equipment === "All") {
+        $(this).css('display', '');
+      } else if ($(this).attr('equipment').split(',').includes(selected_equipment)) {
+        $(this).css('display', '');
+      } else {
+        $(this).css('display', 'none');
+      };
+    });
+  });
+
+  $('#filter').on('change', function(){
+    let selected_category = $(this).val();
+    $.each($('.workout'), function(idx, value) {
+
+      if (selected_category === "All") {
+        $(this).css('display', '');
+      } else if ($(this).attr('category') === selected_category){
+        $(this).css('display', '');
+      } else {
+        $(this).css('display', 'none');
+      };
+    });
+  });
+</script>

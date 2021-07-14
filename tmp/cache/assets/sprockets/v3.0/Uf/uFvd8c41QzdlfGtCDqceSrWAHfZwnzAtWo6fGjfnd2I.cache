@@ -1,0 +1,27 @@
+{:uriI"‘file://node_modules/mark.js/test/fixtures/iframes/exclude.html?type=text/html&id=ffbd82e8290709dbf2c71cdd4ba454267daac9026e4bd83dfa86249985e06577:ET:load_pathI"node_modules;T:filenameI"<node_modules/mark.js/test/fixtures/iframes/exclude.html;T:	nameI"*mark.js/test/fixtures/iframes/exclude;T:logical_pathI"/mark.js/test/fixtures/iframes/exclude.html;T:content_typeI"text/html;T:sourceI"Ž<div class="iframes-exclude" id="iframes-exclude-target">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <script>
+        // Can't use document.write here, as this fixture will be
+        // included after the document was fully loaded
+        var target = document.getElementById("iframes-exclude-target");
+        var iframe = document.createElement("iframe");
+        iframe.className = "ignore";
+        iframe.src = jasmine.getFixtures().fixturesPath + "/iframes/inc.html";
+        target.appendChild(iframe);
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Jfile-digest://node_modules/mark.js/test/fixtures/iframes/exclude.html;TTF:charsetI"
+utf-8;F:digest"%šðÑjõXÁvlPstdMÈ¹§Yµ¡…ô–­ :lengthiŽ:dependencies_digest"%±	[(›À >°s³™Á¬
+ó5“WD—¥ÎŒKì;6ZÈ:idI"Effbd82e8290709dbf2c71cdd4ba454267daac9026e4bd83dfa86249985e06577;F:
+mtimel+í‹íY

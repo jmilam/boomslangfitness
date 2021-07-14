@@ -1,0 +1,12 @@
+<div class="container app-font" style="margin-top:20px;">
+	<div class="jumbotron" style="background: #025951;color: white;opacity:0.8;">
+		<h4 class="text-center app-font">Daily Food Logs</h4>
+		<p class="text-center"><%= link_to "Create Food", new_food_path, style: 'color:#A7C8F2;' %></p>
+	</div>
+	<div class="card">
+	  <div class="card-body">
+      <%= render "partials/daily_logs_table", daily_logs: @daily_logs %>
+			<%= link_to "New Log", new_daily_log_path, class: 'btn pull-right', style:"background-color:#F29F05;color:white;" if @today_log.nil? %>
+	  </div>
+	</div>
+</div>

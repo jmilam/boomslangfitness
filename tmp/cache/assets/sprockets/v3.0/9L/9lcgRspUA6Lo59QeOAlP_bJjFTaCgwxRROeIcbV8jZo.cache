@@ -1,0 +1,25 @@
+{:uriI"êfile://node_modules/mark.js/test/fixtures/basic/synonyms.html?type=text/html&id=da6c84d21d89c169e4b7f01656b505b8d7aa33a9fce0f3941ab080bd3e26fa60:ET:load_pathI"node_modules;T:filenameI";node_modules/mark.js/test/fixtures/basic/synonyms.html;T:	nameI")mark.js/test/fixtures/basic/synonyms;T:logical_pathI".mark.js/test/fixtures/basic/synonyms.html;T:content_typeI"text/html;T:sourceI"£<div class="basic-synonyms">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum one two three, dolor sit amet 1, consetetur. Lorem ipsum Luefte dolor
+            sit amet
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ifile-digest://node_modules/mark.js/test/fixtures/basic/synonyms.html;TTF:charsetI"
+utf-8;F:digest"%ÏIùäö£	gãònæbnã6mDq%r∂çˇ†“†Ò›wª:lengthi£:dependencies_digest"%ø⁄É„ï§e÷6jGla•øRÙ9ÜÄFL“©PÜÿa:idI"Eda6c84d21d89c169e4b7f01656b505b8d7aa33a9fce0f3941ab080bd3e26fa60;F:
+mtimel+”™O`

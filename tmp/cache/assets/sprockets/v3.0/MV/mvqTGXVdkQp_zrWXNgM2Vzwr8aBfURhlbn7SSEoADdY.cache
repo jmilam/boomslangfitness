@@ -1,0 +1,33 @@
+{:uriI"file://node_modules/mark.js/test/fixtures/basic/accuracy-complementary.html?type=text/html&id=fcef0ed29e365d4d4d78b872f69e5ffdb5d0ed295abb0c9426b078a88a02568b:ET:load_pathI"node_modules;T:filenameI"Inode_modules/mark.js/test/fixtures/basic/accuracy-complementary.html;T:	nameI"7mark.js/test/fixtures/basic/accuracy-complementary;T:logical_pathI"<mark.js/test/fixtures/basic/accuracy-complementary.html;T:content_typeI"text/html;T:sourceI"/<div class="basic-accuracy-complementary">
+    <div>
+        <p>
+            Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est testLoremtest ipsum dolor sit
+            amet. ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est ipsum dolor sit amet.
+            Et (ipsumx) dolor ipsumx-test Ã¶ipsumxÃ¶.
+        </p>
+    </div>
+    <div>
+        <p>
+            Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est testLorem ipsumtest dolor sit
+            amet. ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est ipsum dolor sit amet.
+            Et (ipsumx) dolor.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Wfile-digest://node_modules/mark.js/test/fixtures/basic/accuracy-complementary.html;TTF:charsetI"
+utf-8;F:digest"%ˆ†©’p­§QßSåü`|´Oã-ò÷ş`˜\ªÊS!¨:lengthi/:dependencies_digest"%o+p6ÕH"äû)‚¨†Õ€Á«ªu«ãºI:idI"Efcef0ed29e365d4d4d78b872f69e5ffdb5d0ed295abb0c9426b078a88a02568b;F:
+mtimel+í‹íY
