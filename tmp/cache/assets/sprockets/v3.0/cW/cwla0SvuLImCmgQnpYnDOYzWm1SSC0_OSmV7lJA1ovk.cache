@@ -1,0 +1,29 @@
+{:uriI"¡file://node_modules/mark.js/test/fixtures/basic/case-sensitive-diacritics.html?type=text/html&id=7627bac3463ebbf98491e46cac82a7d4d6cea5a5d4ca3f248f2b883bd7292602:ET:load_pathI"node_modules;T:filenameI"Lnode_modules/mark.js/test/fixtures/basic/case-sensitive-diacritics.html;T:	nameI":mark.js/test/fixtures/basic/case-sensitive-diacritics;T:logical_pathI"?mark.js/test/fixtures/basic/case-sensitive-diacritics.html;T:content_typeI"text/html;T:sourceI"Ü<div class="basic-case-sensitive-diacritics">
+    <h3>LorÃ¨m Ipsum DolÃ¸r</h3>
+    <p>
+        LorÃ¨m ipsum dolor sit amÄ™t, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justÃ² duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est lorem ipsum Ä‘olor sit amet. LÃ´rÃ«m ipsÅ¯m dolor
+        sit áº£met, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justÃ³ duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Å‚orem ipsum ÄoloÅ™ sit Ã met.
+    </p>
+    <h3>AmÄ“t</h3>
+    <p>
+        Morbi convallis tellus non lacus tincidunt, eu luctus quam gravida. Donec sodales,
+        arcu at sollicitudin rhoncus, sapien massa aliquam velit, vitae auctor massa libero
+        quis Å‚orem ipsum. Integer suscipit leo gravida luctus placerat. Integer dapibus
+        placerat porttitor. Sed laoreet pellentesque ex quis porttitor. Nulla fermentum
+        rutrum gravida. Fusce non lectus massa. Ã‚liquam erat volutpat. Sed molestie, lacus
+        id vehicula faucibus, eros quam ornare nunc, vitae blandit ex nisl fringilla lorem.
+        Morbi efficitur a enim aliquam ultrices. Lorem ipÅ›um dÃ¸lor sit Ãƒmet, consectetur
+        adipiscing elit. Fusce bibendum sagittis odio.
+    </p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Zfile-digest://node_modules/mark.js/test/fixtures/basic/case-sensitive-diacritics.html;TTF:charsetI"
+utf-8;F:digest"%z«°;:½„Æ¶0Ãâ @j|p5ğûåŞˆŒiÚ¤PÈ:lengthiÜ:dependencies_digest"%j±Ç^šËtïHŞÏNªÂ#l%Ë8_dªÂSuó<:idI"E7627bac3463ebbf98491e46cac82a7d4d6cea5a5d4ca3f248f2b883bd7292602;F:
+mtimel+ÓªO`

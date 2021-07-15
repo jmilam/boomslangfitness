@@ -1,0 +1,30 @@
+{:uriI" file://node_modules/mark.js/test/fixtures/across-elements/iframes/across.html?type=text/html&id=d73d396bbc38290f30ca27082c048e947dccd9d4da1ba6bd6cd79717bc47a5dd:ET:load_pathI"node_modules;T:filenameI"Knode_modules/mark.js/test/fixtures/across-elements/iframes/across.html;T:	nameI"9mark.js/test/fixtures/across-elements/iframes/across;T:logical_pathI">mark.js/test/fixtures/across-elements/iframes/across.html;T:content_typeI"text/html;T:sourceI"P<div class="across-elements-iframes-across" id="across-elements-iframes-across-target">
+    <p>
+        Lorem ipsum <span>dolor</span> sit amet, consetetur sadipscing elitr, sed
+        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <p>Lorem ipsum</p>
+    <script>
+        // Can't use document.write here, as this fixture will be
+        // included after the document was fully loaded
+        var container = document.getElementById(
+            "across-elements-iframes-across-target"
+        );
+        var insertElement = container.querySelector("p:nth-child(2)");
+        var iframe = document.createElement("iframe");
+        iframe.src = jasmine.getFixtures().fixturesPath +
+            "/across-elements/iframes/nested-inc.html";
+        container.insertBefore(iframe, insertElement);
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Yfile-digest://node_modules/mark.js/test/fixtures/across-elements/iframes/across.html;TTF:charsetI"
+utf-8;F:digest"%^E7ø_LáÕ|³¹@ºN8\Ðhß<‘¬šµƒöAô\:lengthiP:dependencies_digest"%™}$ýý¶|QÁ3sµ¼ ññ‰	³8£	ÐÌ%áxbö:idI"Ed73d396bbc38290f30ca27082c048e947dccd9d4da1ba6bd6cd79717bc47a5dd;F:
+mtimel+ÓªO`

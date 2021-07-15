@@ -1,0 +1,18 @@
+{:uriI"ùfile://node_modules/mark.js/test/fixtures/across-elements/regexp/main.html?type=text/html&id=0725c32f9bebc915e8e1b8485ab7d7f37988220f5c0aae827fbe13195f7a03be:ET:load_pathI"node_modules;T:filenameI"Hnode_modules/mark.js/test/fixtures/across-elements/regexp/main.html;T:	nameI"6mark.js/test/fixtures/across-elements/regexp/main;T:logical_pathI";mark.js/test/fixtures/across-elements/regexp/main.html;T:content_typeI"text/html;T:sourceI"Í<div class="across-elements-regexp">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est <span>Lorem</span> ipsum dolor sit. Lorem
+        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+        gubergren, no sea takimata sanctus est Lorem <span>ipsum dolor</span> sit
+        amet.
+    </p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Vfile-digest://node_modules/mark.js/test/fixtures/across-elements/regexp/main.html;TTF:charsetI"
+utf-8;F:digest"%pdeÍ`mà»⁄9Ñ$˚'œ0TRkinÊÏî±∑:lengthiÍ:dependencies_digest"%ëñ‚0õ^ÉÈÎVPf7Ÿm/ˆ˙^πp’Ú]hùe3:idI"E0725c32f9bebc915e8e1b8485ab7d7f37988220f5c0aae827fbe13195f7a03be;F:
+mtimel+”™O`

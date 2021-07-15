@@ -1,69 +1,0 @@
-{:uriI"„file://node_modules/scheduler/package.json?type=application/json&id=60576734ce678a0a45210387e3d3d2c20df622bd5dc38ec0d88ee5d67b54bfdb:ET:load_pathI"node_modules;T:filenameI"(node_modules/scheduler/package.json;T:	nameI"scheduler/package;T:logical_pathI"scheduler/package.json;T:content_typeI"application/json;T:sourceI"3{
-  "_from": "scheduler@^0.13.6",
-  "_id": "scheduler@0.13.6",
-  "_inBundle": false,
-  "_integrity": "sha512-IWnObHt413ucAYKsD9J1QShUKkbKLQQHdxRyw73sw4FN26iWr3DY/H34xGPe4nmL1DwXyWmSWmMrA9TfQbE/XQ==",
-  "_location": "/scheduler",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "scheduler@^0.13.6",
-    "name": "scheduler",
-    "escapedName": "scheduler",
-    "rawSpec": "^0.13.6",
-    "saveSpec": null,
-    "fetchSpec": "^0.13.6"
-  },
-  "_requiredBy": [
-    "/react",
-    "/react-dom"
-  ],
-  "_resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.13.6.tgz",
-  "_shasum": "466a4ec332467b31a91b9bf74e5347072e4cd889",
-  "_spec": "scheduler@^0.13.6",
-  "_where": "/Users/jmilam/Projects/workout_randomizer/node_modules/react",
-  "browserify": {
-    "transform": [
-      "loose-envify"
-    ]
-  },
-  "bugs": {
-    "url": "https://github.com/facebook/react/issues"
-  },
-  "bundleDependencies": false,
-  "dependencies": {
-    "loose-envify": "^1.1.0",
-    "object-assign": "^4.1.1"
-  },
-  "deprecated": false,
-  "description": "Cooperative scheduler for the browser environment.",
-  "files": [
-    "LICENSE",
-    "README.md",
-    "build-info.json",
-    "index.js",
-    "tracing.js",
-    "tracing-profiling.js",
-    "cjs/",
-    "umd/"
-  ],
-  "homepage": "https://reactjs.org/",
-  "keywords": [
-    "react"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "name": "scheduler",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/facebook/react.git",
-    "directory": "packages/scheduler"
-  },
-  "version": "0.13.6"
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"6file-digest://node_modules/scheduler/package.json;TTF:charsetI"
-utf-8;F:digest"%âS76ë}-æ§òW«>ä“L‡#Íæ“Ø¹I:lengthi3:dependencies_digest"%Ë\öÃàxœœaäâ'…÷HPH;•Ò?ÔÜò ´:idI"E60576734ce678a0a45210387e3d3d2c20df622bd5dc38ec0d88ee5d67b54bfdb;F:
-mtimel+š¾6`

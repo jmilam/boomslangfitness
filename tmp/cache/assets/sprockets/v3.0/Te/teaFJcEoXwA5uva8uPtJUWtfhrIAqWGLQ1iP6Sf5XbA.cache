@@ -1,23 +1,0 @@
-{:uriI"Åfile://node_modules/lodash/package.json?type=application/json&id=b2cf8c6d44f7cab5f11ac7e6c5055c853ba2b4561da119f64185605785ca6073:ET:load_pathI"node_modules;T:filenameI"%node_modules/lodash/package.json;T:	nameI"lodash/package;T:logical_pathI"lodash/package.json;T:content_typeI"application/json;T:sourceI"B{
-  "name": "lodash",
-  "version": "4.17.14",
-  "description": "Lodash modular utilities.",
-  "keywords": "modules, stdlib, util",
-  "homepage": "https://lodash.com/",
-  "repository": "lodash/lodash",
-  "icon": "https://lodash.com/icon.svg",
-  "license": "MIT",
-  "main": "lodash.js",
-  "author": "John-David Dalton <john.david.dalton@gmail.com>",
-  "contributors": [
-    "John-David Dalton <john.david.dalton@gmail.com>",
-    "Mathias Bynens <mathias@qiwi.be>"
-  ],
-  "scripts": { "test": "echo \"See https://travis-ci.org/lodash-archive/lodash-cli for testing details.\"" }
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"3file-digest://node_modules/lodash/package.json;TTF:charsetI"
-utf-8;F:digest"%{%QæpÃ¬ïü!_SrË8
-b!Êe[/hü—Æ%:lengthiB:dependencies_digest"%:Ò#;—€ö”CSDo—ﬂ+¿Ûf‡Cﬁ'Ÿ”Ñôÿl):idI"Eb2cf8c6d44f7cab5f11ac7e6c5055c853ba2b4561da119f64185605785ca6073;F:
-mtimel+—™O`

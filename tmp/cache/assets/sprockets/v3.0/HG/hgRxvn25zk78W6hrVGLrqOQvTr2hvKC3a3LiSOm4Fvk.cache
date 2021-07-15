@@ -1,0 +1,25 @@
+{:uriI"êfile://node_modules/mark.js/test/fixtures/iframes/onload.html?type=text/html&id=9f87b59193ba38600544259f2da7de7dbfc12704f81db3807eff0e7249a14490:ET:load_pathI"node_modules;T:filenameI";node_modules/mark.js/test/fixtures/iframes/onload.html;T:	nameI")mark.js/test/fixtures/iframes/onload;T:logical_pathI".mark.js/test/fixtures/iframes/onload.html;T:content_typeI"text/html;T:sourceI"<div class="iframes-onload" id="iframes-onload-target">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus test est Lorem ipsum dolor sit amet. Lorem ipsum
+        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <script>
+        var target = document.getElementById("iframes-onload-target");
+        var iframe = document.createElement("iframe");
+        iframe.src = jasmine.getFixtures().fixturesPath +
+            "/iframes/onload-inc.html";
+        target.appendChild(iframe);
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ifile-digest://node_modules/mark.js/test/fixtures/iframes/onload.html;TTF:charsetI"
+utf-8;F:digest"%V]>uä'Öùª2™©ì˜e‹î˜j’E®t@öV‰¸:lengthi:dependencies_digest"%E›’∑x!`ı¥®œj*X9Î
+‘Êîß∆knµoÎ:idI"E9f87b59193ba38600544259f2da7de7dbfc12704f81db3807eff0e7249a14490;F:
+mtimel+”™O`

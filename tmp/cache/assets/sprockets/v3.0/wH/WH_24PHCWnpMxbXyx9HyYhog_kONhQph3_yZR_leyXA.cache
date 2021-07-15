@@ -1,0 +1,25 @@
+{:uriI"”file://node_modules/mark.js/test/fixtures/basic/script-style.html?type=text/html&id=f8f21341024be139eb6df12caf1f05b83339bc9d90d578709edf1d4c6bbc940f:ET:load_pathI"node_modules;T:filenameI"?node_modules/mark.js/test/fixtures/basic/script-style.html;T:	nameI"-mark.js/test/fixtures/basic/script-style;T:logical_pathI"2mark.js/test/fixtures/basic/script-style.html;T:content_typeI"text/html;T:sourceI"g<div class="basic-script-style">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <style>
+        .someting-lorem {
+            background: red;
+        }
+    </style>
+    <script>
+        var lorem_ipsum = function() {};
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Mfile-digest://node_modules/mark.js/test/fixtures/basic/script-style.html;TTF:charsetI"
+utf-8;F:digest"%ÁÀ‰Å–°Þ°ÂŒ­Dà¬ˆ‚ôYžvl«À]®®cs*@:lengthig:dependencies_digest"%ÞKöiå˜æ¶“ÙjÎ'ù'ö#F;?x7¨{Tòˆ§Q:idI"Ef8f21341024be139eb6df12caf1f05b83339bc9d90d578709edf1d4c6bbc940f;F:
+mtimel+ÓªO`

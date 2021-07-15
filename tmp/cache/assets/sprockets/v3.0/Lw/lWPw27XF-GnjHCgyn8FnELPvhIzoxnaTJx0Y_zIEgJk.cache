@@ -1,0 +1,18 @@
+{:uriI"èfile://node_modules/mark.js/test/fixtures/iframes/order.html?type=text/html&id=2b66aa50757ac25fb7d813764f29e2ad8c8a6e946e02cf2600d94cb351283989:ET:load_pathI"node_modules;T:filenameI":node_modules/mark.js/test/fixtures/iframes/order.html;T:	nameI"(mark.js/test/fixtures/iframes/order;T:logical_pathI"-mark.js/test/fixtures/iframes/order.html;T:content_typeI"text/html;T:sourceI"<div class="iframes-order">
+    <p>Lorem ipsum dolor</p>
+    <div id="iframes-order-target"></div>
+    <p>Lorem ipsum dolor</p>
+    <script>
+        // Can't use document.write here, as this fixture will be
+        // included after the document was fully loaded
+        var target = document.getElementById("iframes-order-target");
+        var iframe = document.createElement("iframe");
+        iframe.src = jasmine.getFixtures().fixturesPath + "/iframes/inc.html";
+        target.appendChild(iframe);
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Hfile-digest://node_modules/mark.js/test/fixtures/iframes/order.html;TTF:charsetI"
+utf-8;F:digest"%◊∂<J^6RÅ‘µ?RFõc;SµˆVØ≥ÒÙg óÉ+u¢:lengthi:dependencies_digest"%Ï<Ìæu`<!“∂ì8qk2g&nﬁ0ˇÂôwA‹7X:idI"E2b66aa50757ac25fb7d813764f29e2ad8c8a6e946e02cf2600d94cb351283989;F:
+mtimel+”™O`

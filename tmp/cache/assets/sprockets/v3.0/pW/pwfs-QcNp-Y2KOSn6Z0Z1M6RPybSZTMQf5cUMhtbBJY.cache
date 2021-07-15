@@ -1,0 +1,45 @@
+{:uriI"€file://node_modules/react/package.json?type=application/json&id=0357f9f383d7e2b0817b9190c661424743a7480b186acfd63b19efad5346615b:ET:load_pathI"node_modules;T:filenameI"$node_modules/react/package.json;T:	nameI"react/package;T:logical_pathI"react/package.json;T:content_typeI"application/json;T:sourceI"{
+  "name": "react",
+  "description": "React is a JavaScript library for building user interfaces.",
+  "keywords": [
+    "react"
+  ],
+  "version": "16.8.6",
+  "homepage": "https://reactjs.org/",
+  "bugs": "https://github.com/facebook/react/issues",
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "build-info.json",
+    "index.js",
+    "cjs/",
+    "umd/"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/react.git",
+    "directory": "packages/react"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "loose-envify": "^1.1.0",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.6.2",
+    "scheduler": "^0.13.6"
+  },
+  "browserify": {
+    "transform": [
+      "loose-envify"
+    ]
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"2file-digest://node_modules/react/package.json;TTF:charsetI"
+utf-8;F:digest"%}Q;ÿMý‰bì­£äÜ~ÁbÔJ8v’P7D-å_:lengthi:dependencies_digest"%Ä¸ø._k¬þÀ+	"\Ì¾ƒ(
+%á¹ò2P+Rþ:idI"E0357f9f383d7e2b0817b9190c661424743a7480b186acfd63b19efad5346615b;F:
+mtimel+ÑªO`

@@ -1,0 +1,47 @@
+{:uriI"ˆfile://node_modules/object-assign/package.json?type=application/json&id=a5d9d4c1bc3a542ea6ae38a76422fcc24952e976a3b280c8582a56f9c8df9069:ET:load_pathI"node_modules;T:filenameI",node_modules/object-assign/package.json;T:	nameI"object-assign/package;T:logical_pathI"object-assign/package.json;T:content_typeI"application/json;T:sourceI"ü{
+  "name": "object-assign",
+  "version": "4.1.1",
+  "description": "ES2015 `Object.assign()` ponyfill",
+  "license": "MIT",
+  "repository": "sindresorhus/object-assign",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "bench": "matcha bench.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "object",
+    "assign",
+    "extend",
+    "properties",
+    "es2015",
+    "ecmascript",
+    "harmony",
+    "ponyfill",
+    "prollyfill",
+    "polyfill",
+    "shim",
+    "browser"
+  ],
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "lodash": "^4.16.4",
+    "matcha": "^0.7.0",
+    "xo": "^0.16.0"
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI":file-digest://node_modules/object-assign/package.json;TTF:charsetI"
+utf-8;F:digest"%Y»ÿ¢5üg]ëÙ%Õl?H¢´RmŒŸuUÊÞÉ:lengthiü:dependencies_digest"%²m³:Šõ=ÜÆeÞxŒ!d½Yü“áec>{:idI"Ea5d9d4c1bc3a542ea6ae38a76422fcc24952e976a3b280c8582a56f9c8df9069;F:
+mtimel+ÒªO`

@@ -1,0 +1,43 @@
+{:uriI"„file://node_modules/scheduler/package.json?type=application/json&id=d8758627b0e920e610920bc25021a5a9ad78606fac1c00c8a999bc4858d2c149:ET:load_pathI"node_modules;T:filenameI"(node_modules/scheduler/package.json;T:	nameI"scheduler/package;T:logical_pathI"scheduler/package.json;T:content_typeI"application/json;T:sourceI"ì{
+  "name": "scheduler",
+  "version": "0.13.6",
+  "description": "Cooperative scheduler for the browser environment.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/react.git",
+    "directory": "packages/scheduler"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react"
+  ],
+  "bugs": {
+    "url": "https://github.com/facebook/react/issues"
+  },
+  "homepage": "https://reactjs.org/",
+  "dependencies": {
+    "loose-envify": "^1.1.0",
+    "object-assign": "^4.1.1"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "build-info.json",
+    "index.js",
+    "tracing.js",
+    "tracing-profiling.js",
+    "cjs/",
+    "umd/"
+  ],
+  "browserify": {
+    "transform": [
+      "loose-envify"
+    ]
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"6file-digest://node_modules/scheduler/package.json;TTF:charsetI"
+utf-8;F:digest"%8lÉeÎA„ÏÙ~Ê{¢ŒÍÅWÉÏA8˜üŸ¡R¤8ïZš:lengthiì:dependencies_digest"%ÆÃ=ÖýÚƒµä›f¶¸NÙòUk%âã%XxOR·3–ì:idI"Ed8758627b0e920e610920bc25021a5a9ad78606fac1c00c8a999bc4858d2c149;F:
+mtimel+ÒªO`

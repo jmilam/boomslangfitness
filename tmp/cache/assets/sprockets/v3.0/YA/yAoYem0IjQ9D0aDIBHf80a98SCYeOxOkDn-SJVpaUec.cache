@@ -1,0 +1,31 @@
+{:uriI"šfile://node_modules/mark.js/test/fixtures/basic/duplicate-keywords.html?type=text/html&id=f8ad0080a0a87e853747d43b013db4a38dd29bd9bd7c675d5c5e7f65f5b2d6ca:ET:load_pathI"node_modules;T:filenameI"Enode_modules/mark.js/test/fixtures/basic/duplicate-keywords.html;T:	nameI"3mark.js/test/fixtures/basic/duplicate-keywords;T:logical_pathI"8mark.js/test/fixtures/basic/duplicate-keywords.html;T:content_typeI"text/html;T:sourceI"ê<div class="basic-duplicate-keywords">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+            dolor sit amet, test consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+            dolor sit amet, test consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Sfile-digest://node_modules/mark.js/test/fixtures/basic/duplicate-keywords.html;TTF:charsetI"
+utf-8;F:digest"%*ûaIûÏóø<s 9]Üí¬À©áFÓÚ7ÅÌ«dÙBl:lengthiê:dependencies_digest"%ˆ~V,Œ“ÿ¥È¡Ö’Qù;•”Ÿz’ø¶m½…î:idI"Ef8ad0080a0a87e853747d43b013db4a38dd29bd9bd7c675d5c5e7f65f5b2d6ca;F:
+mtimel+ÓªO`

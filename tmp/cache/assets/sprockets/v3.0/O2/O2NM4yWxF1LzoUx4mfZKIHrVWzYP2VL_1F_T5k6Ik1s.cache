@@ -1,59 +1,0 @@
-{:uriI"Éfile://node_modules/react-is/package.json?type=application/json&id=c5294fb28df8ae63bf769b6f0f0f318226d4b886e667a3880156a406c6208651:ET:load_pathI"node_modules;T:filenameI"'node_modules/react-is/package.json;T:	nameI"react-is/package;T:logical_pathI"react-is/package.json;T:content_typeI"application/json;T:sourceI"~{
-  "_from": "react-is@^16.8.1",
-  "_id": "react-is@16.13.1",
-  "_inBundle": false,
-  "_integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==",
-  "_location": "/react-is",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "react-is@^16.8.1",
-    "name": "react-is",
-    "escapedName": "react-is",
-    "rawSpec": "^16.8.1",
-    "saveSpec": null,
-    "fetchSpec": "^16.8.1"
-  },
-  "_requiredBy": [
-    "/hoist-non-react-statics",
-    "/prop-types",
-    "/react-redux"
-  ],
-  "_resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
-  "_shasum": "789729a4dc36de2999dc156dd6c1d9c18cea56a4",
-  "_spec": "react-is@^16.8.1",
-  "_where": "/Users/jmilam/Projects/workout_randomizer/node_modules/prop-types",
-  "bugs": {
-    "url": "https://github.com/facebook/react/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "Brand checking of React Elements.",
-  "files": [
-    "LICENSE",
-    "README.md",
-    "build-info.json",
-    "index.js",
-    "cjs/",
-    "umd/"
-  ],
-  "homepage": "https://reactjs.org/",
-  "keywords": [
-    "react"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "name": "react-is",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/facebook/react.git",
-    "directory": "packages/react-is"
-  },
-  "version": "16.13.1"
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"5file-digest://node_modules/react-is/package.json;TTF:charsetI"
-utf-8;F:digest"%'⁄Mú%#&úÈíÆº¡c˝Yjïa·-•Ï%&«÷2:lengthi~:dependencies_digest"%Œ1xRª›‡[[;È,¯¡ˇ‰µ≥{!aÕHç;gq‹òÚê:idI"Ec5294fb28df8ae63bf769b6f0f0f318226d4b886e667a3880156a406c6208651;F:
-mtimel+öæ6`

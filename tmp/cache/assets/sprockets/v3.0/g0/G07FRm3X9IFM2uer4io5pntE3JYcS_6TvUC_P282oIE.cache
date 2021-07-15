@@ -1,0 +1,19 @@
+{:uriI"éfile://node_modules/mark.js/test/fixtures/basic/events.html?type=text/html&id=18cb06ca3406eb9fb5f13bdfc5e7814d391927cd82ad4e0afbe9d6a8dcd28c3e:ET:load_pathI"node_modules;T:filenameI"9node_modules/mark.js/test/fixtures/basic/events.html;T:	nameI"'mark.js/test/fixtures/basic/events;T:logical_pathI",mark.js/test/fixtures/basic/events.html;T:content_typeI"text/html;T:sourceI"Ú<div class="basic-events">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        <span class="event-target">test</span>
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Gfile-digest://node_modules/mark.js/test/fixtures/basic/events.html;TTF:charsetI"
+utf-8;F:digest"%ª∆F¿X§·'N9
+"¶Oˆ∞{!÷ºcß(ÆT/9Ø&:lengthiÚ:dependencies_digest"%ÒF }y+‚Ph7=Î2O¬%≈§‚è`xœp∞kÕÆ¢:idI"E18cb06ca3406eb9fb5f13bdfc5e7814d391927cd82ad4e0afbe9d6a8dcd28c3e;F:
+mtimel+”™O`

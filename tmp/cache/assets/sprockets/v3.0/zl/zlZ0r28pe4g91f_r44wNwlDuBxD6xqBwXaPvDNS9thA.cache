@@ -1,0 +1,32 @@
+{:uriI"ôfile://node_modules/mark.js/test/fixtures/basic/duplicate-context.html?type=text/html&id=624a4552abe9619c276a155445aa15aa63b88283ca84e6c6013388969d352ee6:ET:load_pathI"node_modules;T:filenameI"Dnode_modules/mark.js/test/fixtures/basic/duplicate-context.html;T:	nameI"2mark.js/test/fixtures/basic/duplicate-context;T:logical_pathI"7mark.js/test/fixtures/basic/duplicate-context.html;T:content_typeI"text/html;T:sourceI"<div class="basic-duplicate-context">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+            dolor sit amet, test consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+            dolor sit amet, test consetetur
+            <span>lorem test ipsum</span> sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Rfile-digest://node_modules/mark.js/test/fixtures/basic/duplicate-context.html;TTF:charsetI"
+utf-8;F:digest"%ΩOU‘'˛6)0èûùˇN"esÎÖ›Ù‘ w/∞á*':lengthi:dependencies_digest"%ıﬂöajF– ´Û∑¸ÛÃ√pøU8ÒGÇπ~œ :idI"E624a4552abe9619c276a155445aa15aa63b88283ca84e6c6013388969d352ee6;F:
+mtimel+”™O`

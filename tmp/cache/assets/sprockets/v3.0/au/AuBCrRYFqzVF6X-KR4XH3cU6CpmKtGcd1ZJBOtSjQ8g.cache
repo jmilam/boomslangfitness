@@ -1,0 +1,27 @@
+{:uriI"™file://node_modules/mark.js/test/fixtures/basic/ignore-joiners-synonyms-diacritics.html?type=text/html&id=cfbb0d1e4e2c249d5e1adf9beb3b9e6b1406ef1d7850e142fea89e1ae1312dda:ET:load_pathI"node_modules;T:filenameI"Unode_modules/mark.js/test/fixtures/basic/ignore-joiners-synonyms-diacritics.html;T:	nameI"Cmark.js/test/fixtures/basic/ignore-joiners-synonyms-diacritics;T:logical_pathI"Hmark.js/test/fixtures/basic/ignore-joiners-synonyms-diacritics.html;T:content_typeI"text/html;T:sourceI"J<div class="basic-ignore-joiners-synonyms-diacritics">
+    <p>
+        Lor√®m ips&#8204;um dolor sit amƒôt, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        At vero eos et accusam et j&#8203;ust√≤ duo dolores et ea rebum. Stet clita
+        kasd gubergren, no sea takimata sanctus est lorem ipsum ƒëolor sit amet. L√¥r√´&#8205;m
+        ips≈Øm dolor sit ·∫£met, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        At vero eos et accusam et just√≥ duo dolores et ea rebum. Stet clita kasd
+        gubergren, no sea takimata sanctus est ≈Çorem ipsum do≈Ç&#8204;o≈ô sit √†met.
+        Morbi convallis tellus non lacus tincidunt, eu luctus quam gravida. Donec
+        sodales, arcu at sollicitudin rhoncus, sapien massa aliquam velit, vitae
+        auctor massa libero quis ≈Çorem ipsum. Integer suscipit leo gravida luctus
+        placerat. Integer dapibus placerat porttitor. Sed laoreet pellentesque ex
+        quis porttitor. Nulla fermentum rutrum gravida. Fusce non lectus massa. √Çliquam
+        erat volutpat. Sed molestie, lacus id vehicula faucibus, eros quam ornare
+        nunc, vitae blandit ex nisl fringilla lorem. Morbi efficitur a enim aliquam
+        ultrices. Lorem ip≈õ&shy;um d√∏lor sit √£&#8205;met, consectetur adipiscing
+        elit. Fusce bibendum sagittis odio. Just√≤ duo dolores et ea rebum. Stet clita
+        kasd gubergren, no sea takimata sanctus est lorem ipsum dolor sit amet.
+    </p>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"cfile-digest://node_modules/mark.js/test/fixtures/basic/ignore-joiners-synonyms-diacritics.html;TTF:charsetI"
+utf-8;F:digest"%sWÃ@d∑∆π±æ∆ìΩ÷$ÁV˜7BæºjnJ<~<à
+Œ:lengthiJ:dependencies_digest"%~À˝∑÷QKñØãf|,öCΩ&^; OüX;ó,Ì£]±:idI"Ecfbb0d1e4e2c249d5e1adf9beb3b9e6b1406ef1d7850e142fea89e1ae1312dda;F:
+mtimel+”™O`

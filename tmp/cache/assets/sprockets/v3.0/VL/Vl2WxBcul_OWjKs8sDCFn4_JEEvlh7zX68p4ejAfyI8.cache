@@ -1,53 +1,0 @@
-{:uriI"‰file://node_modules/@zoomus/websdk/package.json?type=application/json&id=cf46a4b52a62c6ccac2a1b5af131b0364e1277d09612dbb2d0df17e6064d1d9e:ET:load_pathI"node_modules;T:filenameI"-node_modules/@zoomus/websdk/package.json;T:	nameI"@zoomus/websdk/package;T:logical_pathI" @zoomus/websdk/package.json;T:content_typeI"application/json;T:sourceI"à{
-  "name": "@zoomus/websdk",
-  "version": "1.9.1",
-  "description": "Zoom Web SDK",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zoom/websdk.git"
-  },
-  "keywords": [
-    "zoom",
-    "web",
-    "sdk"
-  ],
-  "author": "Jack Yang",
-  "license": "MIT",
-  "homepage": "https://github.com/zoom/websdk#readme",
-  "bugs": {
-    "url": "https://github.com/zoom/websdk/issues"
-  },
-  "dependencies": {
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "redux": "3.7.2",
-    "react-redux": "7.1.0",
-    "lodash": "^4.17.14",
-    "redux-thunk": "2.2.0"
-  },
-  "peerDependencies": {
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "redux": "3.7.2",
-    "react-redux": "7.1.0",
-    "lodash": "^4.17.14",
-    "redux-thunk": "2.2.0"
-  },
-  "files": [
-    "dist/*",
-    "index.d.ts",
-    "CHANGELOG.md",
-    "LICENSE.pdf",
-    "README.md"
-  ]
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI";file-digest://node_modules/@zoomus/websdk/package.json;TTF:charsetI"
-utf-8;F:digest"%ú§¿vgpÞª®ÙKEÆÔ‹¯Ô@í¾{+Õ|¹tžŸv:lengthià:dependencies_digest"%yJ¶l/$sf¶'ÞìŒ¦¤âfº;h«Š16ûŽú	4:idI"Ecf46a4b52a62c6ccac2a1b5af131b0364e1277d09612dbb2d0df17e6064d1d9e;F:
-mtimel+ÑªO`

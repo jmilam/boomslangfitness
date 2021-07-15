@@ -1,41 +1,0 @@
-{:uriI"Ñfile://node_modules/invariant/package.json?type=application/json&id=888455d4e034b1a29e07b3a611fe73d2c920bef67c85725fb61f027f3ff8d0b7:ET:load_pathI"node_modules;T:filenameI"(node_modules/invariant/package.json;T:	nameI"invariant/package;T:logical_pathI"invariant/package.json;T:content_typeI"application/json;T:sourceI"Œ{
-  "name": "invariant",
-  "version": "2.2.4",
-  "description": "invariant",
-  "keywords": [
-    "test",
-    "invariant"
-  ],
-  "license": "MIT",
-  "author": "Andres Suarez <zertosh@gmail.com>",
-  "files": [
-    "browser.js",
-    "invariant.js",
-    "invariant.js.flow"
-  ],
-  "repository": "https://github.com/zertosh/invariant",
-  "scripts": {
-    "test": "NODE_ENV=production tap test/*.js && NODE_ENV=development tap test/*.js"
-  },
-  "dependencies": {
-    "loose-envify": "^1.0.0"
-  },
-  "devDependencies": {
-    "browserify": "^11.0.1",
-    "flow-bin": "^0.67.1",
-    "tap": "^1.4.0"
-  },
-  "main": "invariant.js",
-  "browser": "browser.js",
-  "browserify": {
-    "transform": [
-      "loose-envify"
-    ]
-  }
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"6file-digest://node_modules/invariant/package.json;TTF:charsetI"
-utf-8;F:digest"%ÔŸ˘)‚GªW
-ê?:õ÷F¡Úç)Êû·qyL“£:lengthiŒ:dependencies_digest"%ö)@`dãÅ˝+2X)OµØ∫z««Q"ó»¥Rã:idI"E888455d4e034b1a29e07b3a611fe73d2c920bef67c85725fb61f027f3ff8d0b7;F:
-mtimel+“™O`

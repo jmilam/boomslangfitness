@@ -1,0 +1,18 @@
+{:uriI"¡file://node_modules/mark.js/test/fixtures/across-elements/regexp/infinite.html?type=text/html&id=c96d5f1bcd1ecd5a4d06326be4b709db1ed9265d63bea65e81c617b10ff378f8:ET:load_pathI"node_modules;T:filenameI"Lnode_modules/mark.js/test/fixtures/across-elements/regexp/infinite.html;T:	nameI":mark.js/test/fixtures/across-elements/regexp/infinite;T:logical_pathI"?mark.js/test/fixtures/across-elements/regexp/infinite.html;T:content_typeI"text/html;T:sourceI"ó<div class="across-elements-regexp-infinite">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est <span>Lorem</span> ipsum dolor sit. Lorem
+        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+        gubergren, no sea takimata sanctus est Lorem <span>ipsum dolor</span> sit
+        amet.
+    </p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Zfile-digest://node_modules/mark.js/test/fixtures/across-elements/regexp/infinite.html;TTF:charsetI"
+utf-8;F:digest"%‚’-ë_ßoa·ç^þuåÅ”3ßKj&é•¦zÉn:lengthió:dependencies_digest"%#lÀ¶þùS•šw‚«ñ)}ã“z‰4\Ì BdøZgr:idI"Ec96d5f1bcd1ecd5a4d06326be4b709db1ed9265d63bea65e81c617b10ff378f8;F:
+mtimel+ÓªO`

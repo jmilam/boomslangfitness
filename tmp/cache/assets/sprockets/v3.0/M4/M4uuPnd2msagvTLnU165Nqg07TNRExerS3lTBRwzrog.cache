@@ -1,0 +1,26 @@
+{:uriI"–file://node_modules/mark.js/test/fixtures/iframes/inaccessible.html?type=text/html&id=b801cc893ca350f7ed2471d316e797301655f0a82f80046afcb1c147cc348379:ET:load_pathI"node_modules;T:filenameI"Anode_modules/mark.js/test/fixtures/iframes/inaccessible.html;T:	nameI"/mark.js/test/fixtures/iframes/inaccessible;T:logical_pathI"4mark.js/test/fixtures/iframes/inaccessible.html;T:content_typeI"text/html;T:sourceI"U<div class="iframes-inaccessible" id="iframes-inaccessible-target">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <script>
+        // Can't use document.write here, as this fixture will be
+        // included after the document was fully loaded
+        var target = document.getElementById("iframes-inaccessible-target");
+        var iframe = document.createElement("iframe");
+        iframe.src = "http://example.com/";
+        target.appendChild(iframe);
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ofile-digest://node_modules/mark.js/test/fixtures/iframes/inaccessible.html;TTF:charsetI"
+utf-8;F:digest"%˜tFô¥qËV©WÒ‹
+)üÐŠ›ü´OÁ;6µ:lengthiU:dependencies_digest"%ÏÓa%‘…Ý;ñÂ}«>€	©Ü¼ÑKAo™|í„:idI"Eb801cc893ca350f7ed2471d316e797301655f0a82f80046afcb1c147cc348379;F:
+mtimel+ÓªO`

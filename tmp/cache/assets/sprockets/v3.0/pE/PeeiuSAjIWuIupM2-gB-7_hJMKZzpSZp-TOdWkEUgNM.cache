@@ -1,0 +1,29 @@
+{:uriI"˜file://node_modules/mark.js/test/fixtures/basic/context-nodelist.html?type=text/html&id=3c6e01f98647047bfba8bc3ff50bc81511e385153b40021e98931df5808d8fbe:ET:load_pathI"node_modules;T:filenameI"Cnode_modules/mark.js/test/fixtures/basic/context-nodelist.html;T:	nameI"1mark.js/test/fixtures/basic/context-nodelist;T:logical_pathI"6mark.js/test/fixtures/basic/context-nodelist.html;T:content_typeI"text/html;T:sourceI"š<div class="basic-context-nodelist">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+</div>
+<div class="basic-context-nodelist">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Qfile-digest://node_modules/mark.js/test/fixtures/basic/context-nodelist.html;TTF:charsetI"
+utf-8;F:digest"%|(Ç7=­Q¨e–:O #p—ØCì»dñ_¥F6o:lengthiš:dependencies_digest"%^`¯Cö^•Îãåz¹7Ý¿Pn4íhíŸ]¯MþAƒ:idI"E3c6e01f98647047bfba8bc3ff50bc81511e385153b40021e98931df5808d8fbe;F:
+mtimel+ÓªO`

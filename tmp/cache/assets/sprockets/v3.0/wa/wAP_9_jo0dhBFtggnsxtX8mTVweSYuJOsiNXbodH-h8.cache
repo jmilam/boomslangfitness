@@ -1,0 +1,28 @@
+{:uriI" file://node_modules/mark.js/test/fixtures/across-elements/iframes/nested.html?type=text/html&id=b68cf5b71901bc77acb97e904301acee0aa874666986041e7576e2c86f04da97:ET:load_pathI"node_modules;T:filenameI"Knode_modules/mark.js/test/fixtures/across-elements/iframes/nested.html;T:	nameI"9mark.js/test/fixtures/across-elements/iframes/nested;T:logical_pathI">mark.js/test/fixtures/across-elements/iframes/nested.html;T:content_typeI"text/html;T:sourceI"Ï<div class="across-elements-iframes-nested" id="across-elements-iframes-nested-target">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <script>
+        // Can't use document.write here, as this fixture will be
+        // included after the document was fully loaded
+        var target = document.getElementById(
+            "across-elements-iframes-nested-target"
+        );
+        var iframe = document.createElement("iframe");
+        iframe.src = jasmine.getFixtures().fixturesPath +
+            "/across-elements/iframes/nested-inc.html";
+        target.appendChild(iframe);
+    </script>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Yfile-digest://node_modules/mark.js/test/fixtures/across-elements/iframes/nested.html;TTF:charsetI"
+utf-8;F:digest"%Ş8Ö´ÖÇE+÷Ú/Ì(#¥ùì¢îúáõÈ¬KHîàÊÀø¢:lengthiÏ:dependencies_digest"%ú«/ò?íÚÂ¯™_;døõ3øMÅînv˜:idI"Eb68cf5b71901bc77acb97e904301acee0aa874666986041e7576e2c86f04da97;F:
+mtimel+ÓªO`

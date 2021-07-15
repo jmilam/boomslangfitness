@@ -1,0 +1,31 @@
+{:uriI"çfile://node_modules/mark.js/test/fixtures/ranges/main.html?type=text/html&id=756397ddcaba3771a5baf13b26211418525a530e0d3d5e3ccd4c7dc55bacd7ac:ET:load_pathI"node_modules;T:filenameI"8node_modules/mark.js/test/fixtures/ranges/main.html;T:	nameI"&mark.js/test/fixtures/ranges/main;T:logical_pathI"+mark.js/test/fixtures/ranges/main.html;T:content_typeI"text/html;T:sourceI"“<div class="ranges">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut<br> labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ffile-digest://node_modules/mark.js/test/fixtures/ranges/main.html;TTF:charsetI"
+utf-8;F:digest"%2$>˛GNíµ`5á∏˙˚˜ó-†˘˘˘–fv‘¢:lengthi“:dependencies_digest"%lßÖ7rgÆû‰∫˜af§¥> ‚Ia!Y⁄:idI"E756397ddcaba3771a5baf13b26211418525a530e0d3d5e3ccd4c7dc55bacd7ac;F:
+mtimel+”™O`

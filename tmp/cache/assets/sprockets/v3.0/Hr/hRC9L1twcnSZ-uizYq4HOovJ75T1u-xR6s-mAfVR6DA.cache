@@ -1,0 +1,29 @@
+{:uriI"©file://node_modules/mark.js/test/fixtures/basic/wildcards-ignore-joiners-synonyms.html?type=text/html&id=156eb6ac464a6fd04c473e0c9ee6f28a8c6fcdef8b5c0c6873b612e933dd2152:ET:load_pathI"node_modules;T:filenameI"Tnode_modules/mark.js/test/fixtures/basic/wildcards-ignore-joiners-synonyms.html;T:	nameI"Bmark.js/test/fixtures/basic/wildcards-ignore-joiners-synonyms;T:logical_pathI"Gmark.js/test/fixtures/basic/wildcards-ignore-joiners-synonyms.html;T:content_typeI"text/html;T:sourceI"Q<div class="basic-wildcards-ignore-joiners-synonyms">
+    <div>
+        <p>
+            Lorenzom ip&shy;sum dolor sit amet, consetetur sadipsu&#8203;mcing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. L&#8204;orem ips12&shy;34m dolor sit amet, consetetur
+            sadipscing elitr. Lori&shy;em ipsm dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. Lorm ipsim Lo&shy;r&#8203;um ips&#8205;√°m,
+            et Lo&shy;r√©√ºm IpseÃÅm. Lor?m ipsa12m. Lor&#8203;*m ipsu&#8204;√üm.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorenzom ip&shy;sum dolor sit amet, consetetur sadipsu&#8203;mcing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. L&#8204;orem ips12&shy;34m dolor sit amet, consetetur
+            sadipscing elitr. Lori&shy;em ipsm dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. Lorm ipsim Lo&shy;r&#8203;um ips&#8205;√°m,
+            et Lo&shy;r√©√ºm IpseÃÅm. Lor?m ipsa12m. Lor&#8203;*m ipsu&#8204;√üm.
+        </p>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"bfile-digest://node_modules/mark.js/test/fixtures/basic/wildcards-ignore-joiners-synonyms.html;TTF:charsetI"
+utf-8;F:digest"%≤≠II˚6`.ﬁ0/ïDßﬁ“fîñ*çÂŒ`øÛLÇ;Ç:lengthiQ:dependencies_digest"%Ù4≠oŒÂñ'c!˝E#ó`b∑è4Yﬁé§¥ùªM!:idI"E156eb6ac464a6fd04c473e0c9ee6f28a8c6fcdef8b5c0c6873b612e933dd2152;F:
+mtimel+”™O`

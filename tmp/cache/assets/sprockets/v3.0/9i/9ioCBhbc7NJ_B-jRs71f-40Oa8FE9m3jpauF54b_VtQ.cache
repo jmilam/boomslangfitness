@@ -1,0 +1,33 @@
+{:uriI"£file://node_modules/mark.js/test/fixtures/basic/ignore-punctuation-accuracy.html?type=text/html&id=16cc1de9796963bf01dd50ad7b50f65f60880af157472e0c28cd1b1d288e5a01:ET:load_pathI"node_modules;T:filenameI"Nnode_modules/mark.js/test/fixtures/basic/ignore-punctuation-accuracy.html;T:	nameI"<mark.js/test/fixtures/basic/ignore-punctuation-accuracy;T:logical_pathI"Amark.js/test/fixtures/basic/ignore-punctuation-accuracy.html;T:content_typeI"text/html;T:sourceI"d<div class="basic-ignore-punctuation-accuracy">
+    <div>
+        <p>
+            Lorem, ipâ€’sum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est lo[rem]! ips'umtest dolor sit.
+            Lore'm ip(sum) dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+            rebum. Stet clita kasd gubergren, no sea takimata sanctus est lorem ipsum
+            dolor sit amet. Lor}{em "ipsum". Lorem ip&shy;sum.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem, ipâ€’sum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est lo[rem]! ips'umtest dolor sit.
+            Lore'm ip(sum) dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+            rebum. Stet clita kasd gubergren, no sea takimata sanctus est lorem ipsum
+            dolor sit amet. Lor}{em "ipsum". Lorem ip&shy;sum.
+        </p>
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"\file-digest://node_modules/mark.js/test/fixtures/basic/ignore-punctuation-accuracy.html;TTF:charsetI"
+utf-8;F:digest"%U¤úş`…Ñı¸
+^ø&Y‰ËİÖÈ½¬çCºü‘p`-Ğ:lengthid:dependencies_digest"%hŠÑ×¥,¥!Â&ñ{FòÒág IÂ½lø¥Ç½:idI"E16cc1de9796963bf01dd50ad7b50f65f60880af157472e0c28cd1b1d288e5a01;F:
+mtimel+ÓªO`

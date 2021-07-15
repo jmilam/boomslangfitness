@@ -1,0 +1,21 @@
+{:uriI"ñfile://node_modules/mark.js/test/fixtures/basic/unmark-exclude.html?type=text/html&id=3ce266b2deddee8633fafdc0813ddfd5b94aa32e81479b54664b4feea57175b1:ET:load_pathI"node_modules;T:filenameI"Anode_modules/mark.js/test/fixtures/basic/unmark-exclude.html;T:	nameI"/mark.js/test/fixtures/basic/unmark-exclude;T:logical_pathI"4mark.js/test/fixtures/basic/unmark-exclude.html;T:content_typeI"text/html;T:sourceI"-<div class="basic-unmark-exclude">
+    <a class="ignore">Lorem ipsum</a>
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <div data-ignore="true">
+        Lorem ipsum
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ofile-digest://node_modules/mark.js/test/fixtures/basic/unmark-exclude.html;TTF:charsetI"
+utf-8;F:digest"%3.aÚ”wî0πÍu•«Zè€eÈ?ƒ˛\ÉµÍÍ»ú‡:lengthi-:dependencies_digest"%4ãq·Be≤wÄ*∞öLhkˆËÕB∂\Â^F#Sr“:idI"E3ce266b2deddee8633fafdc0813ddfd5b94aa32e81479b54664b4feea57175b1;F:
+mtimel+”™O`

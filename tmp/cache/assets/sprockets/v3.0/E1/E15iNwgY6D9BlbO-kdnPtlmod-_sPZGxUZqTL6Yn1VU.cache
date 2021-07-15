@@ -1,70 +1,0 @@
-{:uriI"file://node_modules/lodash/package.json?type=application/json&id=438bb1279eb47f5924f94fcab0b101cefd1371adcc949729929e9c641ad7914d:ET:load_pathI"node_modules;T:filenameI"%node_modules/lodash/package.json;T:	nameI"lodash/package;T:logical_pathI"lodash/package.json;T:content_typeI"application/json;T:sourceI"Œ{
-  "_from": "lodash@^4.17.14",
-  "_id": "lodash@4.17.21",
-  "_inBundle": false,
-  "_integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==",
-  "_location": "/lodash",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "lodash@^4.17.14",
-    "name": "lodash",
-    "escapedName": "lodash",
-    "rawSpec": "^4.17.14",
-    "saveSpec": null,
-    "fetchSpec": "^4.17.14"
-  },
-  "_requiredBy": [
-    "/@zoomus/websdk",
-    "/redux"
-  ],
-  "_resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
-  "_shasum": "679591c564c3bffaae8454cf0b3df370c3d6911c",
-  "_spec": "lodash@^4.17.14",
-  "_where": "/Users/jmilam/Projects/workout_randomizer/node_modules/@zoomus/websdk",
-  "author": {
-    "name": "John-David Dalton",
-    "email": "john.david.dalton@gmail.com"
-  },
-  "bugs": {
-    "url": "https://github.com/lodash/lodash/issues"
-  },
-  "bundleDependencies": false,
-  "contributors": [
-    {
-      "name": "John-David Dalton",
-      "email": "john.david.dalton@gmail.com"
-    },
-    {
-      "name": "Mathias Bynens",
-      "email": "mathias@qiwi.be"
-    }
-  ],
-  "deprecated": false,
-  "description": "Lodash modular utilities.",
-  "homepage": "https://lodash.com/",
-  "icon": "https://lodash.com/icon.svg",
-  "keywords": [
-    "modules",
-    "stdlib",
-    "util"
-  ],
-  "license": "MIT",
-  "main": "lodash.js",
-  "name": "lodash",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lodash/lodash.git"
-  },
-  "scripts": {
-    "test": "echo \"See https://travis-ci.org/lodash-archive/lodash-cli for testing details.\""
-  },
-  "version": "4.17.21"
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"3file-digest://node_modules/lodash/package.json;TTF:charsetI"
-utf-8;F:digest"%Ù€oÏs¨Ğ:	§ê2mŸ0ÌÖ~{(—…ß¼‚3Áw8:lengthiŒ:dependencies_digest"%ÆßV™ï«
-	šM”Iç%ÜRhF>ÑOÍÖÅ‡ÉDùªr:idI"E438bb1279eb47f5924f94fcab0b101cefd1371adcc949729929e9c641ad7914d;F:
-mtimel+š¾6`

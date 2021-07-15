@@ -1,0 +1,29 @@
+{:uriI"–file://node_modules/mark.js/test/fixtures/basic/context-string.html?type=text/html&id=67666b12d77fb9f994544518bcdeaf7466ed18c9a7aa744ae069a440284eb656:ET:load_pathI"node_modules;T:filenameI"Anode_modules/mark.js/test/fixtures/basic/context-string.html;T:	nameI"/mark.js/test/fixtures/basic/context-string;T:logical_pathI"4mark.js/test/fixtures/basic/context-string.html;T:content_typeI"text/html;T:sourceI"–<div class="basic-context-string">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+</div>
+<div class="basic-context-string">
+    <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Ofile-digest://node_modules/mark.js/test/fixtures/basic/context-string.html;TTF:charsetI"
+utf-8;F:digest"%Ê±Çæx˜¦šö3”ýìxé€gÇàBÚji"»Bœ²ä:lengthi–:dependencies_digest"%^Æú{,ï;îÔ.„¾ÞAÂFýŠåøç5ùRoÝ:idI"E67666b12d77fb9f994544518bcdeaf7466ed18c9a7aa744ae069a440284eb656;F:
+mtimel+ÓªO`
