@@ -1,0 +1,11 @@
+# Logfile created on 2022-03-03 15:09:43 -0500 by logger.rb/v1.4.2
+[03/03/22 15:09:43 -0500 AdminisatorsAir.lan (95491)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/03/22 15:09:43 -0500 AdminisatorsAir.lan (95491)] INFO : Scout Agent [5.1.1] Initialized
+[03/03/22 15:09:43 -0500 AdminisatorsAir.lan (95491)] INFO : Not Loading Instruments
+[03/03/22 15:09:43 -0500 AdminisatorsAir.lan (95491)] INFO : Scout Agent [5.1.1] Installed
+[03/03/22 15:09:43 -0500 AdminisatorsAir.lan (95491)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/03/22 15:14:28 -0500 AdminisatorsAir.lan (98467)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/03/22 15:14:28 -0500 AdminisatorsAir.lan (98467)] INFO : Scout Agent [5.1.1] Initialized
+[03/03/22 15:14:28 -0500 AdminisatorsAir.lan (98467)] INFO : Not Loading Instruments
+[03/03/22 15:14:28 -0500 AdminisatorsAir.lan (98467)] INFO : Scout Agent [5.1.1] Installed
+[03/03/22 15:14:28 -0500 AdminisatorsAir.lan (98467)] INFO : Monitoring isn't enabled for the [development] environment.
