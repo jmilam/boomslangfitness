@@ -24,3 +24,18 @@
 [03/08/22 15:33:16 -0500 AdminisatorsAir.lan (96789)] INFO : Not Loading Instruments
 [03/08/22 15:33:16 -0500 AdminisatorsAir.lan (96789)] INFO : Scout Agent [5.1.1] Installed
 [03/08/22 15:33:16 -0500 AdminisatorsAir.lan (96789)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/08/22 17:23:17 -0500 Administrators-MacBook-Air.local (48026)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/08/22 17:23:17 -0500 Administrators-MacBook-Air.local (48026)] INFO : Scout Agent [5.1.1] Initialized
+[03/08/22 17:23:17 -0500 Administrators-MacBook-Air.local (48026)] INFO : Not Loading Instruments
+[03/08/22 17:23:17 -0500 Administrators-MacBook-Air.local (48026)] INFO : Scout Agent [5.1.1] Installed
+[03/08/22 17:23:17 -0500 Administrators-MacBook-Air.local (48026)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/08/22 17:24:47 -0500 AdminisatorsAir.lan (49132)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/08/22 17:24:47 -0500 AdminisatorsAir.lan (49132)] INFO : Scout Agent [5.1.1] Initialized
+[03/08/22 17:24:47 -0500 AdminisatorsAir.lan (49132)] INFO : Not Loading Instruments
+[03/08/22 17:24:47 -0500 AdminisatorsAir.lan (49132)] INFO : Scout Agent [5.1.1] Installed
+[03/08/22 17:24:48 -0500 AdminisatorsAir.lan (49132)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/08/22 17:30:31 -0500 AdminisatorsAir.lan (52564)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/08/22 17:30:31 -0500 AdminisatorsAir.lan (52564)] INFO : Scout Agent [5.1.1] Initialized
+[03/08/22 17:30:31 -0500 AdminisatorsAir.lan (52564)] INFO : Not Loading Instruments
+[03/08/22 17:30:31 -0500 AdminisatorsAir.lan (52564)] INFO : Scout Agent [5.1.1] Installed
+[03/08/22 17:30:31 -0500 AdminisatorsAir.lan (52564)] INFO : Monitoring isn't enabled for the [development] environment.
