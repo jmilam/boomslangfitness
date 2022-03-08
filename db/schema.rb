@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_11_185243) do
+ActiveRecord::Schema.define(version: 2022_03_08_203208) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -401,6 +401,10 @@ ActiveRecord::Schema.define(version: 2021_02_11_185243) do
     t.integer "user_previous_workout_id"
     t.text "comment", default: ""
     t.string "band_color"
+    t.integer "rep_7_weight"
+    t.integer "rep_8_weight"
+    t.integer "rep_9_weight"
+    t.integer "rep_10_weight"
   end
 
   create_table "workout_group_pairings", force: :cascade do |t|
