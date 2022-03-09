@@ -32,14 +32,14 @@
 		<div class="row rate-workout">
 			<%= hidden_field_tag :workout_id, @workout.id %>
 			<%= hidden_field_tag :user_id, @user_id %>
-			<div class="card col-md-3 offset-md-2 col-4 offset-1 text-center likes">
+			<div class="card col-md-3 offset-md-2 col-4 offset-1 text-center likes" data-type="likes">
 			  <div class="card-body">
-			  	<i class="fa fa-thumbs-up fa-lg" data-type="likes"></i>
+			  	<i class="fa fa-thumbs-up fa-lg"></i>
 			  </div>
 			 </div>
-			<div class="card col-md-3 offset-md-1 col-4 offset-1 text-center dislikes">
+			<div class="card col-md-3 offset-md-1 col-4 offset-1 text-center dislikes" data-type="dislikes">
 				<div class="card-body">
-					<i class="fa fa-thumbs-down fa-lg" data-type="dislikes"></i>
+					<i class="fa fa-thumbs-down fa-lg"></i>
 				</div>
 			</div>
 		</div>
