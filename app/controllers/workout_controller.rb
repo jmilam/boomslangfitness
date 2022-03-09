@@ -140,7 +140,12 @@ class WorkoutController < ApplicationController
     json_response = { likes: @likes, dislikes: @dislikes}.to_json
 
     respond_to do |format|
-      format.html 
+      if params[:type]
+        flash[:notice] = "Successfully rated todays workout";
+        format.html { redirect_to rate_workout_web_path(@workout.id) }
+      else
+        format.html
+      end
       format.json { render json: json_response }
     end
   rescue ActiveRecord::RecordInvalid
