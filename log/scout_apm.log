@@ -59,3 +59,33 @@
 [03/09/22 10:15:22 -0500 AdminisatorsAir.lan (15042)] INFO : Not Loading Instruments
 [03/09/22 10:15:22 -0500 AdminisatorsAir.lan (15042)] INFO : Scout Agent [5.1.1] Installed
 [03/09/22 10:15:22 -0500 AdminisatorsAir.lan (15042)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/09/22 10:45:04 -0500 AdminisatorsAir.lan (33746)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/09/22 10:45:04 -0500 AdminisatorsAir.lan (33746)] INFO : Scout Agent [5.1.1] Initialized
+[03/09/22 10:45:04 -0500 AdminisatorsAir.lan (33746)] INFO : Not Loading Instruments
+[03/09/22 10:45:04 -0500 AdminisatorsAir.lan (33746)] INFO : Scout Agent [5.1.1] Installed
+[03/09/22 10:45:05 -0500 AdminisatorsAir.lan (33746)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/09/22 10:47:08 -0500 AdminisatorsAir.lan (34961)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/09/22 10:47:08 -0500 AdminisatorsAir.lan (34961)] INFO : Scout Agent [5.1.1] Initialized
+[03/09/22 10:47:08 -0500 AdminisatorsAir.lan (34961)] INFO : Not Loading Instruments
+[03/09/22 10:47:08 -0500 AdminisatorsAir.lan (34961)] INFO : Scout Agent [5.1.1] Installed
+[03/09/22 10:47:08 -0500 AdminisatorsAir.lan (34961)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/09/22 11:01:43 -0500 AdminisatorsAir.lan (44248)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/09/22 11:01:43 -0500 AdminisatorsAir.lan (44248)] INFO : Scout Agent [5.1.1] Initialized
+[03/09/22 11:01:43 -0500 AdminisatorsAir.lan (44248)] INFO : Not Loading Instruments
+[03/09/22 11:01:43 -0500 AdminisatorsAir.lan (44248)] INFO : Scout Agent [5.1.1] Installed
+[03/09/22 11:01:43 -0500 AdminisatorsAir.lan (44248)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/09/22 11:11:04 -0500 AdminisatorsAir.lan (50198)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/09/22 11:11:04 -0500 AdminisatorsAir.lan (50198)] INFO : Scout Agent [5.1.1] Initialized
+[03/09/22 11:11:04 -0500 AdminisatorsAir.lan (50198)] INFO : Not Loading Instruments
+[03/09/22 11:11:04 -0500 AdminisatorsAir.lan (50198)] INFO : Scout Agent [5.1.1] Installed
+[03/09/22 11:11:04 -0500 AdminisatorsAir.lan (50198)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/09/22 11:12:21 -0500 AdminisatorsAir.lan (50957)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/09/22 11:12:21 -0500 AdminisatorsAir.lan (50957)] INFO : Scout Agent [5.1.1] Initialized
+[03/09/22 11:12:21 -0500 AdminisatorsAir.lan (50957)] INFO : Not Loading Instruments
+[03/09/22 11:12:21 -0500 AdminisatorsAir.lan (50957)] INFO : Scout Agent [5.1.1] Installed
+[03/09/22 11:12:21 -0500 AdminisatorsAir.lan (50957)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/09/22 11:13:13 -0500 AdminisatorsAir.lan (51522)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/09/22 11:13:13 -0500 AdminisatorsAir.lan (51522)] INFO : Scout Agent [5.1.1] Initialized
+[03/09/22 11:13:13 -0500 AdminisatorsAir.lan (51522)] INFO : Not Loading Instruments
+[03/09/22 11:13:13 -0500 AdminisatorsAir.lan (51522)] INFO : Scout Agent [5.1.1] Installed
+[03/09/22 11:13:13 -0500 AdminisatorsAir.lan (51522)] INFO : Monitoring isn't enabled for the [development] environment.

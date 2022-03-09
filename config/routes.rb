@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'workout/list', to: 'workout#list', as: 'list_workouts'
   get 'workout/manual_workout', to: 'workout#manual_workout', as: 'manual_workout'
+  get 'workout/rate_workout/:id', to: 'workout#rate_workout', as: 'rate_workout_web'
   post 'workout/accept_deny_workout', to: 'workout#accept_deny_workout', as: 'accept_deny_workout'
   post 'workout/rate_workout', to: 'workout#rate_workout'
   patch 'workout/accept_workout', to: 'workout#accept_workout', as: 'accept_workout'

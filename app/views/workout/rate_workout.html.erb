@@ -1,0 +1,54 @@
+<style>
+	.rate-workout .card {
+		padding: 70px 0;
+  	border: 2px solid grey;
+  	text-align: center;
+    color: #003259;
+    opacity: 0.8;
+    height: 12em;
+	}
+	.row {
+		margin-top:40%;
+	}
+
+	.dislikes:hover {
+		background-color: #CC0000;
+	}
+
+	.likes:hover {
+		background-color: #71B11D;
+	}
+</style>
+<div class="container">
+	<div class="row rate-workout">
+		<%= hidden_field_tag :workout_id, @workout.id %>
+		<%= hidden_field_tag :user_id, @user_id %>
+		<div class="card col-md-3 offset-md-2 col-4 offset-1 text-center likes">
+		  <div class="card-body">
+		  	<i class="fa fa-thumbs-up fa-lg" data-type="likes"></i>
+		  </div>
+		 </div>
+		<div class="card col-md-3 offset-md-1 col-4 offset-1 text-center dislikes">
+			<div class="card-body">
+				<i class="fa fa-thumbs-down fa-lg" data-type="dislikes"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.likes, .dislikes').on('click', function() {
+			$.ajax({
+				beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
+			  dataType: 'script',
+			  type: 'POST',
+			  url: "/workout/rate_workout",
+			  data: {id: $('#workout_id').val(), type: $(this).data('type'), user_id: $('#user_id').val()},
+			  success: function(data) {
+			  	alert("Rating successfully submitted")
+				}
+			});
+		});
+	});
+</script>

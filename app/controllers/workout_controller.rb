@@ -1,5 +1,5 @@
 class WorkoutController < ApplicationController
-  layout 'nav', except: ['list', 'new', 'manual_workout']  
+  layout 'nav', except: ['list', 'new', 'manual_workout', 'rate_workout']  
   def new
     @workout = Workout.new
     @categories = current_user.gym.categories.enabled
@@ -120,16 +120,28 @@ class WorkoutController < ApplicationController
   end
 
   def rate_workout
-    workout = Workout.find(params[:id])
+    @workout = Workout.find(params[:id])
     type = params[:type]
-    user_id = params[:user_id]
+    @user_id = params[:user_id] || current_user.id
+
     if type == 'likes'
-      workout.likes.create!(workout_id: workout.id, user_id: user_id)
+      @workout.likes.create!(workout_id: @workout.id, user_id: @user_id)
     elsif type == 'dislikes'
-      workout.dislikes.create!(workout_id: workout.id, user_id: user_id)
+      @workout.dislikes.create!(workout_id: @workout.id, user_id: @user_id)
+    end
+
+    @likes = @workout.likes.count
+    @dislikes = @workout.dislikes.count
+
+    json_response = { likes: @likes, dislikes: @dislikes}.to_json
+
+    flash[:notice] = "Successfully rated this workout"
+    respond_to do |format|
+      format.html 
+      format.json { render json: json_response }
     end
   rescue ActiveRecord::RecordInvalid
-    render json: {likes: workout.likes.count, dislikes: workout.dislikes.count}
+    render json: json_response
   end
 
   def manual_workout
