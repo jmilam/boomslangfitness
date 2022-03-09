@@ -29,6 +29,7 @@ Rails.application.routes.draw do
   get 'workout/list', to: 'workout#list', as: 'list_workouts'
   get 'workout/manual_workout', to: 'workout#manual_workout', as: 'manual_workout'
   post 'workout/accept_deny_workout', to: 'workout#accept_deny_workout', as: 'accept_deny_workout'
+  post 'workout/rate_workout', to: 'workout#rate_workout'
   patch 'workout/accept_workout', to: 'workout#accept_workout', as: 'accept_workout'
   patch 'workout/stop_workout', to: 'workout#stop_workout', as: 'stop_workout'
   put 'workout/add_exercise', to: 'workout#add_exercise', as: 'add_exercise'

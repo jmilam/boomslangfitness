@@ -95,6 +95,8 @@ class ExerciseController < ApplicationController
 
   def get_all_for_workout_group
     @workout = Workout.find(params[:id]) unless params[:id].blank?
+    @likes = @workout.likes.count
+    @dislikes = @workout.dislikes.count
     @user = User.find(params[:user_id])
 
     @previous_workouts = @user.user_previous_workouts.includes(:exercises).where(workout_id: @workout&.id)

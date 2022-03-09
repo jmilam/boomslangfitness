@@ -17,6 +17,10 @@
 				<div class="row">
 						<%= select_tag :user, options_for_select(@users.collect{ |u| ["#{u.first_name} #{u.last_name}", u.id] }, @user.id), prompt: "Select User", class: "form-control col-10 offset-1" %>
 				</div>
+				<div class="row invisible rate-workout">
+					<div class="col-6 text-right likes"><i class="fa fa-thumbs-up fa-lg" style="color:white;" data-type="likes"></i></div>
+					<div class="col-6 text-left dislikes"><i class="fa fa-thumbs-down fa-lg" style="color:white;" data-type="dislikes"></i></div>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-9">
@@ -39,6 +43,20 @@
 			}
 		});
 
+
+		$('.likes i, .dislikes i').on('click', function() {
+			$.ajax({
+			  dataType: 'script',
+			  type: 'POST',
+			  url: "/workout/rate_workout",
+			  data: {id: $('#workout').val(), type: $(this).data('type'), user_id: $('#user').val()},
+			  success: function(data) {
+			  	$('.likes i').text(JSON.parse(data).likes)
+			  	$('.dislikes i').text(JSON.parse(data).dislikes)
+				}
+			});
+		});
+
 		$('#workout, #workout_date, #user').on('change', function(){
 			$.ajax({
 			  dataType: 'script',
@@ -46,7 +64,8 @@
 			  url: "/exercise/get_all_for_workout_group",
 			  data: {id: $('#workout').val(), workout_date: $('#workout_date').val(), user_id: $('#user').val(), edit_mode: $('#edit_mode').val()},
 			  success: function(data) {
-			  	console.log(data)
+			  	$('.rate-workout').addClass('visible')
+		  		$('.rate-workout').removeClass('invisible')
 				}
 			});
 		});

@@ -119,6 +119,19 @@ class WorkoutController < ApplicationController
     end
   end
 
+  def rate_workout
+    workout = Workout.find(params[:id])
+    type = params[:type]
+    user_id = params[:user_id]
+    if type == 'likes'
+      workout.likes.create!(workout_id: workout.id, user_id: user_id)
+    elsif type == 'dislikes'
+      workout.dislikes.create!(workout_id: workout.id, user_id: user_id)
+    end
+  rescue ActiveRecord::RecordInvalid
+    render json: {likes: workout.likes.count, dislikes: workout.dislikes.count}
+  end
+
   def manual_workout
     @selected_workout = Workout.find_by(id: params[:workout_id])
     @working_date = params[:workout_date] || Date.today
