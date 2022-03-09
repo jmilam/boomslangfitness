@@ -123,11 +123,15 @@ class WorkoutController < ApplicationController
     @workout = Workout.find(params[:id])
     type = params[:type]
     @user_id = params[:user_id] || current_user.id
+    @already_rated = @workout.likes.where('user_id = ? AND DATE(created_at) = ?',  current_user.id, Date.today).size == 1 ||
+      @workout.dislikes.where('user_id = ? AND DATE(created_at) = ?',  current_user.id, Date.today).size == 1
 
-    if type == 'likes'
-      @workout.likes.create!(workout_id: @workout.id, user_id: @user_id)
-    elsif type == 'dislikes'
-      @workout.dislikes.create!(workout_id: @workout.id, user_id: @user_id)
+    unless @already_rated
+      if type == 'likes'
+        @workout.likes.create!(workout_id: @workout.id, user_id: @user_id)
+      elsif type == 'dislikes'
+        @workout.dislikes.create!(workout_id: @workout.id, user_id: @user_id)
+      end
     end
 
     @likes = @workout.likes.count
@@ -135,7 +139,6 @@ class WorkoutController < ApplicationController
 
     json_response = { likes: @likes, dislikes: @dislikes}.to_json
 
-    flash[:notice] = "Successfully rated this workout"
     respond_to do |format|
       format.html 
       format.json { render json: json_response }

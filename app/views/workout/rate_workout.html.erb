@@ -20,20 +20,30 @@
 	}
 </style>
 <div class="container">
-	<div class="row rate-workout">
-		<%= hidden_field_tag :workout_id, @workout.id %>
-		<%= hidden_field_tag :user_id, @user_id %>
-		<div class="card col-md-3 offset-md-2 col-4 offset-1 text-center likes">
-		  <div class="card-body">
-		  	<i class="fa fa-thumbs-up fa-lg" data-type="likes"></i>
-		  </div>
-		 </div>
-		<div class="card col-md-3 offset-md-1 col-4 offset-1 text-center dislikes">
-			<div class="card-body">
-				<i class="fa fa-thumbs-down fa-lg" data-type="dislikes"></i>
+	<% if  @already_rated %>
+		<div class="jumbotron jumbotron-fluid" style="margin-top:2em;">
+	    <div class="container">
+	      <h1 class="display-4 text-center">Already rated!</h1>
+	      <hr/>
+	      <p class="lead">You have already rated todays workout. Please come back tomorrow and tell us how tomorrows workout goes.</b></p>
+	    </div>
+	  </div>
+	<% else %>
+		<div class="row rate-workout">
+			<%= hidden_field_tag :workout_id, @workout.id %>
+			<%= hidden_field_tag :user_id, @user_id %>
+			<div class="card col-md-3 offset-md-2 col-4 offset-1 text-center likes">
+			  <div class="card-body">
+			  	<i class="fa fa-thumbs-up fa-lg" data-type="likes"></i>
+			  </div>
+			 </div>
+			<div class="card col-md-3 offset-md-1 col-4 offset-1 text-center dislikes">
+				<div class="card-body">
+					<i class="fa fa-thumbs-down fa-lg" data-type="dislikes"></i>
+				</div>
 			</div>
 		</div>
-	</div>
+	<% end %>
 </div>
 
 <script type="text/javascript">
